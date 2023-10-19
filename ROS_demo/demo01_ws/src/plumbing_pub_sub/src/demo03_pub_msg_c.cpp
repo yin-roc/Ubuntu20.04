@@ -19,7 +19,7 @@ int main(int argc, char * argv[])
     {
         pub.publish(p);
         p.age += 1;
-        ROS_INFO("我叫:%s, 今年：%d岁, 高：%.2f米", p.name, p.age, p.height);
+        ROS_INFO("我叫:%s, 今年：%d岁, 高：%.2f米", p.name.c_str(), p.age, p.height);
         r.sleep();
         ros::spinOnce();
     }
