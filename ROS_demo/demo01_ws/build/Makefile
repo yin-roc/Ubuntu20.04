@@ -935,6 +935,19 @@ plumbing_server_client_generate_messages_nodejs/fast:
 .PHONY : plumbing_server_client_generate_messages_nodejs/fast
 
 #=============================================================================
+# Target rules for targets named test03_service_client_c
+
+# Build rule for target.
+test03_service_client_c: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test03_service_client_c
+.PHONY : test03_service_client_c
+
+# fast build rule for target.
+test03_service_client_c/fast:
+	$(MAKE) -f four_plumbing_test/CMakeFiles/test03_service_client_c.dir/build.make four_plumbing_test/CMakeFiles/test03_service_client_c.dir/build
+.PHONY : test03_service_client_c/fast
+
+#=============================================================================
 # Target rules for targets named test02_sub_twist_c
 
 # Build rule for target.
@@ -1091,6 +1104,19 @@ turtlesim_generate_messages_nodejs/fast:
 .PHONY : turtlesim_generate_messages_nodejs/fast
 
 #=============================================================================
+# Target rules for targets named test04_param_c
+
+# Build rule for target.
+test04_param_c: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test04_param_c
+.PHONY : test04_param_c
+
+# fast build rule for target.
+test04_param_c/fast:
+	$(MAKE) -f four_plumbing_test/CMakeFiles/test04_param_c.dir/build.make four_plumbing_test/CMakeFiles/test04_param_c.dir/build
+.PHONY : test04_param_c/fast
+
+#=============================================================================
 # Target rules for targets named test01_pub_twist_c
 
 # Build rule for target.
@@ -1227,6 +1253,7 @@ help:
 	@echo "... demo01_server_c"
 	@echo "... plumbing_server_client_genlisp"
 	@echo "... plumbing_server_client_generate_messages_nodejs"
+	@echo "... test03_service_client_c"
 	@echo "... test02_sub_twist_c"
 	@echo "... std_srvs_generate_messages_py"
 	@echo "... turtlesim_generate_messages_cpp"
@@ -1239,6 +1266,7 @@ help:
 	@echo "... turtlesim_generate_messages_lisp"
 	@echo "... turtlesim_generate_messages_eus"
 	@echo "... turtlesim_generate_messages_nodejs"
+	@echo "... test04_param_c"
 	@echo "... test01_pub_twist_c"
 	@echo "... geometry_msgs_generate_messages_py"
 	@echo "... std_srvs_generate_messages_cpp"

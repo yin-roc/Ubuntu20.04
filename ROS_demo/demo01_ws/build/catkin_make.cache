@@ -1,2 +1,2 @@
-four_plumbing_test:plumbing_param_server:plumbing_pub_sub:plumbing_server_client
+four_plumbing_test:launch01_basic:plumbing_param_server:plumbing_pub_sub:plumbing_server_client
 -DCATKIN_DEVEL_PREFIX=/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/devel -DCMAKE_INSTALL_PREFIX=/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/install -G Unix Makefiles

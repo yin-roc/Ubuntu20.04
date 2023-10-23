@@ -15,6 +15,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "catkin_generated/order_packages.cmake"
   "four_plumbing_test/catkin_generated/ordered_paths.cmake"
   "four_plumbing_test/catkin_generated/package.cmake"
+  "launch01_basic/catkin_generated/ordered_paths.cmake"
+  "launch01_basic/catkin_generated/package.cmake"
   "plumbing_param_server/catkin_generated/ordered_paths.cmake"
   "plumbing_param_server/catkin_generated/package.cmake"
   "plumbing_pub_sub/catkin_generated/ordered_paths.cmake"
@@ -32,6 +34,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/src/CMakeLists.txt"
   "/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/src/four_plumbing_test/CMakeLists.txt"
   "/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/src/four_plumbing_test/package.xml"
+  "/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/src/launch01_basic/CMakeLists.txt"
+  "/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/src/launch01_basic/package.xml"
   "/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/src/plumbing_param_server/CMakeLists.txt"
   "/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/src/plumbing_param_server/package.xml"
   "/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/src/plumbing_pub_sub/CMakeLists.txt"
@@ -238,6 +242,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "plumbing_pub_sub/CMakeFiles/CMakeDirectoryInformation.cmake"
   "plumbing_server_client/CMakeFiles/CMakeDirectoryInformation.cmake"
   "four_plumbing_test/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "launch01_basic/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -301,6 +306,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "plumbing_server_client/CMakeFiles/demo01_server_c.dir/DependInfo.cmake"
   "plumbing_server_client/CMakeFiles/plumbing_server_client_genlisp.dir/DependInfo.cmake"
   "plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_nodejs.dir/DependInfo.cmake"
+  "four_plumbing_test/CMakeFiles/test03_service_client_c.dir/DependInfo.cmake"
   "four_plumbing_test/CMakeFiles/test02_sub_twist_c.dir/DependInfo.cmake"
   "four_plumbing_test/CMakeFiles/std_srvs_generate_messages_py.dir/DependInfo.cmake"
   "four_plumbing_test/CMakeFiles/turtlesim_generate_messages_cpp.dir/DependInfo.cmake"
@@ -313,6 +319,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "four_plumbing_test/CMakeFiles/turtlesim_generate_messages_lisp.dir/DependInfo.cmake"
   "four_plumbing_test/CMakeFiles/turtlesim_generate_messages_eus.dir/DependInfo.cmake"
   "four_plumbing_test/CMakeFiles/turtlesim_generate_messages_nodejs.dir/DependInfo.cmake"
+  "four_plumbing_test/CMakeFiles/test04_param_c.dir/DependInfo.cmake"
   "four_plumbing_test/CMakeFiles/test01_pub_twist_c.dir/DependInfo.cmake"
   "four_plumbing_test/CMakeFiles/geometry_msgs_generate_messages_py.dir/DependInfo.cmake"
   "four_plumbing_test/CMakeFiles/std_srvs_generate_messages_cpp.dir/DependInfo.cmake"

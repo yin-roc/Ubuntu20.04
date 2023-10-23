@@ -168,6 +168,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+four_plumbing_test/CMakeFiles/test03_service_client_c.dir/rule:
+	cd /home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/build && $(MAKE) -f CMakeFiles/Makefile2 four_plumbing_test/CMakeFiles/test03_service_client_c.dir/rule
+.PHONY : four_plumbing_test/CMakeFiles/test03_service_client_c.dir/rule
+
+# Convenience name for target.
+test03_service_client_c: four_plumbing_test/CMakeFiles/test03_service_client_c.dir/rule
+
+.PHONY : test03_service_client_c
+
+# fast build rule for target.
+test03_service_client_c/fast:
+	cd /home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/build && $(MAKE) -f four_plumbing_test/CMakeFiles/test03_service_client_c.dir/build.make four_plumbing_test/CMakeFiles/test03_service_client_c.dir/build
+.PHONY : test03_service_client_c/fast
+
+# Convenience name for target.
 four_plumbing_test/CMakeFiles/test02_sub_twist_c.dir/rule:
 	cd /home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/build && $(MAKE) -f CMakeFiles/Makefile2 four_plumbing_test/CMakeFiles/test02_sub_twist_c.dir/rule
 .PHONY : four_plumbing_test/CMakeFiles/test02_sub_twist_c.dir/rule
@@ -348,6 +363,21 @@ turtlesim_generate_messages_nodejs/fast:
 .PHONY : turtlesim_generate_messages_nodejs/fast
 
 # Convenience name for target.
+four_plumbing_test/CMakeFiles/test04_param_c.dir/rule:
+	cd /home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/build && $(MAKE) -f CMakeFiles/Makefile2 four_plumbing_test/CMakeFiles/test04_param_c.dir/rule
+.PHONY : four_plumbing_test/CMakeFiles/test04_param_c.dir/rule
+
+# Convenience name for target.
+test04_param_c: four_plumbing_test/CMakeFiles/test04_param_c.dir/rule
+
+.PHONY : test04_param_c
+
+# fast build rule for target.
+test04_param_c/fast:
+	cd /home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/build && $(MAKE) -f four_plumbing_test/CMakeFiles/test04_param_c.dir/build.make four_plumbing_test/CMakeFiles/test04_param_c.dir/build
+.PHONY : test04_param_c/fast
+
+# Convenience name for target.
 four_plumbing_test/CMakeFiles/test01_pub_twist_c.dir/rule:
 	cd /home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/build && $(MAKE) -f CMakeFiles/Makefile2 four_plumbing_test/CMakeFiles/test01_pub_twist_c.dir/rule
 .PHONY : four_plumbing_test/CMakeFiles/test01_pub_twist_c.dir/rule
@@ -476,6 +506,60 @@ src/test02_sub_twist_c.cpp.s:
 	cd /home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/build && $(MAKE) -f four_plumbing_test/CMakeFiles/test02_sub_twist_c.dir/build.make four_plumbing_test/CMakeFiles/test02_sub_twist_c.dir/src/test02_sub_twist_c.cpp.s
 .PHONY : src/test02_sub_twist_c.cpp.s
 
+src/test03_service_client_c.o: src/test03_service_client_c.cpp.o
+
+.PHONY : src/test03_service_client_c.o
+
+# target to build an object file
+src/test03_service_client_c.cpp.o:
+	cd /home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/build && $(MAKE) -f four_plumbing_test/CMakeFiles/test03_service_client_c.dir/build.make four_plumbing_test/CMakeFiles/test03_service_client_c.dir/src/test03_service_client_c.cpp.o
+.PHONY : src/test03_service_client_c.cpp.o
+
+src/test03_service_client_c.i: src/test03_service_client_c.cpp.i
+
+.PHONY : src/test03_service_client_c.i
+
+# target to preprocess a source file
+src/test03_service_client_c.cpp.i:
+	cd /home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/build && $(MAKE) -f four_plumbing_test/CMakeFiles/test03_service_client_c.dir/build.make four_plumbing_test/CMakeFiles/test03_service_client_c.dir/src/test03_service_client_c.cpp.i
+.PHONY : src/test03_service_client_c.cpp.i
+
+src/test03_service_client_c.s: src/test03_service_client_c.cpp.s
+
+.PHONY : src/test03_service_client_c.s
+
+# target to generate assembly for a file
+src/test03_service_client_c.cpp.s:
+	cd /home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/build && $(MAKE) -f four_plumbing_test/CMakeFiles/test03_service_client_c.dir/build.make four_plumbing_test/CMakeFiles/test03_service_client_c.dir/src/test03_service_client_c.cpp.s
+.PHONY : src/test03_service_client_c.cpp.s
+
+src/test04_param_c.o: src/test04_param_c.cpp.o
+
+.PHONY : src/test04_param_c.o
+
+# target to build an object file
+src/test04_param_c.cpp.o:
+	cd /home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/build && $(MAKE) -f four_plumbing_test/CMakeFiles/test04_param_c.dir/build.make four_plumbing_test/CMakeFiles/test04_param_c.dir/src/test04_param_c.cpp.o
+.PHONY : src/test04_param_c.cpp.o
+
+src/test04_param_c.i: src/test04_param_c.cpp.i
+
+.PHONY : src/test04_param_c.i
+
+# target to preprocess a source file
+src/test04_param_c.cpp.i:
+	cd /home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/build && $(MAKE) -f four_plumbing_test/CMakeFiles/test04_param_c.dir/build.make four_plumbing_test/CMakeFiles/test04_param_c.dir/src/test04_param_c.cpp.i
+.PHONY : src/test04_param_c.cpp.i
+
+src/test04_param_c.s: src/test04_param_c.cpp.s
+
+.PHONY : src/test04_param_c.s
+
+# target to generate assembly for a file
+src/test04_param_c.cpp.s:
+	cd /home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/build && $(MAKE) -f four_plumbing_test/CMakeFiles/test04_param_c.dir/build.make four_plumbing_test/CMakeFiles/test04_param_c.dir/src/test04_param_c.cpp.s
+.PHONY : src/test04_param_c.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -486,6 +570,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test"
+	@echo "... test03_service_client_c"
 	@echo "... test02_sub_twist_c"
 	@echo "... std_srvs_generate_messages_py"
 	@echo "... install/local"
@@ -501,6 +586,7 @@ help:
 	@echo "... turtlesim_generate_messages_eus"
 	@echo "... install/strip"
 	@echo "... turtlesim_generate_messages_nodejs"
+	@echo "... test04_param_c"
 	@echo "... test01_pub_twist_c"
 	@echo "... geometry_msgs_generate_messages_py"
 	@echo "... std_srvs_generate_messages_cpp"
@@ -512,6 +598,12 @@ help:
 	@echo "... src/test02_sub_twist_c.o"
 	@echo "... src/test02_sub_twist_c.i"
 	@echo "... src/test02_sub_twist_c.s"
+	@echo "... src/test03_service_client_c.o"
+	@echo "... src/test03_service_client_c.i"
+	@echo "... src/test03_service_client_c.s"
+	@echo "... src/test04_param_c.o"
+	@echo "... src/test04_param_c.i"
+	@echo "... src/test04_param_c.s"
 .PHONY : help
 
 
