@@ -1,0 +1,8 @@
+prefix=/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/install
+
+Name: five_plumbing_apis
+Description: Description of five_plumbing_apis
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

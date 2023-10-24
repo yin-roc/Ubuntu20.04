@@ -39,7 +39,7 @@ int main(int argc, char * argv[])
     // 判断服务器状态
     client.waitForExistence();
     //或者 ros::service::waitForService("/spawn");
-    bool flag = client.call(spawn);// flag 接收响应状态，响应结果也会被设置进spawn对象
+    bool flag = client.call(spawn);// flag 接收响应状态，响应结果也会被设置进 spawn 对象
 
     // 6、处理响应
     if(flag)
