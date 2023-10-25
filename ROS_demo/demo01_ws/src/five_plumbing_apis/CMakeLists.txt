@@ -137,6 +137,7 @@ include_directories(
 add_executable(demo01_apis_pub_c src/demo01_apis_pub_c.cpp)
 add_executable(demo02_apis_sub_c src/demo02_apis_sub_c.cpp)
 add_executable(demo03_apis_time src/demo03_apis_time.cpp)
+add_executable(demo04_apis_log src/demo04_apis_log.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -161,6 +162,10 @@ target_link_libraries(demo02_apis_sub_c
 target_link_libraries(demo03_apis_time
   ${catkin_LIBRARIES}
 )
+target_link_libraries(demo04_apis_log
+  ${catkin_LIBRARIES}
+)
+
 
 #############
 ## Install ##

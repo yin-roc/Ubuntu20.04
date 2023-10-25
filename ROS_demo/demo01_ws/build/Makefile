@@ -454,6 +454,19 @@ rosgraph_msgs_generate_messages_cpp/fast:
 .PHONY : rosgraph_msgs_generate_messages_cpp/fast
 
 #=============================================================================
+# Target rules for targets named demo04_apis_log
+
+# Build rule for target.
+demo04_apis_log: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 demo04_apis_log
+.PHONY : demo04_apis_log
+
+# fast build rule for target.
+demo04_apis_log/fast:
+	$(MAKE) -f five_plumbing_apis/CMakeFiles/demo04_apis_log.dir/build.make five_plumbing_apis/CMakeFiles/demo04_apis_log.dir/build
+.PHONY : demo04_apis_log/fast
+
+#=============================================================================
 # Target rules for targets named std_msgs_generate_messages_cpp
 
 # Build rule for target.
@@ -1255,6 +1268,7 @@ help:
 	@echo "... std_msgs_generate_messages_eus"
 	@echo "... roscpp_generate_messages_nodejs"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
+	@echo "... demo04_apis_log"
 	@echo "... std_msgs_generate_messages_cpp"
 	@echo "... rosgraph_msgs_generate_messages_eus"
 	@echo "... rosgraph_msgs_generate_messages_lisp"

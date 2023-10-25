@@ -123,8 +123,8 @@ int main(int argc, char *argv[])
         )
     */
 //    ros::Timer timer = nh.createTimer(ros::Duration(1), cb);
-   ros::Timer timer = nh.createTimer(ros::Duration(1), cb, true);
-//    ros::Timer timer = nh.createTimer(ros::Duration(1), cb, false, false); // 关闭自动启动
+//    ros::Timer timer = nh.createTimer(ros::Duration(1), cb, true);
+   ros::Timer timer = nh.createTimer(ros::Duration(1), cb, false, false); // 关闭自动启动
    timer.start(); // 手动启动
 
    ros::spin();

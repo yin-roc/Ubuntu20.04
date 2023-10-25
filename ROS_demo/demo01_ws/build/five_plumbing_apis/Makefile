@@ -363,6 +363,21 @@ rosgraph_msgs_generate_messages_cpp/fast:
 .PHONY : rosgraph_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
+five_plumbing_apis/CMakeFiles/demo04_apis_log.dir/rule:
+	cd /home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/build && $(MAKE) -f CMakeFiles/Makefile2 five_plumbing_apis/CMakeFiles/demo04_apis_log.dir/rule
+.PHONY : five_plumbing_apis/CMakeFiles/demo04_apis_log.dir/rule
+
+# Convenience name for target.
+demo04_apis_log: five_plumbing_apis/CMakeFiles/demo04_apis_log.dir/rule
+
+.PHONY : demo04_apis_log
+
+# fast build rule for target.
+demo04_apis_log/fast:
+	cd /home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/build && $(MAKE) -f five_plumbing_apis/CMakeFiles/demo04_apis_log.dir/build.make five_plumbing_apis/CMakeFiles/demo04_apis_log.dir/build
+.PHONY : demo04_apis_log/fast
+
+# Convenience name for target.
 five_plumbing_apis/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule:
 	cd /home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/build && $(MAKE) -f CMakeFiles/Makefile2 five_plumbing_apis/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
 .PHONY : five_plumbing_apis/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
@@ -518,6 +533,33 @@ src/demo03_apis_time.cpp.s:
 	cd /home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/build && $(MAKE) -f five_plumbing_apis/CMakeFiles/demo03_apis_time.dir/build.make five_plumbing_apis/CMakeFiles/demo03_apis_time.dir/src/demo03_apis_time.cpp.s
 .PHONY : src/demo03_apis_time.cpp.s
 
+src/demo04_apis_log.o: src/demo04_apis_log.cpp.o
+
+.PHONY : src/demo04_apis_log.o
+
+# target to build an object file
+src/demo04_apis_log.cpp.o:
+	cd /home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/build && $(MAKE) -f five_plumbing_apis/CMakeFiles/demo04_apis_log.dir/build.make five_plumbing_apis/CMakeFiles/demo04_apis_log.dir/src/demo04_apis_log.cpp.o
+.PHONY : src/demo04_apis_log.cpp.o
+
+src/demo04_apis_log.i: src/demo04_apis_log.cpp.i
+
+.PHONY : src/demo04_apis_log.i
+
+# target to preprocess a source file
+src/demo04_apis_log.cpp.i:
+	cd /home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/build && $(MAKE) -f five_plumbing_apis/CMakeFiles/demo04_apis_log.dir/build.make five_plumbing_apis/CMakeFiles/demo04_apis_log.dir/src/demo04_apis_log.cpp.i
+.PHONY : src/demo04_apis_log.cpp.i
+
+src/demo04_apis_log.s: src/demo04_apis_log.cpp.s
+
+.PHONY : src/demo04_apis_log.s
+
+# target to generate assembly for a file
+src/demo04_apis_log.cpp.s:
+	cd /home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/build && $(MAKE) -f five_plumbing_apis/CMakeFiles/demo04_apis_log.dir/build.make five_plumbing_apis/CMakeFiles/demo04_apis_log.dir/src/demo04_apis_log.cpp.s
+.PHONY : src/demo04_apis_log.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -544,6 +586,7 @@ help:
 	@echo "... roscpp_generate_messages_nodejs"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
 	@echo "... install/strip"
+	@echo "... demo04_apis_log"
 	@echo "... std_msgs_generate_messages_cpp"
 	@echo "... rosgraph_msgs_generate_messages_eus"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
@@ -558,6 +601,9 @@ help:
 	@echo "... src/demo03_apis_time.o"
 	@echo "... src/demo03_apis_time.i"
 	@echo "... src/demo03_apis_time.s"
+	@echo "... src/demo04_apis_log.o"
+	@echo "... src/demo04_apis_log.i"
+	@echo "... src/demo04_apis_log.s"
 .PHONY : help
 
 
