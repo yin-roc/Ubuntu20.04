@@ -987,6 +987,45 @@ plumbing_server_client_generate_messages_nodejs/fast:
 .PHONY : plumbing_server_client_generate_messages_nodejs/fast
 
 #=============================================================================
+# Target rules for targets named use_hello
+
+# Build rule for target.
+use_hello: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 use_hello
+.PHONY : use_hello
+
+# fast build rule for target.
+use_hello/fast:
+	$(MAKE) -f seven_plumbing_head_src/CMakeFiles/use_hello.dir/build.make seven_plumbing_head_src/CMakeFiles/use_hello.dir/build
+.PHONY : use_hello/fast
+
+#=============================================================================
+# Target rules for targets named head_src
+
+# Build rule for target.
+head_src: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 head_src
+.PHONY : head_src
+
+# fast build rule for target.
+head_src/fast:
+	$(MAKE) -f seven_plumbing_head_src/CMakeFiles/head_src.dir/build.make seven_plumbing_head_src/CMakeFiles/head_src.dir/build
+.PHONY : head_src/fast
+
+#=============================================================================
+# Target rules for targets named hello
+
+# Build rule for target.
+hello: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 hello
+.PHONY : hello
+
+# fast build rule for target.
+hello/fast:
+	$(MAKE) -f six_plumbing_head/CMakeFiles/hello.dir/build.make six_plumbing_head/CMakeFiles/hello.dir/build
+.PHONY : hello/fast
+
+#=============================================================================
 # Target rules for targets named test03_service_client_c
 
 # Build rule for target.
@@ -1309,6 +1348,9 @@ help:
 	@echo "... demo01_server_c"
 	@echo "... plumbing_server_client_genlisp"
 	@echo "... plumbing_server_client_generate_messages_nodejs"
+	@echo "... use_hello"
+	@echo "... head_src"
+	@echo "... hello"
 	@echo "... test03_service_client_c"
 	@echo "... test02_sub_twist_c"
 	@echo "... std_srvs_generate_messages_py"

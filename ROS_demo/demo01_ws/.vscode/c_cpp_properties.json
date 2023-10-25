@@ -10,7 +10,9 @@
                 "/home/yin-roc/demo_ws/demo01_ws/src/demo01/include/**",
                 "/usr/include/**",
                 "/opt/ros/noetic/include",
-                "/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/devel/include/**"
+                "/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/devel/include/**",
+                "/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/src/six_plumbing_head/include/**",
+                "/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/src/seven_plumbing_head_src/include/**"
             ],
             "name": "ROS",
             "intelliSenseMode": "gcc-x64",
