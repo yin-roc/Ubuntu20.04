@@ -1,0 +1,13 @@
+<!-- 1、-->
+<!-- <launch>
+    <node name="helloworld" pkg="six_plumbing_head" type="hello" output="screen"/>
+    <node name="t1" pkg="turtlesim" type="turtlesim_node" />
+    <node name="key1" pkg="turtlesim" type="turtle_teleop_key" />
+</launch> -->
+
+<!-- 2、 -->
+<launch deprecated = "此文件已过时，不建议使用！">
+    <node name="helloworld" pkg="six_plumbing_head" type="hello" output="screen"/>
+    <node name="t1" pkg="turtlesim" type="turtlesim_node" />
+    <node name="key1" pkg="turtlesim" type="turtle_teleop_key" />
+</launch>

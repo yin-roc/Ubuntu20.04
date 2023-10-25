@@ -131,6 +131,7 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/build/gtest/cmake_install.cmake")
+  include("/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/build/eight_plumbing_metapackage/cmake_install.cmake")
   include("/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/build/five_plumbing_apis/cmake_install.cmake")
   include("/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/build/plumbing_param_server/cmake_install.cmake")
   include("/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/build/plumbing_pub_sub/cmake_install.cmake")
@@ -139,6 +140,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/build/six_plumbing_head/cmake_install.cmake")
   include("/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/build/four_plumbing_test/cmake_install.cmake")
   include("/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/build/launch01_basic/cmake_install.cmake")
+  include("/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/build/nine_launch01_basic/cmake_install.cmake")
 
 endif()
 

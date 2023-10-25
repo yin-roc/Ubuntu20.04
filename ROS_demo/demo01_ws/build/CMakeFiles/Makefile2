@@ -54,6 +54,7 @@ CMAKE_BINARY_DIR = /home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/build
 
 # The main recursive "all" target.
 all: gtest/all
+all: eight_plumbing_metapackage/all
 all: five_plumbing_apis/all
 all: plumbing_param_server/all
 all: plumbing_pub_sub/all
@@ -62,11 +63,13 @@ all: seven_plumbing_head_src/all
 all: six_plumbing_head/all
 all: four_plumbing_test/all
 all: launch01_basic/all
+all: nine_launch01_basic/all
 
 .PHONY : all
 
 # The main recursive "preinstall" target.
 preinstall: gtest/preinstall
+preinstall: eight_plumbing_metapackage/preinstall
 preinstall: five_plumbing_apis/preinstall
 preinstall: plumbing_param_server/preinstall
 preinstall: plumbing_pub_sub/preinstall
@@ -75,6 +78,7 @@ preinstall: seven_plumbing_head_src/preinstall
 preinstall: six_plumbing_head/preinstall
 preinstall: four_plumbing_test/preinstall
 preinstall: launch01_basic/preinstall
+preinstall: nine_launch01_basic/preinstall
 
 .PHONY : preinstall
 
@@ -85,6 +89,7 @@ clean: CMakeFiles/clean_test_results.dir/clean
 clean: CMakeFiles/tests.dir/clean
 clean: CMakeFiles/download_extra_data.dir/clean
 clean: gtest/clean
+clean: eight_plumbing_metapackage/clean
 clean: five_plumbing_apis/clean
 clean: plumbing_param_server/clean
 clean: plumbing_pub_sub/clean
@@ -93,8 +98,27 @@ clean: seven_plumbing_head_src/clean
 clean: six_plumbing_head/clean
 clean: four_plumbing_test/clean
 clean: launch01_basic/clean
+clean: nine_launch01_basic/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory eight_plumbing_metapackage
+
+# Recursive "all" directory target.
+eight_plumbing_metapackage/all:
+
+.PHONY : eight_plumbing_metapackage/all
+
+# Recursive "preinstall" directory target.
+eight_plumbing_metapackage/preinstall:
+
+.PHONY : eight_plumbing_metapackage/preinstall
+
+# Recursive "clean" directory target.
+eight_plumbing_metapackage/clean: eight_plumbing_metapackage/CMakeFiles/_catkin_empty_exported_target.dir/clean
+
+.PHONY : eight_plumbing_metapackage/clean
 
 #=============================================================================
 # Directory level rules for directory five_plumbing_apis
@@ -248,6 +272,24 @@ launch01_basic/preinstall:
 launch01_basic/clean:
 
 .PHONY : launch01_basic/clean
+
+#=============================================================================
+# Directory level rules for directory nine_launch01_basic
+
+# Recursive "all" directory target.
+nine_launch01_basic/all:
+
+.PHONY : nine_launch01_basic/all
+
+# Recursive "preinstall" directory target.
+nine_launch01_basic/preinstall:
+
+.PHONY : nine_launch01_basic/preinstall
+
+# Recursive "clean" directory target.
+nine_launch01_basic/clean:
+
+.PHONY : nine_launch01_basic/clean
 
 #=============================================================================
 # Directory level rules for directory plumbing_param_server
@@ -626,6 +668,33 @@ gtest: gtest/googletest/CMakeFiles/gtest.dir/rule
 gtest/googletest/CMakeFiles/gtest.dir/clean:
 	$(MAKE) -f gtest/googletest/CMakeFiles/gtest.dir/build.make gtest/googletest/CMakeFiles/gtest.dir/clean
 .PHONY : gtest/googletest/CMakeFiles/gtest.dir/clean
+
+#=============================================================================
+# Target rules for target eight_plumbing_metapackage/CMakeFiles/_catkin_empty_exported_target.dir
+
+# All Build rule for target.
+eight_plumbing_metapackage/CMakeFiles/_catkin_empty_exported_target.dir/all:
+	$(MAKE) -f eight_plumbing_metapackage/CMakeFiles/_catkin_empty_exported_target.dir/build.make eight_plumbing_metapackage/CMakeFiles/_catkin_empty_exported_target.dir/depend
+	$(MAKE) -f eight_plumbing_metapackage/CMakeFiles/_catkin_empty_exported_target.dir/build.make eight_plumbing_metapackage/CMakeFiles/_catkin_empty_exported_target.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/build/CMakeFiles --progress-num= "Built target _catkin_empty_exported_target"
+.PHONY : eight_plumbing_metapackage/CMakeFiles/_catkin_empty_exported_target.dir/all
+
+# Build rule for subdir invocation for target.
+eight_plumbing_metapackage/CMakeFiles/_catkin_empty_exported_target.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 eight_plumbing_metapackage/CMakeFiles/_catkin_empty_exported_target.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/build/CMakeFiles 0
+.PHONY : eight_plumbing_metapackage/CMakeFiles/_catkin_empty_exported_target.dir/rule
+
+# Convenience name for target.
+_catkin_empty_exported_target: eight_plumbing_metapackage/CMakeFiles/_catkin_empty_exported_target.dir/rule
+
+.PHONY : _catkin_empty_exported_target
+
+# clean rule for target.
+eight_plumbing_metapackage/CMakeFiles/_catkin_empty_exported_target.dir/clean:
+	$(MAKE) -f eight_plumbing_metapackage/CMakeFiles/_catkin_empty_exported_target.dir/build.make eight_plumbing_metapackage/CMakeFiles/_catkin_empty_exported_target.dir/clean
+.PHONY : eight_plumbing_metapackage/CMakeFiles/_catkin_empty_exported_target.dir/clean
 
 #=============================================================================
 # Target rules for target five_plumbing_apis/CMakeFiles/demo03_apis_time.dir

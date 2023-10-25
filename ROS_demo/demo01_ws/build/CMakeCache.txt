@@ -407,6 +407,18 @@ catkin_DIR:PATH=/opt/ros/noetic/share/catkin/cmake
 cpp_common_DIR:PATH=/opt/ros/noetic/share/cpp_common/cmake
 
 //Value Computed by CMake
+eight_plumbing_MetaPackage_BINARY_DIR:STATIC=/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/build/eight_plumbing_MetaPackage
+
+//Value Computed by CMake
+eight_plumbing_MetaPackage_SOURCE_DIR:STATIC=/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/src/eight_plumbing_MetaPackage
+
+//Value Computed by CMake
+eight_plumbing_metapackage_BINARY_DIR:STATIC=/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/build/eight_plumbing_metapackage
+
+//Value Computed by CMake
+eight_plumbing_metapackage_SOURCE_DIR:STATIC=/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/src/eight_plumbing_metapackage
+
+//Value Computed by CMake
 five_plumbing_apis_BINARY_DIR:STATIC=/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/build/five_plumbing_apis
 
 //Value Computed by CMake
@@ -499,6 +511,12 @@ message_generation_DIR:PATH=/opt/ros/noetic/share/message_generation/cmake
 
 //The directory containing a CMake configuration file for message_runtime.
 message_runtime_DIR:PATH=/opt/ros/noetic/share/message_runtime/cmake
+
+//Value Computed by CMake
+nine_launch01_basic_BINARY_DIR:STATIC=/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/build/nine_launch01_basic
+
+//Value Computed by CMake
+nine_launch01_basic_SOURCE_DIR:STATIC=/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/src/nine_launch01_basic
 
 //Value Computed by CMake
 plumbing_param_server_BINARY_DIR:STATIC=/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/build/plumbing_param_server
@@ -711,7 +729,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=12
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=14
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
