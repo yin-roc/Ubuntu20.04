@@ -1,0 +1,9 @@
+<launch>
+<!-- 为什么不直接写在一起呢？
+        因为rosparam标签是优先启动的，所以它导出时，其他节点还没有启动，所以导出的参数很少，不全面 -->
+    <rosparam command="dump" file="$(find nine_launch01_basic)/launch/params_out.yaml"/>
+
+<!-- delete：删除参数 -->
+    <rosparam command="delete" param = "bg_B"/>
+    
+</launch>

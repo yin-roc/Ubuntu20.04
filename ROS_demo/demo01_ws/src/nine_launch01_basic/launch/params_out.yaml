@@ -1,0 +1,24 @@
+bg_G: 50
+bg_R: 100
+my_turtle:
+  background_b: 255
+  background_g: 86
+  background_r: 69
+  bg_B: 255
+  bg_G: 50
+  bg_R: 100
+rosdistro: 'noetic
+
+  '
+roslaunch:
+  uris:
+    host_yinroc_virtualbox__34257: http://yinroc-VirtualBox:34257/
+    host_yinroc_virtualbox__37027: http://yinroc-VirtualBox:37027/
+    host_yinroc_virtualbox__39327: http://yinroc-VirtualBox:39327/
+    host_yinroc_virtualbox__43281: http://yinroc-VirtualBox:43281/
+    host_yinroc_virtualbox__44669: http://yinroc-VirtualBox:44669/
+    host_yinroc_virtualbox__46481: http://yinroc-VirtualBox:46481/
+rosversion: '1.16.0
+
+  '
+run_id: 2f51a404-73e1-11ee-97b5-710bcf148931
