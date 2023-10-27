@@ -142,6 +142,13 @@
 /home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/build/six_plumbing_head/CMakeFiles/edit_cache.dir
 /home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/build/six_plumbing_head/CMakeFiles/test.dir
 /home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/build/six_plumbing_head/CMakeFiles/hello.dir
+/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/build/ten_rename01_ns_name/CMakeFiles/install/strip.dir
+/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/build/ten_rename01_ns_name/CMakeFiles/install/local.dir
+/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/build/ten_rename01_ns_name/CMakeFiles/install.dir
+/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/build/ten_rename01_ns_name/CMakeFiles/list_install_components.dir
+/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/build/ten_rename01_ns_name/CMakeFiles/rebuild_cache.dir
+/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/build/ten_rename01_ns_name/CMakeFiles/edit_cache.dir
+/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/build/ten_rename01_ns_name/CMakeFiles/test.dir
 /home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/build/four_plumbing_test/CMakeFiles/list_install_components.dir
 /home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/build/four_plumbing_test/CMakeFiles/rebuild_cache.dir
 /home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/build/four_plumbing_test/CMakeFiles/edit_cache.dir

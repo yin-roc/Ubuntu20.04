@@ -61,6 +61,7 @@ all: plumbing_pub_sub/all
 all: plumbing_server_client/all
 all: seven_plumbing_head_src/all
 all: six_plumbing_head/all
+all: ten_rename01_ns_name/all
 all: four_plumbing_test/all
 all: launch01_basic/all
 all: nine_launch01_basic/all
@@ -76,6 +77,7 @@ preinstall: plumbing_pub_sub/preinstall
 preinstall: plumbing_server_client/preinstall
 preinstall: seven_plumbing_head_src/preinstall
 preinstall: six_plumbing_head/preinstall
+preinstall: ten_rename01_ns_name/preinstall
 preinstall: four_plumbing_test/preinstall
 preinstall: launch01_basic/preinstall
 preinstall: nine_launch01_basic/preinstall
@@ -96,6 +98,7 @@ clean: plumbing_pub_sub/clean
 clean: plumbing_server_client/clean
 clean: seven_plumbing_head_src/clean
 clean: six_plumbing_head/clean
+clean: ten_rename01_ns_name/clean
 clean: four_plumbing_test/clean
 clean: launch01_basic/clean
 clean: nine_launch01_basic/clean
@@ -424,6 +427,24 @@ six_plumbing_head/preinstall:
 six_plumbing_head/clean: six_plumbing_head/CMakeFiles/hello.dir/clean
 
 .PHONY : six_plumbing_head/clean
+
+#=============================================================================
+# Directory level rules for directory ten_rename01_ns_name
+
+# Recursive "all" directory target.
+ten_rename01_ns_name/all:
+
+.PHONY : ten_rename01_ns_name/all
+
+# Recursive "preinstall" directory target.
+ten_rename01_ns_name/preinstall:
+
+.PHONY : ten_rename01_ns_name/preinstall
+
+# Recursive "clean" directory target.
+ten_rename01_ns_name/clean:
+
+.PHONY : ten_rename01_ns_name/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/doxygen.dir
