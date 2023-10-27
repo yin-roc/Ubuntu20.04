@@ -197,3 +197,11 @@
 /home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/build/nine_launch01_basic/CMakeFiles/rebuild_cache.dir
 /home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/build/nine_launch01_basic/CMakeFiles/edit_cache.dir
 /home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/build/nine_launch01_basic/CMakeFiles/test.dir
+/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/build/twelve_rename03_param/CMakeFiles/install/strip.dir
+/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/build/twelve_rename03_param/CMakeFiles/install/local.dir
+/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/build/twelve_rename03_param/CMakeFiles/install.dir
+/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/build/twelve_rename03_param/CMakeFiles/list_install_components.dir
+/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/build/twelve_rename03_param/CMakeFiles/rebuild_cache.dir
+/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/build/twelve_rename03_param/CMakeFiles/edit_cache.dir
+/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/build/twelve_rename03_param/CMakeFiles/test.dir
+/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/build/twelve_rename03_param/CMakeFiles/demo01_param_name_c.dir

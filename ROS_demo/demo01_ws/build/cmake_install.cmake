@@ -143,6 +143,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/build/four_plumbing_test/cmake_install.cmake")
   include("/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/build/launch01_basic/cmake_install.cmake")
   include("/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/build/nine_launch01_basic/cmake_install.cmake")
+  include("/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/build/twelve_rename03_param/cmake_install.cmake")
 
 endif()
 

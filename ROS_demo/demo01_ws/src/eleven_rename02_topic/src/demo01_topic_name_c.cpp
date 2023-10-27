@@ -44,8 +44,9 @@ int main(int argc, char *argv[])
     // rostopic list: /xxx/hello/chatter/money
     // risnode list: /xxx/hello
 
-    ros::Publisher pub = nh.advertise<std_msgs::String>("/chatter/money", 1000); 
-
+    ros::Publisher pub = nh.advertise<std_msgs::String>("/chatter/money", 1000); // "/"代表全局，全局比私有的优先级高
+    // rostopic list: /chatter/money
+    // risnode list: /xxx/hello
 
     while(ros::ok())
     {}

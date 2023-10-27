@@ -42,6 +42,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "six_plumbing_head/catkin_generated/package.cmake"
   "ten_rename01_ns_name/catkin_generated/ordered_paths.cmake"
   "ten_rename01_ns_name/catkin_generated/package.cmake"
+  "twelve_rename03_param/catkin_generated/ordered_paths.cmake"
+  "twelve_rename03_param/catkin_generated/package.cmake"
   "/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/devel/share/plumbing_pub_sub/cmake/plumbing_pub_sub-msg-paths.cmake"
   "/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/devel/share/plumbing_server_client/cmake/plumbing_server_client-msg-paths.cmake"
   "/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/src/CMakeLists.txt"
@@ -69,6 +71,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/src/six_plumbing_head/package.xml"
   "/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/src/ten_rename01_ns_name/CMakeLists.txt"
   "/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/src/ten_rename01_ns_name/package.xml"
+  "/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/src/twelve_rename03_param/CMakeLists.txt"
+  "/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/src/twelve_rename03_param/package.xml"
   "/opt/ros/noetic/share/catkin/cmake/all.cmake"
   "/opt/ros/noetic/share/catkin/cmake/assert.cmake"
   "/opt/ros/noetic/share/catkin/cmake/atomic_configure_file.cmake"
@@ -279,6 +283,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "four_plumbing_test/CMakeFiles/CMakeDirectoryInformation.cmake"
   "launch01_basic/CMakeFiles/CMakeDirectoryInformation.cmake"
   "nine_launch01_basic/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "twelve_rename03_param/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -370,4 +375,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "four_plumbing_test/CMakeFiles/std_srvs_generate_messages_cpp.dir/DependInfo.cmake"
   "four_plumbing_test/CMakeFiles/std_srvs_generate_messages_eus.dir/DependInfo.cmake"
   "four_plumbing_test/CMakeFiles/std_srvs_generate_messages_lisp.dir/DependInfo.cmake"
+  "twelve_rename03_param/CMakeFiles/demo01_param_name_c.dir/DependInfo.cmake"
   )
