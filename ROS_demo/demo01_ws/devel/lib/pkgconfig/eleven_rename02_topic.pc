@@ -1,0 +1,8 @@
+prefix=/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/devel
+
+Name: eleven_rename02_topic
+Description: Description of eleven_rename02_topic
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

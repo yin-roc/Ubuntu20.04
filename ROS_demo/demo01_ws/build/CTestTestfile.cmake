@@ -6,6 +6,7 @@
 # testing this directory and lists subdirectories to be tested as well.
 subdirs("gtest")
 subdirs("eight_plumbing_metapackage")
+subdirs("eleven_rename02_topic")
 subdirs("five_plumbing_apis")
 subdirs("plumbing_param_server")
 subdirs("plumbing_pub_sub")
