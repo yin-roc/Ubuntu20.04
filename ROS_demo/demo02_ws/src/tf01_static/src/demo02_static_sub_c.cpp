@@ -24,16 +24,27 @@ int main(int argc, char *argv[])
     ros::NodeHandle nh;
 
     // 3、创建订阅对象；------->订阅坐标系相对关系
-    // 3-1、创建一个 buffer 缓存
+    // 3-1、创建一个 buffer 缓存,管理和维护坐标变换信息
     tf2_ros::Buffer buffer;
     
     // 3-2、再创建监听对象（监听对象可以将订阅到的数据存入 buffer）
+    // tf2_ros::TransformListener 是一个用于监听坐标变换信息的类。
+    // 这个监听器对象允许节点订阅坐标变换信息，以便实时获取两个不同坐标系之间的坐标变换关系
     tf2_ros::TransformListener listener(buffer); 
-    
+
     // 4、组织一个坐标点数据
+    // 创建了一个名为 ps 的消息对象，用于存储三维点数据，并且该点带有时间戳和坐标系信息。
     geometry_msgs::PointStamped ps;
-    ps.header.frame_id = "laser";
+
+    // 设置 ps 消息的头部（header）的坐标系（frame_id）。
+    // 指定了这个三维点所处的坐标系，即 "laser" 坐标系。这表示这个三维点的坐标是相对于 "laser" 坐标系的。
+    ps.header.frame_id = "laser"; 
+
+    // 设置 ps 消息的头部的时间戳（stamp）。
+    // ros::Time::now() 返回当前的 ROS 时间，因此这里将当前时间作为时间戳，表示这个三维点的时间信息。
     ps.header.stamp = ros::Time::now();
+
+    // 设置 ps 消息中的三维点的坐标
     ps.point.x = 2.0;
     ps.point.y = 3.0;
     ps.point.z = 5.0;

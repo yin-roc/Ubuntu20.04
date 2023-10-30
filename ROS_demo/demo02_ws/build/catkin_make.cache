@@ -1,2 +1,2 @@
-tf01_static
+tf01_static:tf02_dynamic
 -DCATKIN_DEVEL_PREFIX=/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo02_ws/devel -DCMAKE_INSTALL_PREFIX=/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo02_ws/install -G Unix Makefiles
