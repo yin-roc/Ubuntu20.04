@@ -133,6 +133,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo02_ws/build/gtest/cmake_install.cmake")
   include("/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo02_ws/build/tf01_static/cmake_install.cmake")
   include("/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo02_ws/build/tf02_dynamic/cmake_install.cmake")
+  include("/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo02_ws/build/tf03_tfs/cmake_install.cmake")
 
 endif()
 

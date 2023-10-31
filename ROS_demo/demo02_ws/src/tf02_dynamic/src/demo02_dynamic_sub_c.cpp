@@ -42,7 +42,7 @@ int main(int argc, char *argv[])
     // 时间戳
     ps.header.stamp = ros::Time(0.0); // 0.0 相当于不加时间戳，直接转换成不判断时间是否对齐
 
-    // ps.header.stamp = ros::Time(); // 会报错，加了时间戳，得验证时间是否对齐
+    // ps.header.stamp = ros::Time::now(); // 会报错，加了时间戳，得验证时间是否对齐
 
     ps.point.x = 2.0;
     ps.point.y = 3.0;
@@ -50,7 +50,6 @@ int main(int argc, char *argv[])
 
     // 方案1：添加休眠：以防已经开始订阅了，而发布者还没发布消息
     // ros::Duration(2).sleep();
-
     // 5、转换算法，需要调用 tf 内置实现
     ros::Rate rate(10);
 
