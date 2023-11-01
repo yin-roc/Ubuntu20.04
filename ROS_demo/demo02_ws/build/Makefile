@@ -934,6 +934,45 @@ demo01_tfs_c/fast:
 	$(MAKE) -f tf03_tfs/CMakeFiles/demo01_tfs_c.dir/build.make tf03_tfs/CMakeFiles/demo01_tfs_c.dir/build
 .PHONY : demo01_tfs_c/fast
 
+#=============================================================================
+# Target rules for targets named test03_control_turtle2_c
+
+# Build rule for target.
+test03_control_turtle2_c: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test03_control_turtle2_c
+.PHONY : test03_control_turtle2_c
+
+# fast build rule for target.
+test03_control_turtle2_c/fast:
+	$(MAKE) -f tf04_test/CMakeFiles/test03_control_turtle2_c.dir/build.make tf04_test/CMakeFiles/test03_control_turtle2_c.dir/build
+.PHONY : test03_control_turtle2_c/fast
+
+#=============================================================================
+# Target rules for targets named test02_pub_turtle_c
+
+# Build rule for target.
+test02_pub_turtle_c: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test02_pub_turtle_c
+.PHONY : test02_pub_turtle_c
+
+# fast build rule for target.
+test02_pub_turtle_c/fast:
+	$(MAKE) -f tf04_test/CMakeFiles/test02_pub_turtle_c.dir/build.make tf04_test/CMakeFiles/test02_pub_turtle_c.dir/build
+.PHONY : test02_pub_turtle_c/fast
+
+#=============================================================================
+# Target rules for targets named test01_new_turtle_c
+
+# Build rule for target.
+test01_new_turtle_c: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test01_new_turtle_c
+.PHONY : test01_new_turtle_c
+
+# fast build rule for target.
+test01_new_turtle_c/fast:
+	$(MAKE) -f tf04_test/CMakeFiles/test01_new_turtle_c.dir/build.make tf04_test/CMakeFiles/test01_new_turtle_c.dir/build
+.PHONY : test01_new_turtle_c/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1006,6 +1045,9 @@ help:
 	@echo "... std_srvs_generate_messages_nodejs"
 	@echo "... demo02_dynamic_sub_c"
 	@echo "... demo01_tfs_c"
+	@echo "... test03_control_turtle2_c"
+	@echo "... test02_pub_turtle_c"
+	@echo "... test01_new_turtle_c"
 .PHONY : help
 
 

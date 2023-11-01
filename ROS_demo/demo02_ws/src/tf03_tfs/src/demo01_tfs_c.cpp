@@ -65,7 +65,7 @@ int main(int argc, char *argv[])
                         son1ToSon2.transform.translation.z);
             
             // 2、计算 son1 的某个坐标点在 son2 中的坐标值
-            geometry_msgs::PointStamped psAtSon2 = buffer.transform(psAtSon1, "son2");
+            geometry_msgs::PointStamped psAtSon2 = buffer.transform(psAtSon1, "son2"); // 要转换的点：pSAtSon1，要转换到的坐标系：son2
             ROS_INFO("坐标点在 son2 中的值：(%.2f, %.2f, %.2f)", 
                         psAtSon2.point.x,
                         psAtSon2.point.y,
