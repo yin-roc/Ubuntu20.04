@@ -9,6 +9,7 @@
 # modified environment variables
 export CMAKE_PREFIX_PATH="/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo03_ws/devel:$CMAKE_PREFIX_PATH"
 export LD_LIBRARY_PATH="/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo03_ws/devel/lib:$LD_LIBRARY_PATH"
+export PATH="/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo03_ws/devel/bin:$PATH"
 export PKG_CONFIG_PATH="/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo03_ws/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PWD='/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo03_ws/build'
 export PYTHONPATH="/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo03_ws/devel/lib/python3/dist-packages:$PYTHONPATH"
