@@ -107,7 +107,7 @@
         </gazebo>
 
         <!-- 3.2、joint -->
-        <joint name="${wheel_name}2link" type="continuous">
+        <joint name="${wheel_name}_wheel_joint" type="continuous"> <!--修改处2023/11/16-->
             <parent link="base_link"/>
             <child link="${wheel_name}_wheel"/>
             <!-- 
@@ -120,8 +120,8 @@
         </joint>
     </xacro:macro>
 
-    <xacro:wheel_func wheel_name="left" flag="1" />
-    <xacro:wheel_func wheel_name="right" flag="-1" />
+    <xacro:wheel_func wheel_name="base_l" flag="1" />
+    <xacro:wheel_func wheel_name="base_r" flag="-1" />
 
 
     <!-- 4、添加万象轮 -->

@@ -137,6 +137,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo03_ws/build/arbotix_ros/arbotix_python/cmake_install.cmake")
   include("/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo03_ws/build/arbotix_ros/arbotix_sensors/cmake_install.cmake")
   include("/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo03_ws/build/arbotix_ros/arbotix_msgs/cmake_install.cmake")
+  include("/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo03_ws/build/three_nav_demo/cmake_install.cmake")
   include("/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo03_ws/build/one_urdf01_rviz/cmake_install.cmake")
   include("/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo03_ws/build/two_urdf02_gazebo/cmake_install.cmake")
 
