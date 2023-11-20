@@ -438,6 +438,21 @@ rosgraph_msgs_generate_messages_py/fast:
 .PHONY : rosgraph_msgs_generate_messages_py/fast
 
 # Convenience name for target.
+demo01_action/CMakeFiles/demo01_action_server.dir/rule:
+	cd /home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo04_ws/build && $(MAKE) -f CMakeFiles/Makefile2 demo01_action/CMakeFiles/demo01_action_server.dir/rule
+.PHONY : demo01_action/CMakeFiles/demo01_action_server.dir/rule
+
+# Convenience name for target.
+demo01_action_server: demo01_action/CMakeFiles/demo01_action_server.dir/rule
+
+.PHONY : demo01_action_server
+
+# fast build rule for target.
+demo01_action_server/fast:
+	cd /home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo04_ws/build && $(MAKE) -f demo01_action/CMakeFiles/demo01_action_server.dir/build.make demo01_action/CMakeFiles/demo01_action_server.dir/build
+.PHONY : demo01_action_server/fast
+
+# Convenience name for target.
 demo01_action/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule:
 	cd /home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo04_ws/build && $(MAKE) -f CMakeFiles/Makefile2 demo01_action/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
 .PHONY : demo01_action/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
@@ -827,6 +842,33 @@ _demo01_action_generate_messages_check_deps_AddIntsActionGoal/fast:
 	cd /home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo04_ws/build && $(MAKE) -f demo01_action/CMakeFiles/_demo01_action_generate_messages_check_deps_AddIntsActionGoal.dir/build.make demo01_action/CMakeFiles/_demo01_action_generate_messages_check_deps_AddIntsActionGoal.dir/build
 .PHONY : _demo01_action_generate_messages_check_deps_AddIntsActionGoal/fast
 
+src/demo01_action_server.o: src/demo01_action_server.cpp.o
+
+.PHONY : src/demo01_action_server.o
+
+# target to build an object file
+src/demo01_action_server.cpp.o:
+	cd /home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo04_ws/build && $(MAKE) -f demo01_action/CMakeFiles/demo01_action_server.dir/build.make demo01_action/CMakeFiles/demo01_action_server.dir/src/demo01_action_server.cpp.o
+.PHONY : src/demo01_action_server.cpp.o
+
+src/demo01_action_server.i: src/demo01_action_server.cpp.i
+
+.PHONY : src/demo01_action_server.i
+
+# target to preprocess a source file
+src/demo01_action_server.cpp.i:
+	cd /home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo04_ws/build && $(MAKE) -f demo01_action/CMakeFiles/demo01_action_server.dir/build.make demo01_action/CMakeFiles/demo01_action_server.dir/src/demo01_action_server.cpp.i
+.PHONY : src/demo01_action_server.cpp.i
+
+src/demo01_action_server.s: src/demo01_action_server.cpp.s
+
+.PHONY : src/demo01_action_server.s
+
+# target to generate assembly for a file
+src/demo01_action_server.cpp.s:
+	cd /home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo04_ws/build && $(MAKE) -f demo01_action/CMakeFiles/demo01_action_server.dir/build.make demo01_action/CMakeFiles/demo01_action_server.dir/src/demo01_action_server.cpp.s
+.PHONY : src/demo01_action_server.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -857,6 +899,7 @@ help:
 	@echo "... actionlib_msgs_generate_messages_lisp"
 	@echo "... rosgraph_msgs_generate_messages_py"
 	@echo "... install/local"
+	@echo "... demo01_action_server"
 	@echo "... rosgraph_msgs_generate_messages_eus"
 	@echo "... actionlib_generate_messages_nodejs"
 	@echo "... actionlib_generate_messages_py"
@@ -884,6 +927,9 @@ help:
 	@echo "... _demo01_action_generate_messages_check_deps_AddIntsAction"
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... _demo01_action_generate_messages_check_deps_AddIntsActionGoal"
+	@echo "... src/demo01_action_server.o"
+	@echo "... src/demo01_action_server.i"
+	@echo "... src/demo01_action_server.s"
 .PHONY : help
 
 
