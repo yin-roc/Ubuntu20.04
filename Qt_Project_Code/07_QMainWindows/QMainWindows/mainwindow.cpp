@@ -1,6 +1,11 @@
 #include "mainwindow.h"
+
 #include <QMenuBar>
 #include <QToolBar>
+#include <QStatusBar>
+#include <QLabel>
+#include <QDockWidget>
+#include <QTextEdit>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -26,11 +31,32 @@ MainWindow::MainWindow(QWidget *parent)
     buildname->addAction("构建所有项目(&R)");
 
 
-    // QToolBar
+    // QToolBar 工具栏
     QToolBar * toolbar = new QToolBar(this);
     addToolBar(Qt::TopToolBarArea, toolbar); // 创建完，工具栏首先出现在顶层，但可变换位置，比如LeftToolBarArea
     toolbar->addAction("测试");
     toolbar->addSeparator();
+
+
+    // QStatusBar 状态栏
+    QStatusBar *stbar = new QStatusBar(this);
+    setStatusBar(stbar);
+    QLabel * label = new QLabel(this);
+    label->setText("状态栏");
+    stbar->addWidget(label);
+
+
+    // QDockWidget 浮动窗口
+    //    QDockWidget *dockwidget = new QDockWidget(this);
+    QDockWidget *dockwidget = new QDockWidget("小窗口",this); // 给停靠窗口加个名称
+
+    // 放在中心部件的左(Left)/右(Right)/上(Top)/下(Buttom)位置，但是若没有中心部件则无论如何规划DockWidget的位置，都无法体现出方位
+    addDockWidget(Qt::LeftDockWidgetArea, dockwidget);
+
+
+    // Central Widget 中心组件
+    QTextEdit * edit = new QTextEdit(this);
+    setCentralWidget(edit);
 }
 
 MainWindow::~MainWindow()
