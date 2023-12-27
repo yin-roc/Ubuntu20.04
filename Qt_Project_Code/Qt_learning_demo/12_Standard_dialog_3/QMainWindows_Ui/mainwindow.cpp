@@ -10,6 +10,8 @@
 #include <QInputDialog>
 #include <QMessageBox>
 #include <QProgressDialog>
+#include <QErrorMessage>
+#include <QWizard>
 
 
 MainWindow::MainWindow(QWidget *parent)
@@ -17,6 +19,8 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+
+    errordlg = new QErrorMessage(this);
 
 //    可以用但也比较麻烦，换台电脑可能就实现不了，需要添加相应的资源文件
 //    ui->action_N->setIcon(QIcon("/home/yin-roc/1_Code/Ubuntu20.04/Qt_Project_Code/08_QMainWindows_Ui/QMainWindows_Ui/Images/new.png"));
@@ -102,6 +106,8 @@ void MainWindow::on_pushButton_5_clicked()
 
 }
 
+
+// 进度对话框
 void MainWindow::on_pushButton_6_clicked()
 {
 //    QProgressDialog * prodlg = new QProgressDialog(); // 指针存放在栈区，只要主窗口不关闭，随时可用
@@ -124,12 +130,47 @@ void MainWindow::on_pushButton_6_clicked()
 
 }
 
+
+// 错误信息对话框(经常用消息对话框显示)
 void MainWindow::on_pushButton_7_clicked()
 {
+//    QErrorMessage errordlg(this);
+//    问题1：即便勾选了don't show again，下次还会再次显现出来，因为重新开始是一个新的对象
+//    解决1：开辟一个内存空间，创建一个变量，共用该变量
 
+//    但问题2：每点一次按钮，也会new新开辟一段内存
+//    QErrorMessage * errordlg = new QErrorMessage(this);
+//    解决2：将 QErrorMessage * errordlg = new QErrorMessage(this); 放在主窗口里面
+
+//    但问题3：本函数想要使用的errordlg变量却在主窗口函数里面，MainWindow函数结束后，该变量便失去了作用,其他函数不能够调用本函数
+//    解决3：定义为全局变量，将新建的变量放在类里面，在MainWindow函数里面分配内存，在槽函数里面进行具体操作
+    errordlg->setWindowTitle("错误");
+    errordlg->showMessage("危险");
+    errordlg->exec();
+}
+
+//向导对话框
+
+QWizardPage* createPage1(void)
+{
+    QWizardPage *page = new QWizardPage;
+    page->setTitle("第一步操作");
+    return page;
+}
+
+QWizardPage* createPage2(void)
+{
+    QWizardPage *page = new QWizardPage;
+    page->setTitle("第二步操作");
+    return page;
 }
 
 void MainWindow::on_pushButton_8_clicked()
 {
+    QWizard wizard(this);
+    wizard.setWindowTitle("向导对话框");
+    wizard.addPage(createPage1());
+    wizard.addPage(createPage2());
+    wizard.exec();
 
 }
