@@ -172,5 +172,4 @@ void MainWindow::on_pushButton_8_clicked()
     wizard.addPage(createPage1());
     wizard.addPage(createPage2());
     wizard.exec();
-
 }
