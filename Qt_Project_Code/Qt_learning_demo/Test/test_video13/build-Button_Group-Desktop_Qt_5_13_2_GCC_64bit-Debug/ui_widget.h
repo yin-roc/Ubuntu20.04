@@ -11,7 +11,6 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
-#include <QtWidgets/QCheckBox>
 #include <QtWidgets/QGroupBox>
 #include <QtWidgets/QRadioButton>
 #include <QtWidgets/QToolButton>
@@ -33,10 +32,6 @@ public:
     QRadioButton *rBscore_4;
     QRadioButton *rBscore_1;
     QRadioButton *rBscore_2;
-    QGroupBox *groupBox_3;
-    QCheckBox *checkBox;
-    QCheckBox *checkBox_2;
-    QCheckBox *checkBox_3;
 
     void setupUi(QWidget *Widget)
     {
@@ -79,19 +74,6 @@ public:
         rBscore_2 = new QRadioButton(groupBox_2);
         rBscore_2->setObjectName(QString::fromUtf8("rBscore_2"));
         rBscore_2->setGeometry(QRect(10, 70, 112, 23));
-        groupBox_3 = new QGroupBox(Widget);
-        groupBox_3->setObjectName(QString::fromUtf8("groupBox_3"));
-        groupBox_3->setGeometry(QRect(520, 240, 171, 241));
-        checkBox = new QCheckBox(groupBox_3);
-        checkBox->setObjectName(QString::fromUtf8("checkBox"));
-        checkBox->setGeometry(QRect(10, 30, 92, 23));
-        checkBox->setTristate(true);
-        checkBox_2 = new QCheckBox(groupBox_3);
-        checkBox_2->setObjectName(QString::fromUtf8("checkBox_2"));
-        checkBox_2->setGeometry(QRect(10, 70, 92, 23));
-        checkBox_3 = new QCheckBox(groupBox_3);
-        checkBox_3->setObjectName(QString::fromUtf8("checkBox_3"));
-        checkBox_3->setGeometry(QRect(10, 110, 92, 23));
 
         retranslateUi(Widget);
 
@@ -112,10 +94,6 @@ public:
         rBscore_4->setText(QCoreApplication::translate("Widget", "60~69", nullptr));
         rBscore_1->setText(QCoreApplication::translate("Widget", "90~100", nullptr));
         rBscore_2->setText(QCoreApplication::translate("Widget", "80~89", nullptr));
-        groupBox_3->setTitle(QCoreApplication::translate("Widget", "\350\200\201\345\270\210\347\232\204\344\274\230\347\202\271", nullptr));
-        checkBox->setText(QCoreApplication::translate("Widget", "\345\270\205", nullptr));
-        checkBox_2->setText(QCoreApplication::translate("Widget", "\344\272\272\345\223\201\345\245\275", nullptr));
-        checkBox_3->setText(QCoreApplication::translate("Widget", "\346\200\235\347\273\264\346\270\205\346\245\232", nullptr));
     } // retranslateUi
 
 };
