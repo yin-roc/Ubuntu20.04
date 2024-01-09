@@ -7,7 +7,7 @@
 *****************************************************************************/
 
 #include <memory>
-#include "../../test24/MouseEvent/widget.h"
+#include "../MouseEvent/widget.h"
 #include <QtCore/qbytearray.h>
 #include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
