@@ -1,5 +1,6 @@
 #include "widget.h"
 #include "ui_widget.h"
+#include <QDebug>
 
 Widget::Widget(QWidget *parent)
     : QWidget(parent)
@@ -24,20 +25,20 @@ Widget::~Widget()
 
 void Widget::TimerEvent_1()
 {
-
+//    qDebug() << "hello world";
     QStringList newPortStringList;
 
-    newPortStringList.clear(); // 4 清空操作，否则每次都在增加
+    newPortStringList.clear();
 
     foreach (const QSerialPortInfo & info, QSerialPortInfo::availablePorts()) {
         newPortStringList += info.portName();
+    }
 
-        if(newPortStringList.size() != portStringList.size()) // 1 如果不加该判断，会每0.5秒加入所有串口，而没有清空之前语句
-        {
-            portStringList = newPortStringList; // 2 更新当前容器
-            ui->comboBox->clear();  // 3 清空
-            ui->comboBox->addItems(newPortStringList);
-        }
+    if(newPortStringList.size() != portStringList.size())
+    {
+        portStringList = newPortStringList;
+        ui->comboBox->clear();
+        ui->comboBox->addItems(newPortStringList);
     }
 }
 

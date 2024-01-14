@@ -34,12 +34,11 @@ void Widget::TimerEvent1()
 
     foreach (const QSerialPortInfo & info, QSerialPortInfo::availablePorts()) {
         newPortStringList += info.portName();
-
+    }
         if(newPortStringList.size() != portStringList.size()) // 如果不加该判断，会每0.5秒加入所有串口，而没有清空之前语句
         {
             portStringList = newPortStringList; // 更新当前容器
             ui->comboBox->clear();  // 清空
             ui->comboBox->addItems(newPortStringList);
         }
-    }
 }
