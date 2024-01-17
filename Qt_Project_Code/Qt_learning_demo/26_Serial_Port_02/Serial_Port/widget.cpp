@@ -50,9 +50,6 @@ void Widget::TimerEvent1()
         ui->comboBox->clear();  // 清空
         ui->comboBox->addItems(newPortStringList);
     }
-
-
-
 }
 
 void Widget::on_pushButton_clicked()
@@ -102,7 +99,7 @@ void Widget::on_pushButton_clicked()
             return ;
         }
 
-        ui->comboBox->setEnabled(false);
+        ui->comboBox->setEnabled(false); // 禁止修改相应参数
         ui->comboBox_2->setEnabled(false);
         ui->comboBox_3->setEnabled(false);
         ui->comboBox_4->setEnabled(false);

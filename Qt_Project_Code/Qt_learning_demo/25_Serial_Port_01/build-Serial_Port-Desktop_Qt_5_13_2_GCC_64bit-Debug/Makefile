@@ -211,7 +211,6 @@ DIST          = /home/yin-roc/Qt/install/5.13.2/gcc_64/mkspecs/features/spec_pre
 		/home/yin-roc/Qt/install/5.13.2/gcc_64/mkspecs/features/qt_config.prf \
 		/home/yin-roc/Qt/install/5.13.2/gcc_64/mkspecs/linux-g++/qmake.conf \
 		/home/yin-roc/Qt/install/5.13.2/gcc_64/mkspecs/features/spec_post.prf \
-		../../26_Serial_Port_02/Serial_Port/.qmake.stash \
 		/home/yin-roc/Qt/install/5.13.2/gcc_64/mkspecs/features/exclusive_builds.prf \
 		/home/yin-roc/Qt/install/5.13.2/gcc_64/mkspecs/features/toolchain.prf \
 		/home/yin-roc/Qt/install/5.13.2/gcc_64/mkspecs/features/default_pre.prf \
@@ -398,7 +397,6 @@ Makefile: ../../26_Serial_Port_02/Serial_Port/Serial_Port.pro /home/yin-roc/Qt/i
 		/home/yin-roc/Qt/install/5.13.2/gcc_64/mkspecs/features/qt_config.prf \
 		/home/yin-roc/Qt/install/5.13.2/gcc_64/mkspecs/linux-g++/qmake.conf \
 		/home/yin-roc/Qt/install/5.13.2/gcc_64/mkspecs/features/spec_post.prf \
-		.qmake.stash \
 		/home/yin-roc/Qt/install/5.13.2/gcc_64/mkspecs/features/exclusive_builds.prf \
 		/home/yin-roc/Qt/install/5.13.2/gcc_64/mkspecs/features/toolchain.prf \
 		/home/yin-roc/Qt/install/5.13.2/gcc_64/mkspecs/features/default_pre.prf \
@@ -574,7 +572,6 @@ Makefile: ../../26_Serial_Port_02/Serial_Port/Serial_Port.pro /home/yin-roc/Qt/i
 /home/yin-roc/Qt/install/5.13.2/gcc_64/mkspecs/features/qt_config.prf:
 /home/yin-roc/Qt/install/5.13.2/gcc_64/mkspecs/linux-g++/qmake.conf:
 /home/yin-roc/Qt/install/5.13.2/gcc_64/mkspecs/features/spec_post.prf:
-.qmake.stash:
 /home/yin-roc/Qt/install/5.13.2/gcc_64/mkspecs/features/exclusive_builds.prf:
 /home/yin-roc/Qt/install/5.13.2/gcc_64/mkspecs/features/toolchain.prf:
 /home/yin-roc/Qt/install/5.13.2/gcc_64/mkspecs/features/default_pre.prf:
@@ -1018,37 +1015,6 @@ widget.o: ../../26_Serial_Port_02/Serial_Port/widget.cpp ../../26_Serial_Port_02
 		/home/yin-roc/Qt/install/5.13.2/gcc_64/include/QtCore/qtimer.h \
 		/home/yin-roc/Qt/install/5.13.2/gcc_64/include/QtCore/qbasictimer.h \
 		ui_widget.h \
-		/home/yin-roc/Qt/install/5.13.2/gcc_64/include/QtCore/QVariant \
-		/home/yin-roc/Qt/install/5.13.2/gcc_64/include/QtWidgets/QApplication \
-		/home/yin-roc/Qt/install/5.13.2/gcc_64/include/QtWidgets/qapplication.h \
-		/home/yin-roc/Qt/install/5.13.2/gcc_64/include/QtCore/qcoreapplication.h \
-		/home/yin-roc/Qt/install/5.13.2/gcc_64/include/QtCore/qeventloop.h \
-		/home/yin-roc/Qt/install/5.13.2/gcc_64/include/QtWidgets/qdesktopwidget.h \
-		/home/yin-roc/Qt/install/5.13.2/gcc_64/include/QtGui/qguiapplication.h \
-		/home/yin-roc/Qt/install/5.13.2/gcc_64/include/QtGui/qinputmethod.h \
-		/home/yin-roc/Qt/install/5.13.2/gcc_64/include/QtWidgets/QComboBox \
-		/home/yin-roc/Qt/install/5.13.2/gcc_64/include/QtWidgets/qcombobox.h \
-		/home/yin-roc/Qt/install/5.13.2/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
-		/home/yin-roc/Qt/install/5.13.2/gcc_64/include/QtWidgets/qstyleoption.h \
-		/home/yin-roc/Qt/install/5.13.2/gcc_64/include/QtWidgets/qabstractspinbox.h \
-		/home/yin-roc/Qt/install/5.13.2/gcc_64/include/QtGui/qvalidator.h \
-		/home/yin-roc/Qt/install/5.13.2/gcc_64/include/QtCore/qregularexpression.h \
-		/home/yin-roc/Qt/install/5.13.2/gcc_64/include/QtGui/qicon.h \
-		/home/yin-roc/Qt/install/5.13.2/gcc_64/include/QtWidgets/qslider.h \
-		/home/yin-roc/Qt/install/5.13.2/gcc_64/include/QtWidgets/qabstractslider.h \
-		/home/yin-roc/Qt/install/5.13.2/gcc_64/include/QtWidgets/qstyle.h \
-		/home/yin-roc/Qt/install/5.13.2/gcc_64/include/QtWidgets/qtabbar.h \
-		/home/yin-roc/Qt/install/5.13.2/gcc_64/include/QtWidgets/qtabwidget.h \
-		/home/yin-roc/Qt/install/5.13.2/gcc_64/include/QtWidgets/qrubberband.h \
-		/home/yin-roc/Qt/install/5.13.2/gcc_64/include/QtWidgets/qframe.h \
-		/home/yin-roc/Qt/install/5.13.2/gcc_64/include/QtCore/qabstractitemmodel.h \
-		/home/yin-roc/Qt/install/5.13.2/gcc_64/include/QtWidgets/QHBoxLayout \
-		/home/yin-roc/Qt/install/5.13.2/gcc_64/include/QtWidgets/qboxlayout.h \
-		/home/yin-roc/Qt/install/5.13.2/gcc_64/include/QtWidgets/qlayout.h \
-		/home/yin-roc/Qt/install/5.13.2/gcc_64/include/QtWidgets/qlayoutitem.h \
-		/home/yin-roc/Qt/install/5.13.2/gcc_64/include/QtWidgets/qgridlayout.h \
-		/home/yin-roc/Qt/install/5.13.2/gcc_64/include/QtWidgets/QLabel \
-		/home/yin-roc/Qt/install/5.13.2/gcc_64/include/QtWidgets/qlabel.h \
 		/home/yin-roc/Qt/install/5.13.2/gcc_64/include/QtCore/QDebug
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o widget.o ../../26_Serial_Port_02/Serial_Port/widget.cpp
 
