@@ -7,7 +7,7 @@
 *****************************************************************************/
 
 #include <memory>
-#include "../../test28/Serial_Port_01/widget.h"
+#include "../../28_Serial_Port_04/Serial_Port/widget.h"
 #include <QtCore/qbytearray.h>
 #include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
@@ -23,7 +23,7 @@ QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_Widget_t {
     QByteArrayData data[11];
-    char stringdata0[200];
+    char stringdata0[199];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -33,19 +33,19 @@ struct qt_meta_stringdata_Widget_t {
 static const qt_meta_stringdata_Widget_t qt_meta_stringdata_Widget = {
     {
 QT_MOC_LITERAL(0, 0, 6), // "Widget"
-QT_MOC_LITERAL(1, 7, 12), // "TimerEvent_1"
-QT_MOC_LITERAL(2, 20, 0), // ""
-QT_MOC_LITERAL(3, 21, 21), // "on_pushButton_clicked"
-QT_MOC_LITERAL(4, 43, 20), // "serialPort_readyRead"
-QT_MOC_LITERAL(5, 64, 19), // "on_checkBox_clicked"
-QT_MOC_LITERAL(6, 84, 21), // "on_checkBox_2_clicked"
-QT_MOC_LITERAL(7, 106, 21), // "on_checkBox_3_clicked"
-QT_MOC_LITERAL(8, 128, 23), // "on_pushButton_2_clicked"
-QT_MOC_LITERAL(9, 152, 23), // "on_pushButton_3_clicked"
-QT_MOC_LITERAL(10, 176, 23) // "on_pushButton_4_clicked"
+QT_MOC_LITERAL(1, 7, 11), // "TimerEvent1"
+QT_MOC_LITERAL(2, 19, 0), // ""
+QT_MOC_LITERAL(3, 20, 21), // "on_pushButton_clicked"
+QT_MOC_LITERAL(4, 42, 20), // "serialPort_readyRead"
+QT_MOC_LITERAL(5, 63, 19), // "on_checkBox_clicked"
+QT_MOC_LITERAL(6, 83, 21), // "on_checkBox_2_clicked"
+QT_MOC_LITERAL(7, 105, 21), // "on_checkBox_3_clicked"
+QT_MOC_LITERAL(8, 127, 23), // "on_pushButton_2_clicked"
+QT_MOC_LITERAL(9, 151, 23), // "on_pushButton_3_clicked"
+QT_MOC_LITERAL(10, 175, 23) // "on_pushButton_4_clicked"
 
     },
-    "Widget\0TimerEvent_1\0\0on_pushButton_clicked\0"
+    "Widget\0TimerEvent1\0\0on_pushButton_clicked\0"
     "serialPort_readyRead\0on_checkBox_clicked\0"
     "on_checkBox_2_clicked\0on_checkBox_3_clicked\0"
     "on_pushButton_2_clicked\0on_pushButton_3_clicked\0"
@@ -97,7 +97,7 @@ void Widget::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void
         auto *_t = static_cast<Widget *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
-        case 0: _t->TimerEvent_1(); break;
+        case 0: _t->TimerEvent1(); break;
         case 1: _t->on_pushButton_clicked(); break;
         case 2: _t->serialPort_readyRead(); break;
         case 3: _t->on_checkBox_clicked(); break;

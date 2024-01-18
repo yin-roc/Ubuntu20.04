@@ -25,6 +25,11 @@ QT_BEGIN_NAMESPACE
 class Ui_Widget
 {
 public:
+    QLabel *label_6;
+    QLabel *label_7;
+    QTextEdit *textEdit;
+    QLabel *label_8;
+    QTextEdit *textEdit_2;
     QWidget *layoutWidget;
     QVBoxLayout *verticalLayout;
     QPushButton *pushButton;
@@ -45,26 +50,17 @@ public:
     QComboBox *comboBox_5;
     QWidget *layoutWidget1;
     QVBoxLayout *verticalLayout_2;
-    QLabel *label_6;
     QCheckBox *checkBox;
     QCheckBox *checkBox_2;
     QCheckBox *checkBox_3;
     QWidget *layoutWidget2;
+    QVBoxLayout *verticalLayout_3;
+    QHBoxLayout *horizontalLayout_7;
+    QLabel *label_11;
+    QLabel *label_12;
     QHBoxLayout *horizontalLayout_6;
     QLabel *label_9;
-    QLabel *label_11;
-    QWidget *layoutWidget3;
-    QHBoxLayout *horizontalLayout_7;
     QLabel *label_10;
-    QLabel *label_12;
-    QWidget *layoutWidget4;
-    QVBoxLayout *verticalLayout_3;
-    QLabel *label_8;
-    QTextEdit *textEdit_2;
-    QWidget *layoutWidget5;
-    QVBoxLayout *verticalLayout_4;
-    QLabel *label_7;
-    QTextEdit *textEdit;
     QPushButton *pushButton_2;
     QPushButton *pushButton_3;
     QPushButton *pushButton_4;
@@ -74,9 +70,24 @@ public:
         if (Widget->objectName().isEmpty())
             Widget->setObjectName(QString::fromUtf8("Widget"));
         Widget->resize(800, 600);
+        label_6 = new QLabel(Widget);
+        label_6->setObjectName(QString::fromUtf8("label_6"));
+        label_6->setGeometry(QRect(40, 340, 67, 17));
+        label_7 = new QLabel(Widget);
+        label_7->setObjectName(QString::fromUtf8("label_7"));
+        label_7->setGeometry(QRect(320, 30, 67, 17));
+        textEdit = new QTextEdit(Widget);
+        textEdit->setObjectName(QString::fromUtf8("textEdit"));
+        textEdit->setGeometry(QRect(320, 50, 381, 281));
+        label_8 = new QLabel(Widget);
+        label_8->setObjectName(QString::fromUtf8("label_8"));
+        label_8->setGeometry(QRect(320, 370, 67, 17));
+        textEdit_2 = new QTextEdit(Widget);
+        textEdit_2->setObjectName(QString::fromUtf8("textEdit_2"));
+        textEdit_2->setGeometry(QRect(320, 390, 301, 111));
         layoutWidget = new QWidget(Widget);
         layoutWidget->setObjectName(QString::fromUtf8("layoutWidget"));
-        layoutWidget->setGeometry(QRect(30, 20, 221, 241));
+        layoutWidget->setGeometry(QRect(40, 30, 191, 271));
         verticalLayout = new QVBoxLayout(layoutWidget);
         verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
         verticalLayout->setContentsMargins(0, 0, 0, 0);
@@ -180,15 +191,10 @@ public:
 
         layoutWidget1 = new QWidget(Widget);
         layoutWidget1->setObjectName(QString::fromUtf8("layoutWidget1"));
-        layoutWidget1->setGeometry(QRect(40, 300, 63, 118));
+        layoutWidget1->setGeometry(QRect(50, 380, 63, 89));
         verticalLayout_2 = new QVBoxLayout(layoutWidget1);
         verticalLayout_2->setObjectName(QString::fromUtf8("verticalLayout_2"));
         verticalLayout_2->setContentsMargins(0, 0, 0, 0);
-        label_6 = new QLabel(layoutWidget1);
-        label_6->setObjectName(QString::fromUtf8("label_6"));
-
-        verticalLayout_2->addWidget(label_6);
-
         checkBox = new QCheckBox(layoutWidget1);
         checkBox->setObjectName(QString::fromUtf8("checkBox"));
 
@@ -206,77 +212,49 @@ public:
 
         layoutWidget2 = new QWidget(Widget);
         layoutWidget2->setObjectName(QString::fromUtf8("layoutWidget2"));
-        layoutWidget2->setGeometry(QRect(350, 510, 151, 25));
-        horizontalLayout_6 = new QHBoxLayout(layoutWidget2);
+        layoutWidget2->setGeometry(QRect(320, 520, 131, 58));
+        verticalLayout_3 = new QVBoxLayout(layoutWidget2);
+        verticalLayout_3->setObjectName(QString::fromUtf8("verticalLayout_3"));
+        verticalLayout_3->setContentsMargins(0, 0, 0, 0);
+        horizontalLayout_7 = new QHBoxLayout();
+        horizontalLayout_7->setObjectName(QString::fromUtf8("horizontalLayout_7"));
+        label_11 = new QLabel(layoutWidget2);
+        label_11->setObjectName(QString::fromUtf8("label_11"));
+
+        horizontalLayout_7->addWidget(label_11);
+
+        label_12 = new QLabel(layoutWidget2);
+        label_12->setObjectName(QString::fromUtf8("label_12"));
+
+        horizontalLayout_7->addWidget(label_12);
+
+
+        verticalLayout_3->addLayout(horizontalLayout_7);
+
+        horizontalLayout_6 = new QHBoxLayout();
         horizontalLayout_6->setObjectName(QString::fromUtf8("horizontalLayout_6"));
-        horizontalLayout_6->setContentsMargins(0, 0, 0, 0);
         label_9 = new QLabel(layoutWidget2);
         label_9->setObjectName(QString::fromUtf8("label_9"));
 
         horizontalLayout_6->addWidget(label_9);
 
-        label_11 = new QLabel(layoutWidget2);
-        label_11->setObjectName(QString::fromUtf8("label_11"));
-
-        horizontalLayout_6->addWidget(label_11);
-
-        layoutWidget3 = new QWidget(Widget);
-        layoutWidget3->setObjectName(QString::fromUtf8("layoutWidget3"));
-        layoutWidget3->setGeometry(QRect(350, 550, 151, 25));
-        horizontalLayout_7 = new QHBoxLayout(layoutWidget3);
-        horizontalLayout_7->setObjectName(QString::fromUtf8("horizontalLayout_7"));
-        horizontalLayout_7->setContentsMargins(0, 0, 0, 0);
-        label_10 = new QLabel(layoutWidget3);
+        label_10 = new QLabel(layoutWidget2);
         label_10->setObjectName(QString::fromUtf8("label_10"));
 
-        horizontalLayout_7->addWidget(label_10);
+        horizontalLayout_6->addWidget(label_10);
 
-        label_12 = new QLabel(layoutWidget3);
-        label_12->setObjectName(QString::fromUtf8("label_12"));
 
-        horizontalLayout_7->addWidget(label_12);
-
-        layoutWidget4 = new QWidget(Widget);
-        layoutWidget4->setObjectName(QString::fromUtf8("layoutWidget4"));
-        layoutWidget4->setGeometry(QRect(350, 260, 258, 223));
-        verticalLayout_3 = new QVBoxLayout(layoutWidget4);
-        verticalLayout_3->setObjectName(QString::fromUtf8("verticalLayout_3"));
-        verticalLayout_3->setContentsMargins(0, 0, 0, 0);
-        label_8 = new QLabel(layoutWidget4);
-        label_8->setObjectName(QString::fromUtf8("label_8"));
-
-        verticalLayout_3->addWidget(label_8);
-
-        textEdit_2 = new QTextEdit(layoutWidget4);
-        textEdit_2->setObjectName(QString::fromUtf8("textEdit_2"));
-
-        verticalLayout_3->addWidget(textEdit_2);
-
-        layoutWidget5 = new QWidget(Widget);
-        layoutWidget5->setObjectName(QString::fromUtf8("layoutWidget5"));
-        layoutWidget5->setGeometry(QRect(350, 20, 258, 223));
-        verticalLayout_4 = new QVBoxLayout(layoutWidget5);
-        verticalLayout_4->setObjectName(QString::fromUtf8("verticalLayout_4"));
-        verticalLayout_4->setContentsMargins(0, 0, 0, 0);
-        label_7 = new QLabel(layoutWidget5);
-        label_7->setObjectName(QString::fromUtf8("label_7"));
-
-        verticalLayout_4->addWidget(label_7);
-
-        textEdit = new QTextEdit(layoutWidget5);
-        textEdit->setObjectName(QString::fromUtf8("textEdit"));
-
-        verticalLayout_4->addWidget(textEdit);
+        verticalLayout_3->addLayout(horizontalLayout_6);
 
         pushButton_2 = new QPushButton(Widget);
         pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
-        pushButton_2->setGeometry(QRect(530, 510, 81, 61));
+        pushButton_2->setGeometry(QRect(630, 390, 81, 111));
         pushButton_3 = new QPushButton(Widget);
         pushButton_3->setObjectName(QString::fromUtf8("pushButton_3"));
-        pushButton_3->setGeometry(QRect(150, 300, 89, 25));
+        pushButton_3->setGeometry(QRect(150, 390, 89, 25));
         pushButton_4 = new QPushButton(Widget);
         pushButton_4->setObjectName(QString::fromUtf8("pushButton_4"));
-        pushButton_4->setGeometry(QRect(150, 350, 89, 25));
+        pushButton_4->setGeometry(QRect(150, 430, 89, 25));
 
         retranslateUi(Widget);
 
@@ -286,8 +264,11 @@ public:
     void retranslateUi(QWidget *Widget)
     {
         Widget->setWindowTitle(QCoreApplication::translate("Widget", "Widget", nullptr));
+        label_6->setText(QCoreApplication::translate("Widget", "\346\216\245\346\224\266\350\256\276\347\275\256", nullptr));
+        label_7->setText(QCoreApplication::translate("Widget", "\346\216\245\346\224\266\346\225\260\346\215\256", nullptr));
+        label_8->setText(QCoreApplication::translate("Widget", "\345\217\221\351\200\201\346\225\260\346\215\256", nullptr));
         pushButton->setText(QCoreApplication::translate("Widget", "\346\211\223\345\274\200\344\270\262\345\217\243", nullptr));
-        label->setText(QCoreApplication::translate("Widget", "\344\270\262\345\217\243", nullptr));
+        label->setText(QCoreApplication::translate("Widget", "\344\270\262\345\217\243\345\217\267", nullptr));
         label_2->setText(QCoreApplication::translate("Widget", "\346\263\242\347\211\271\347\216\207", nullptr));
         comboBox_2->setItemText(0, QCoreApplication::translate("Widget", "2400", nullptr));
         comboBox_2->setItemText(1, QCoreApplication::translate("Widget", "4800", nullptr));
@@ -314,16 +295,13 @@ public:
         comboBox_5->setItemText(1, QCoreApplication::translate("Widget", "1.5", nullptr));
         comboBox_5->setItemText(2, QCoreApplication::translate("Widget", "2", nullptr));
 
-        label_6->setText(QCoreApplication::translate("Widget", "\346\216\245\346\224\266\350\256\276\347\275\256", nullptr));
-        checkBox->setText(QCoreApplication::translate("Widget", "Hex", nullptr));
-        checkBox_2->setText(QCoreApplication::translate("Widget", "ASCII", nullptr));
+        checkBox->setText(QCoreApplication::translate("Widget", "ASCII", nullptr));
+        checkBox_2->setText(QCoreApplication::translate("Widget", "Hex", nullptr));
         checkBox_3->setText(QCoreApplication::translate("Widget", "\346\232\202\345\201\234", nullptr));
-        label_9->setText(QCoreApplication::translate("Widget", "\346\216\245\346\224\266\345\255\227\350\212\202\357\274\232", nullptr));
-        label_11->setText(QCoreApplication::translate("Widget", "0", nullptr));
-        label_10->setText(QCoreApplication::translate("Widget", "\345\217\221\351\200\201\345\255\227\350\212\202\357\274\232", nullptr));
+        label_11->setText(QCoreApplication::translate("Widget", "\345\217\221\351\200\201\345\255\227\350\212\202\357\274\232", nullptr));
         label_12->setText(QCoreApplication::translate("Widget", "0", nullptr));
-        label_8->setText(QCoreApplication::translate("Widget", "\345\217\221\351\200\201\346\225\260\346\215\256", nullptr));
-        label_7->setText(QCoreApplication::translate("Widget", "\346\216\245\346\224\266\346\225\260\346\215\256", nullptr));
+        label_9->setText(QCoreApplication::translate("Widget", "\346\216\245\346\224\266\345\255\227\350\212\202\357\274\232", nullptr));
+        label_10->setText(QCoreApplication::translate("Widget", "0", nullptr));
         pushButton_2->setText(QCoreApplication::translate("Widget", "\345\217\221\351\200\201", nullptr));
         pushButton_3->setText(QCoreApplication::translate("Widget", "\346\270\205\347\251\272\346\216\245\346\224\266\345\214\272", nullptr));
         pushButton_4->setText(QCoreApplication::translate("Widget", "\346\270\205\347\251\272\345\217\221\351\200\201\345\214\272", nullptr));
