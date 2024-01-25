@@ -4,6 +4,8 @@
 #include <QtMath>
 #include <QTimer>
 #include <QDebug>
+#include <QtSerialPort/QSerialPort>
+#include <QtSerialPort/QSerialPortInfo>
 
 
 Widget::Widget(QWidget *parent)
@@ -15,11 +17,26 @@ Widget::Widget(QWidget *parent)
     resize(1600, 900); // 原型this->resize(),但在widget构造函数里面，因此省略了this
     this->setStyleSheet("background-color: black"); // 背景全黑
 
-    QTimer * timer = new QTimer(this);
-    timer->start(20);
-    connect(timer, &QTimer::timeout, this, &Widget::timerTimeOut);
+//    QTimer * timer = new QTimer(this);
+//    timer->start(20);
+//    connect(timer, &QTimer::timeout, this, &Widget::timerTimeOut);
 
+    serial = new QSerialPort(this);
+    QString PortString;
 
+    foreach (const QSerialPortInfo & info, QSerialPortInfo::availablePorts()) {
+        PortString = info.portName();
+    }
+//    qDebug() << PortString;  // 无效，未找到途径开启默认串口
+    serial->setPortName("/dev/ttyUSB0"); // 因此直接连接串口
+    serial->setBaudRate(9600);
+    serial->setDataBits(QSerialPort::Data8);
+    serial->setParity(QSerialPort::NoParity);
+    serial->setStopBits(QSerialPort::OneStop);
+    serial->setFlowControl(QSerialPort::NoFlowControl);
+
+    connect(serial, &QSerialPort::readyRead, this, &Widget::serialPort_readyRead);
+    serial->open(QIODevice::ReadWrite); // 视频16min时开始讲解发送数据的格式
 }
 
 Widget::~Widget()
@@ -125,6 +142,7 @@ void Widget::paintEvent(QPaintEvent *)
 }
 
 
+/*
 void Widget::timerTimeOut()
 {
     // 更新角度
@@ -144,5 +162,29 @@ void Widget::timerTimeOut()
 
     update();
 }
+*/
 
+
+void Widget::serialPort_readyRead()
+{
+    QString angle_str;
+//    qDebug() << "receive data";
+    Receivetext = serial->readAll();
+    Receive_Byte = Receivetext.length();
+    Receivetext = Receivetext.toLatin1();
+    qDebug() << Receivetext;
+
+    if(Receivetext[0] == '+')
+        flag = 0;
+    else
+        flag = 1;
+    for(int i = 1; i < Receive_Byte - 1; i++)
+    {
+        angle_str += Receivetext[i];
+    }
+
+//    qDebug() << angle_str; // 测试字符串具体内容
+    angle = angle_str.toInt();
+    update();
+}
 

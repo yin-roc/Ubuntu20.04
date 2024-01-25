@@ -7,7 +7,7 @@
 *****************************************************************************/
 
 #include <memory>
-#include "../../36_Radar_02/Arc/widget.h"
+#include "../../38_Radar_03/Arc/widget.h"
 #include <QtCore/qbytearray.h>
 #include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
@@ -23,7 +23,7 @@ QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_Widget_t {
     QByteArrayData data[3];
-    char stringdata0[21];
+    char stringdata0[29];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -33,11 +33,11 @@ struct qt_meta_stringdata_Widget_t {
 static const qt_meta_stringdata_Widget_t qt_meta_stringdata_Widget = {
     {
 QT_MOC_LITERAL(0, 0, 6), // "Widget"
-QT_MOC_LITERAL(1, 7, 12), // "timerTimeOut"
-QT_MOC_LITERAL(2, 20, 0) // ""
+QT_MOC_LITERAL(1, 7, 20), // "serialPort_readyRead"
+QT_MOC_LITERAL(2, 28, 0) // ""
 
     },
-    "Widget\0timerTimeOut\0"
+    "Widget\0serialPort_readyRead\0"
 };
 #undef QT_MOC_LITERAL
 
@@ -69,7 +69,7 @@ void Widget::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void
         auto *_t = static_cast<Widget *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
-        case 0: _t->timerTimeOut(); break;
+        case 0: _t->serialPort_readyRead(); break;
         default: ;
         }
     }
