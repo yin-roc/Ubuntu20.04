@@ -1,0 +1,2 @@
+ros_qt_demo
+-DCATKIN_DEVEL_PREFIX=/home/yin-roc/1_Code/Ubuntu20.04/Qt_Project_Code/Qt_Project/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/yin-roc/1_Code/Ubuntu20.04/Qt_Project_Code/Qt_Project/catkin_ws/install -G Unix Makefiles

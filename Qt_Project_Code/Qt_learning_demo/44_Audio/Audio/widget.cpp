@@ -14,7 +14,7 @@ Widget::Widget(QWidget *parent)
     QDir sourceCodeDir(appDir);
     sourceCodeDir.cdUp();
     QString sourceCodePath = sourceCodeDir.path();
-    QString filePath1 = sourceCodePath + "/Audio/1.mp3";
+    QString filePath1 = sourceCodePath + "/Audio/music.mp3";
     player->setMedia(QUrl::fromLocalFile(filePath1));
     player->setVolume(50);
     player->play();
@@ -22,7 +22,7 @@ Widget::Widget(QWidget *parent)
 
 //    打开 wav 文件
     effect = new QSoundEffect(this);
-    QString filePath2 = sourceCodePath + "/Audio/2.wav";
+    QString filePath2 = sourceCodePath + "/Audio/清晨鸟鸣声.wav";
     effect->setSource(QUrl::fromLocalFile(filePath2));
     effect->setVolume(0.5);
     effect->play();

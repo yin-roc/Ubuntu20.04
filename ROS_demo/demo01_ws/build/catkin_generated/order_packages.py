@@ -2,4 +2,4 @@
 source_root_dir = '/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo01_ws/src'
 whitelisted_packages = ''.split(';') if '' != '' else []
 blacklisted_packages = ''.split(';') if '' != '' else []
-underlay_workspaces = '/home/yin-roc/demo_ws/demo01_ws/devel;/opt/ros/noetic'.split(';') if '/home/yin-roc/demo_ws/demo01_ws/devel;/opt/ros/noetic' != '' else []
+underlay_workspaces = '/home/yin-roc/1_Code/Ubuntu20.04/Qt_Project_Code/Qt_Project/catkin_ws/devel;/home/yin-roc/catkin_ws/devel;/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo03_ws/devel;/home/yin-roc/demo_ws/demo01_ws/devel;/opt/ros/noetic'.split(';') if '/home/yin-roc/1_Code/Ubuntu20.04/Qt_Project_Code/Qt_Project/catkin_ws/devel;/home/yin-roc/catkin_ws/devel;/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo03_ws/devel;/home/yin-roc/demo_ws/demo01_ws/devel;/opt/ros/noetic' != '' else []
