@@ -7,7 +7,7 @@
 *****************************************************************************/
 
 #include <memory>
-#include "../../49_SQL_03/Create_DataSet/widget.h"
+#include "../Create_data/widget.h"
 #include <QtCore/qbytearray.h>
 #include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)

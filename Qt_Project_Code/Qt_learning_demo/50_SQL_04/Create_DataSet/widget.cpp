@@ -1,9 +1,7 @@
-  #include "widget.h"
+#include "widget.h"
 #include "ui_widget.h"
 #include <QDebug>
-#include <QtSql/QSqlDatabase>
-#include <QtSql/QSqlError>
-#include <QtSql/QSqlQuery>
+
 
 Widget::Widget(QWidget *parent)
     : QWidget(parent)
@@ -37,21 +35,21 @@ Widget::Widget(QWidget *parent)
     // 创建新表
     // create table tabname(col1 type1 [not null] [primary key],col2 type2 [not null],..)
     //              表格名称  列   类型
-    QString create_sql = "create tabel student(id int, name varchar(30), age int)";
-    sql_query.prepare(create_sql); // 将传递给它的 SQL 查询语句进行预编译
-    if(!sql_query.exec())
-    {
-        qDebug() << "Error, Failed to create table." << sql_query.lastError();
-    }
-    else
-    {
-        qDebug() << "Table created";
-    }
+    QString create_sql = "create table student(id int, name varchar(30), age int)";
+//    sql_query.prepare(create_sql); // 将传递给它的 SQL 查询语句进行预编译
+//    if(!sql_query.exec())
+//    {
+//        qDebug() << "Error, Failed to create table." << sql_query.lastError();
+//    }
+//    else
+//    {
+//        qDebug() << "Table created";
+//    }
 
 
-    // 插入：insert into table1(field1,field2) values(value1,value2)
-    // 报错：QSqlError("", "Parameter count mismatch", "")；
-    // 可能是因为没有建立表格，上面注释语句取消注释即可。
+//    // 插入：insert into table1(field1,field2) values(value1,value2)
+//    // 报错：QSqlError("", "Parameter count mismatch", "")；
+//    // 可能是因为没有建立表格，上面注释语句取消注释即可。
 
 //    // 创建 SQL 查询语句
 //    // 使用了占位符"?"，表示后续会通过绑定参数的方式为这些占位符提供具体的值
@@ -183,6 +181,19 @@ Widget::Widget(QWidget *parent)
 //    {
 //        qDebug() << "Table cleared";
 //    }
+
+    // Qt 窗口中显示
+    model = new QSqlTableModel(this);
+    ui->tableView->setModel(model);
+    model->setTable("student");
+    model->select();
+
+    // 设置表头信息
+    model->setHeaderData(0, Qt::Horizontal, "学号");
+    model->setHeaderData(1, Qt::Horizontal, "姓名");
+    model->setHeaderData(2, Qt::Horizontal, "年龄");
+
+    model->setEditStrategy(QSqlTableModel::OnManualSubmit); // 所有的更改将被缓存在模型中，直到调用 submitAll() 或 revertAll() 为止
 }
 
 Widget::~Widget()
@@ -190,3 +201,29 @@ Widget::~Widget()
     delete ui;
 }
 
+
+void Widget::on_pushButton_clicked()
+{
+    model->submitAll(); // 提交
+}
+
+void Widget::on_pushButton_2_clicked()
+{
+    model->revertAll(); // 撤销
+    model->submitAll();
+}
+
+void Widget::on_pushButton_3_clicked()
+{
+    QString name = ui->lineEdit->text();
+    QString nm = QString("name = '%1'").arg(name);
+    // 使用 QString 的格式化功能，构建了一个字符串 nm。
+    // 该字符串包含了一个 SQL 查询条件，形式为 "name = '用户输入的文本'"。
+    // 其中 %1 是一个占位符，通过 arg(name) 将前面获取的用户输入文本 name 替换到占位符位置，从而形成最终的查询条件字符串
+
+    model->setFilter(nm); // 将上述构建的查询条件字符串 nm 应用于 QSqlTableModel 的过滤器（filter）属性
+    //    name = 'Jack' （三列对应的是id、name、edge（即使使用 setHeaderData 修改了表头信息））
+    //    model->setFilter("name = 'Jack'"); // 限定死了，只能查找 Jack
+
+    model->select(); // 执行数据库查询操作
+}
