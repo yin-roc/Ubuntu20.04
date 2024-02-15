@@ -7,7 +7,7 @@
 *****************************************************************************/
 
 #include <memory>
-#include "../../54_Semaphore/My_Thread/mythread.h"
+#include "../My_Thread/mythread.h"
 #include <QtCore/qbytearray.h>
 #include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
@@ -21,25 +21,25 @@
 QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
-struct qt_meta_stringdata_Producer_t {
+struct qt_meta_stringdata_MyThread_t {
     QByteArrayData data[1];
     char stringdata0[9];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-    qptrdiff(offsetof(qt_meta_stringdata_Producer_t, stringdata0) + ofs \
+    qptrdiff(offsetof(qt_meta_stringdata_MyThread_t, stringdata0) + ofs \
         - idx * sizeof(QByteArrayData)) \
     )
-static const qt_meta_stringdata_Producer_t qt_meta_stringdata_Producer = {
+static const qt_meta_stringdata_MyThread_t qt_meta_stringdata_MyThread = {
     {
-QT_MOC_LITERAL(0, 0, 8) // "Producer"
+QT_MOC_LITERAL(0, 0, 8) // "MyThread"
 
     },
-    "Producer"
+    "MyThread"
 };
 #undef QT_MOC_LITERAL
 
-static const uint qt_meta_data_Producer[] = {
+static const uint qt_meta_data_MyThread[] = {
 
  // content:
        8,       // revision
@@ -55,7 +55,7 @@ static const uint qt_meta_data_Producer[] = {
        0        // eod
 };
 
-void Producer::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+void MyThread::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     Q_UNUSED(_o);
     Q_UNUSED(_id);
@@ -63,53 +63,53 @@ void Producer::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, vo
     Q_UNUSED(_a);
 }
 
-QT_INIT_METAOBJECT const QMetaObject Producer::staticMetaObject = { {
+QT_INIT_METAOBJECT const QMetaObject MyThread::staticMetaObject = { {
     &QThread::staticMetaObject,
-    qt_meta_stringdata_Producer.data,
-    qt_meta_data_Producer,
+    qt_meta_stringdata_MyThread.data,
+    qt_meta_data_MyThread,
     qt_static_metacall,
     nullptr,
     nullptr
 } };
 
 
-const QMetaObject *Producer::metaObject() const
+const QMetaObject *MyThread::metaObject() const
 {
     return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
 }
 
-void *Producer::qt_metacast(const char *_clname)
+void *MyThread::qt_metacast(const char *_clname)
 {
     if (!_clname) return nullptr;
-    if (!strcmp(_clname, qt_meta_stringdata_Producer.stringdata0))
+    if (!strcmp(_clname, qt_meta_stringdata_MyThread.stringdata0))
         return static_cast<void*>(this);
     return QThread::qt_metacast(_clname);
 }
 
-int Producer::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+int MyThread::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
     _id = QThread::qt_metacall(_c, _id, _a);
     return _id;
 }
-struct qt_meta_stringdata_Consumer_t {
+struct qt_meta_stringdata_MyThread_2_t {
     QByteArrayData data[1];
-    char stringdata0[9];
+    char stringdata0[11];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-    qptrdiff(offsetof(qt_meta_stringdata_Consumer_t, stringdata0) + ofs \
+    qptrdiff(offsetof(qt_meta_stringdata_MyThread_2_t, stringdata0) + ofs \
         - idx * sizeof(QByteArrayData)) \
     )
-static const qt_meta_stringdata_Consumer_t qt_meta_stringdata_Consumer = {
+static const qt_meta_stringdata_MyThread_2_t qt_meta_stringdata_MyThread_2 = {
     {
-QT_MOC_LITERAL(0, 0, 8) // "Consumer"
+QT_MOC_LITERAL(0, 0, 10) // "MyThread_2"
 
     },
-    "Consumer"
+    "MyThread_2"
 };
 #undef QT_MOC_LITERAL
 
-static const uint qt_meta_data_Consumer[] = {
+static const uint qt_meta_data_MyThread_2[] = {
 
  // content:
        8,       // revision
@@ -125,7 +125,7 @@ static const uint qt_meta_data_Consumer[] = {
        0        // eod
 };
 
-void Consumer::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+void MyThread_2::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     Q_UNUSED(_o);
     Q_UNUSED(_id);
@@ -133,30 +133,30 @@ void Consumer::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, vo
     Q_UNUSED(_a);
 }
 
-QT_INIT_METAOBJECT const QMetaObject Consumer::staticMetaObject = { {
+QT_INIT_METAOBJECT const QMetaObject MyThread_2::staticMetaObject = { {
     &QThread::staticMetaObject,
-    qt_meta_stringdata_Consumer.data,
-    qt_meta_data_Consumer,
+    qt_meta_stringdata_MyThread_2.data,
+    qt_meta_data_MyThread_2,
     qt_static_metacall,
     nullptr,
     nullptr
 } };
 
 
-const QMetaObject *Consumer::metaObject() const
+const QMetaObject *MyThread_2::metaObject() const
 {
     return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
 }
 
-void *Consumer::qt_metacast(const char *_clname)
+void *MyThread_2::qt_metacast(const char *_clname)
 {
     if (!_clname) return nullptr;
-    if (!strcmp(_clname, qt_meta_stringdata_Consumer.stringdata0))
+    if (!strcmp(_clname, qt_meta_stringdata_MyThread_2.stringdata0))
         return static_cast<void*>(this);
     return QThread::qt_metacast(_clname);
 }
 
-int Consumer::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+int MyThread_2::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
     _id = QThread::qt_metacall(_c, _id, _a);
     return _id;

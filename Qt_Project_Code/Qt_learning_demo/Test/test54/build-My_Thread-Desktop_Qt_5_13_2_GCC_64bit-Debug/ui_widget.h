@@ -21,8 +21,6 @@ class Ui_Widget
 public:
     QPushButton *pushButton;
     QPushButton *pushButton_2;
-    QPushButton *pushButton_3;
-    QPushButton *pushButton_4;
 
     void setupUi(QWidget *Widget)
     {
@@ -31,16 +29,10 @@ public:
         Widget->resize(800, 600);
         pushButton = new QPushButton(Widget);
         pushButton->setObjectName(QString::fromUtf8("pushButton"));
-        pushButton->setGeometry(QRect(190, 100, 89, 25));
+        pushButton->setGeometry(QRect(130, 100, 111, 31));
         pushButton_2 = new QPushButton(Widget);
         pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
-        pushButton_2->setGeometry(QRect(350, 100, 89, 25));
-        pushButton_3 = new QPushButton(Widget);
-        pushButton_3->setObjectName(QString::fromUtf8("pushButton_3"));
-        pushButton_3->setGeometry(QRect(190, 190, 89, 25));
-        pushButton_4 = new QPushButton(Widget);
-        pushButton_4->setObjectName(QString::fromUtf8("pushButton_4"));
-        pushButton_4->setGeometry(QRect(350, 190, 89, 25));
+        pushButton_2->setGeometry(QRect(290, 100, 111, 31));
 
         retranslateUi(Widget);
 
@@ -50,10 +42,8 @@ public:
     void retranslateUi(QWidget *Widget)
     {
         Widget->setWindowTitle(QCoreApplication::translate("Widget", "Widget", nullptr));
-        pushButton->setText(QCoreApplication::translate("Widget", "\345\220\257\345\212\250\347\224\237\344\272\247", nullptr));
-        pushButton_2->setText(QCoreApplication::translate("Widget", "\345\201\234\346\255\242\347\224\237\344\272\247", nullptr));
-        pushButton_3->setText(QCoreApplication::translate("Widget", "\345\220\257\345\212\250\346\266\210\350\264\271", nullptr));
-        pushButton_4->setText(QCoreApplication::translate("Widget", "\345\201\234\346\255\242\346\266\210\350\264\271", nullptr));
+        pushButton->setText(QCoreApplication::translate("Widget", "\345\220\257\345\212\250\347\272\277\347\250\2131", nullptr));
+        pushButton_2->setText(QCoreApplication::translate("Widget", "\345\201\234\346\255\242\347\272\277\347\250\2131", nullptr));
     } // retranslateUi
 
 };

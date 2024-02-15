@@ -50,10 +50,10 @@ public:
     void retranslateUi(QWidget *Widget)
     {
         Widget->setWindowTitle(QCoreApplication::translate("Widget", "Widget", nullptr));
-        pushButton->setText(QCoreApplication::translate("Widget", "\345\220\257\345\212\250\347\224\237\344\272\247", nullptr));
-        pushButton_2->setText(QCoreApplication::translate("Widget", "\345\201\234\346\255\242\347\224\237\344\272\247", nullptr));
-        pushButton_3->setText(QCoreApplication::translate("Widget", "\345\220\257\345\212\250\346\266\210\350\264\271", nullptr));
-        pushButton_4->setText(QCoreApplication::translate("Widget", "\345\201\234\346\255\242\346\266\210\350\264\271", nullptr));
+        pushButton->setText(QCoreApplication::translate("Widget", "\345\220\257\345\212\250\347\272\277\347\250\2131", nullptr));
+        pushButton_2->setText(QCoreApplication::translate("Widget", "\345\201\234\346\255\242\347\272\277\347\250\2131", nullptr));
+        pushButton_3->setText(QCoreApplication::translate("Widget", "\345\220\257\345\212\250\347\272\277\347\250\2132", nullptr));
+        pushButton_4->setText(QCoreApplication::translate("Widget", "\345\201\234\346\255\242\347\272\277\347\250\2132", nullptr));
     } // retranslateUi
 
 };
