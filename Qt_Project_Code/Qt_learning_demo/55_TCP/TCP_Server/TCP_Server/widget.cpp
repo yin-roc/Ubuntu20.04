@@ -23,7 +23,7 @@ Widget::Widget(QWidget *parent)
         connect(clientConnection, &QTcpSocket::readyRead, this, [&](){
             QByteArray array = clientConnection->readAll();
             ui->textEdit->append("客户端：" + array);
-            ui->textEdit->setAlignment(Qt::AlignRight);
+//            ui->textEdit->setAlignment(Qt::AlignRight);
         });
     });
 
@@ -45,6 +45,6 @@ void Widget::on_pushButton_clicked()
 
     clientConnection->write(ui->textEdit_2->toPlainText().toUtf8());
     ui->textEdit->append("服务器：" + ui->textEdit_2->toPlainText());
-    ui->textEdit->setAlignment(Qt::AlignLeft);
+//    ui->textEdit->setAlignment(Qt::AlignLeft);
     ui->textEdit_2->clear();
 }
