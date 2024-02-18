@@ -64,7 +64,7 @@ void Widget::on_pushButton_2_clicked()
     qDebug() << "文件名： " << fileName;
     qDebug() << "文件大小： " << fileSize;
 
-    if(filePath.isEmpty())
+    if(!filePath.isEmpty())
     {
         ui->label_3->setText(filePath);
         file.setFileName(filePath);
@@ -72,7 +72,7 @@ void Widget::on_pushButton_2_clicked()
 
     }
 
-    ui->progressBar->setMinimum(0);
+    ui->progressBar->setMaximum(0);
     ui->progressBar->setMaximum(fileSize / 1024);
     ui->progressBar->setValue(0);
 
@@ -82,7 +82,7 @@ void Widget::on_pushButton_3_clicked()
 {
     // 发送：“我的小苹果.mp3**313256” (先名称后文件大小)
     QString head = fileName + "**" + QString::number(fileSize);
-    qint64 length = tcpSocket->write(head.toUtf8());
+    qint64 length = tcpSocket->write(head.toUtf8()); // 确保字符数据在网络上传输时能够被正确解释
     if(length > 0) // 发送成功
     {
         // 延时防止粘包
@@ -91,6 +91,8 @@ void Widget::on_pushButton_3_clicked()
     else // 发送失败
     {
         file.close();
+        tcpSocket->disconnectFromHost(); // 关闭连接
+        tcpSocket->close();
     }
 
 }

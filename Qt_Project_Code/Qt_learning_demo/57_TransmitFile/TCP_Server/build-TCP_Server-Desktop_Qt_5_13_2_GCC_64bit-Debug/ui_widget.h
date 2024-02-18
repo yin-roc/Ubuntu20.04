@@ -14,8 +14,8 @@
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
+#include <QtWidgets/QProgressBar>
 #include <QtWidgets/QPushButton>
-#include <QtWidgets/QTextEdit>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -23,72 +23,61 @@ QT_BEGIN_NAMESPACE
 class Ui_Widget
 {
 public:
-    QLabel *label_4;
-    QTextEdit *textEdit;
-    QLabel *label_5;
-    QTextEdit *textEdit_2;
     QPushButton *pushButton;
-    QWidget *widget;
+    QWidget *layoutWidget;
     QHBoxLayout *horizontalLayout;
     QLabel *label;
     QLabel *label_2;
-    QWidget *widget1;
+    QWidget *layoutWidget1;
     QHBoxLayout *horizontalLayout_2;
     QLabel *label_3;
     QLineEdit *lineEdit;
+    QProgressBar *progressBar;
 
     void setupUi(QWidget *Widget)
     {
         if (Widget->objectName().isEmpty())
             Widget->setObjectName(QString::fromUtf8("Widget"));
-        Widget->resize(486, 840);
-        label_4 = new QLabel(Widget);
-        label_4->setObjectName(QString::fromUtf8("label_4"));
-        label_4->setGeometry(QRect(50, 220, 91, 21));
-        textEdit = new QTextEdit(Widget);
-        textEdit->setObjectName(QString::fromUtf8("textEdit"));
-        textEdit->setGeometry(QRect(50, 250, 401, 241));
-        label_5 = new QLabel(Widget);
-        label_5->setObjectName(QString::fromUtf8("label_5"));
-        label_5->setGeometry(QRect(50, 530, 67, 17));
-        textEdit_2 = new QTextEdit(Widget);
-        textEdit_2->setObjectName(QString::fromUtf8("textEdit_2"));
-        textEdit_2->setGeometry(QRect(50, 560, 401, 191));
+        Widget->resize(464, 268);
         pushButton = new QPushButton(Widget);
         pushButton->setObjectName(QString::fromUtf8("pushButton"));
-        pushButton->setGeometry(QRect(350, 780, 89, 25));
-        widget = new QWidget(Widget);
-        widget->setObjectName(QString::fromUtf8("widget"));
-        widget->setGeometry(QRect(50, 60, 211, 31));
-        horizontalLayout = new QHBoxLayout(widget);
+        pushButton->setGeometry(QRect(340, 110, 89, 25));
+        layoutWidget = new QWidget(Widget);
+        layoutWidget->setObjectName(QString::fromUtf8("layoutWidget"));
+        layoutWidget->setGeometry(QRect(50, 60, 211, 31));
+        horizontalLayout = new QHBoxLayout(layoutWidget);
         horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
         horizontalLayout->setContentsMargins(0, 0, 0, 0);
-        label = new QLabel(widget);
+        label = new QLabel(layoutWidget);
         label->setObjectName(QString::fromUtf8("label"));
 
         horizontalLayout->addWidget(label);
 
-        label_2 = new QLabel(widget);
+        label_2 = new QLabel(layoutWidget);
         label_2->setObjectName(QString::fromUtf8("label_2"));
 
         horizontalLayout->addWidget(label_2);
 
-        widget1 = new QWidget(Widget);
-        widget1->setObjectName(QString::fromUtf8("widget1"));
-        widget1->setGeometry(QRect(50, 140, 210, 27));
-        horizontalLayout_2 = new QHBoxLayout(widget1);
+        layoutWidget1 = new QWidget(Widget);
+        layoutWidget1->setObjectName(QString::fromUtf8("layoutWidget1"));
+        layoutWidget1->setGeometry(QRect(50, 110, 210, 27));
+        horizontalLayout_2 = new QHBoxLayout(layoutWidget1);
         horizontalLayout_2->setObjectName(QString::fromUtf8("horizontalLayout_2"));
         horizontalLayout_2->setContentsMargins(0, 0, 0, 0);
-        label_3 = new QLabel(widget1);
+        label_3 = new QLabel(layoutWidget1);
         label_3->setObjectName(QString::fromUtf8("label_3"));
 
         horizontalLayout_2->addWidget(label_3);
 
-        lineEdit = new QLineEdit(widget1);
+        lineEdit = new QLineEdit(layoutWidget1);
         lineEdit->setObjectName(QString::fromUtf8("lineEdit"));
 
         horizontalLayout_2->addWidget(lineEdit);
 
+        progressBar = new QProgressBar(Widget);
+        progressBar->setObjectName(QString::fromUtf8("progressBar"));
+        progressBar->setGeometry(QRect(50, 190, 381, 41));
+        progressBar->setValue(0);
 
         retranslateUi(Widget);
 
@@ -98,9 +87,7 @@ public:
     void retranslateUi(QWidget *Widget)
     {
         Widget->setWindowTitle(QCoreApplication::translate("Widget", "Widget", nullptr));
-        label_4->setText(QCoreApplication::translate("Widget", "\350\201\212\345\244\251\350\256\260\345\275\225\357\274\232", nullptr));
-        label_5->setText(QCoreApplication::translate("Widget", "\350\276\223\345\205\245\347\253\257\357\274\232", nullptr));
-        pushButton->setText(QCoreApplication::translate("Widget", "\345\217\221\351\200\201", nullptr));
+        pushButton->setText(QCoreApplication::translate("Widget", "\347\233\221\345\220\254", nullptr));
         label->setText(QCoreApplication::translate("Widget", "\346\234\215\345\212\241\345\231\250IP:", nullptr));
         label_2->setText(QCoreApplication::translate("Widget", "127.0.0.1", nullptr));
         label_3->setText(QCoreApplication::translate("Widget", "\347\253\257\345\217\243\345\217\267\357\274\232", nullptr));

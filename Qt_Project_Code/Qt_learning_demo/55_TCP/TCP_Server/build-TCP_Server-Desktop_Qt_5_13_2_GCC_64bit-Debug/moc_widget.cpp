@@ -7,7 +7,7 @@
 *****************************************************************************/
 
 #include <memory>
-#include "../TCP_Server/widget.h"
+#include "../../../57_TransmitFile/TCP_Server/TCP_Server/widget.h"
 #include <QtCore/qbytearray.h>
 #include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
