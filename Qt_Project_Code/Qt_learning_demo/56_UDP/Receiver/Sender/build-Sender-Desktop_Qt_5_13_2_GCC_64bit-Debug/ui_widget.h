@@ -28,14 +28,18 @@ public:
     QLabel *label_4;
     QTextEdit *textEdit_2;
     QPushButton *pushButton;
-    QWidget *widget;
+    QWidget *layoutWidget;
     QHBoxLayout *horizontalLayout;
     QLabel *label;
     QLineEdit *lineEdit;
-    QWidget *widget1;
+    QWidget *layoutWidget1;
     QHBoxLayout *horizontalLayout_2;
     QLabel *label_2;
     QLineEdit *lineEdit_2;
+    QWidget *widget;
+    QHBoxLayout *horizontalLayout_3;
+    QLabel *label_5;
+    QLineEdit *lineEdit_3;
 
     void setupUi(QWidget *Widget)
     {
@@ -57,37 +61,53 @@ public:
         pushButton = new QPushButton(Widget);
         pushButton->setObjectName(QString::fromUtf8("pushButton"));
         pushButton->setGeometry(QRect(310, 730, 89, 25));
-        widget = new QWidget(Widget);
-        widget->setObjectName(QString::fromUtf8("widget"));
-        widget->setGeometry(QRect(70, 60, 231, 31));
-        horizontalLayout = new QHBoxLayout(widget);
+        layoutWidget = new QWidget(Widget);
+        layoutWidget->setObjectName(QString::fromUtf8("layoutWidget"));
+        layoutWidget->setGeometry(QRect(70, 60, 231, 31));
+        horizontalLayout = new QHBoxLayout(layoutWidget);
         horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
         horizontalLayout->setContentsMargins(0, 0, 0, 0);
-        label = new QLabel(widget);
+        label = new QLabel(layoutWidget);
         label->setObjectName(QString::fromUtf8("label"));
 
         horizontalLayout->addWidget(label);
 
-        lineEdit = new QLineEdit(widget);
+        lineEdit = new QLineEdit(layoutWidget);
         lineEdit->setObjectName(QString::fromUtf8("lineEdit"));
 
         horizontalLayout->addWidget(lineEdit);
 
-        widget1 = new QWidget(Widget);
-        widget1->setObjectName(QString::fromUtf8("widget1"));
-        widget1->setGeometry(QRect(70, 100, 231, 31));
-        horizontalLayout_2 = new QHBoxLayout(widget1);
+        layoutWidget1 = new QWidget(Widget);
+        layoutWidget1->setObjectName(QString::fromUtf8("layoutWidget1"));
+        layoutWidget1->setGeometry(QRect(70, 100, 231, 31));
+        horizontalLayout_2 = new QHBoxLayout(layoutWidget1);
         horizontalLayout_2->setObjectName(QString::fromUtf8("horizontalLayout_2"));
         horizontalLayout_2->setContentsMargins(0, 0, 0, 0);
-        label_2 = new QLabel(widget1);
+        label_2 = new QLabel(layoutWidget1);
         label_2->setObjectName(QString::fromUtf8("label_2"));
 
         horizontalLayout_2->addWidget(label_2);
 
-        lineEdit_2 = new QLineEdit(widget1);
+        lineEdit_2 = new QLineEdit(layoutWidget1);
         lineEdit_2->setObjectName(QString::fromUtf8("lineEdit_2"));
 
         horizontalLayout_2->addWidget(lineEdit_2);
+
+        widget = new QWidget(Widget);
+        widget->setObjectName(QString::fromUtf8("widget"));
+        widget->setGeometry(QRect(70, 150, 231, 31));
+        horizontalLayout_3 = new QHBoxLayout(widget);
+        horizontalLayout_3->setObjectName(QString::fromUtf8("horizontalLayout_3"));
+        horizontalLayout_3->setContentsMargins(0, 0, 0, 0);
+        label_5 = new QLabel(widget);
+        label_5->setObjectName(QString::fromUtf8("label_5"));
+
+        horizontalLayout_3->addWidget(label_5);
+
+        lineEdit_3 = new QLineEdit(widget);
+        lineEdit_3->setObjectName(QString::fromUtf8("lineEdit_3"));
+
+        horizontalLayout_3->addWidget(lineEdit_3);
 
 
         retranslateUi(Widget);
@@ -103,6 +123,7 @@ public:
         pushButton->setText(QCoreApplication::translate("Widget", "\345\217\221\351\200\201", nullptr));
         label->setText(QCoreApplication::translate("Widget", "\345\257\271\346\226\271IP\357\274\232", nullptr));
         label_2->setText(QCoreApplication::translate("Widget", "\345\257\271\346\226\271Port\357\274\232", nullptr));
+        label_5->setText(QCoreApplication::translate("Widget", "\346\234\254\346\234\272Port\357\274\232", nullptr));
     } // retranslateUi
 
 };

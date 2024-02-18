@@ -29,14 +29,18 @@ public:
     QTextEdit *textEdit_2;
     QPushButton *pushButton;
     QPushButton *pushButton_2;
-    QWidget *widget;
+    QWidget *layoutWidget;
     QHBoxLayout *horizontalLayout;
     QLabel *label;
     QLineEdit *lineEdit;
-    QWidget *widget1;
+    QWidget *layoutWidget1;
     QHBoxLayout *horizontalLayout_2;
     QLabel *label_2;
     QLineEdit *lineEdit_2;
+    QWidget *widget;
+    QHBoxLayout *horizontalLayout_3;
+    QLabel *label_5;
+    QLineEdit *lineEdit_3;
 
     void setupUi(QWidget *Widget)
     {
@@ -60,38 +64,54 @@ public:
         pushButton->setGeometry(QRect(340, 760, 89, 25));
         pushButton_2 = new QPushButton(Widget);
         pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
-        pushButton_2->setGeometry(QRect(370, 130, 89, 25));
-        widget = new QWidget(Widget);
-        widget->setObjectName(QString::fromUtf8("widget"));
-        widget->setGeometry(QRect(70, 60, 241, 41));
-        horizontalLayout = new QHBoxLayout(widget);
+        pushButton_2->setGeometry(QRect(370, 110, 89, 25));
+        layoutWidget = new QWidget(Widget);
+        layoutWidget->setObjectName(QString::fromUtf8("layoutWidget"));
+        layoutWidget->setGeometry(QRect(70, 60, 241, 41));
+        horizontalLayout = new QHBoxLayout(layoutWidget);
         horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
         horizontalLayout->setContentsMargins(0, 0, 0, 0);
-        label = new QLabel(widget);
+        label = new QLabel(layoutWidget);
         label->setObjectName(QString::fromUtf8("label"));
 
         horizontalLayout->addWidget(label);
 
-        lineEdit = new QLineEdit(widget);
+        lineEdit = new QLineEdit(layoutWidget);
         lineEdit->setObjectName(QString::fromUtf8("lineEdit"));
 
         horizontalLayout->addWidget(lineEdit);
 
-        widget1 = new QWidget(Widget);
-        widget1->setObjectName(QString::fromUtf8("widget1"));
-        widget1->setGeometry(QRect(70, 130, 241, 31));
-        horizontalLayout_2 = new QHBoxLayout(widget1);
+        layoutWidget1 = new QWidget(Widget);
+        layoutWidget1->setObjectName(QString::fromUtf8("layoutWidget1"));
+        layoutWidget1->setGeometry(QRect(70, 110, 241, 31));
+        horizontalLayout_2 = new QHBoxLayout(layoutWidget1);
         horizontalLayout_2->setObjectName(QString::fromUtf8("horizontalLayout_2"));
         horizontalLayout_2->setContentsMargins(0, 0, 0, 0);
-        label_2 = new QLabel(widget1);
+        label_2 = new QLabel(layoutWidget1);
         label_2->setObjectName(QString::fromUtf8("label_2"));
 
         horizontalLayout_2->addWidget(label_2);
 
-        lineEdit_2 = new QLineEdit(widget1);
+        lineEdit_2 = new QLineEdit(layoutWidget1);
         lineEdit_2->setObjectName(QString::fromUtf8("lineEdit_2"));
 
         horizontalLayout_2->addWidget(lineEdit_2);
+
+        widget = new QWidget(Widget);
+        widget->setObjectName(QString::fromUtf8("widget"));
+        widget->setGeometry(QRect(70, 160, 240, 27));
+        horizontalLayout_3 = new QHBoxLayout(widget);
+        horizontalLayout_3->setObjectName(QString::fromUtf8("horizontalLayout_3"));
+        horizontalLayout_3->setContentsMargins(0, 0, 0, 0);
+        label_5 = new QLabel(widget);
+        label_5->setObjectName(QString::fromUtf8("label_5"));
+
+        horizontalLayout_3->addWidget(label_5);
+
+        lineEdit_3 = new QLineEdit(widget);
+        lineEdit_3->setObjectName(QString::fromUtf8("lineEdit_3"));
+
+        horizontalLayout_3->addWidget(lineEdit_3);
 
 
         retranslateUi(Widget);
@@ -108,6 +128,7 @@ public:
         pushButton_2->setText(QCoreApplication::translate("Widget", "\345\220\257\345\212\250", nullptr));
         label->setText(QCoreApplication::translate("Widget", "\346\234\254\346\234\272IP\357\274\232", nullptr));
         label_2->setText(QCoreApplication::translate("Widget", "\346\234\254\346\234\272Port\357\274\232", nullptr));
+        label_5->setText(QCoreApplication::translate("Widget", "\345\257\271\346\226\271\347\253\257\345\217\243\345\217\267\357\274\232", nullptr));
     } // retranslateUi
 
 };

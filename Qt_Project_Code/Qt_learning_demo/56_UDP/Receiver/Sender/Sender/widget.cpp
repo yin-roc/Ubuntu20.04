@@ -7,9 +7,18 @@ Widget::Widget(QWidget *parent)
 {
     ui->setupUi(this);
 
-    setWindowTitle("发送端");
+    setWindowTitle("主机2");
     sender = new QUdpSocket(this);
 
+
+    ui->lineEdit_3->setText("8888");
+    sender->bind(ui->lineEdit_3->text().toInt());
+    connect(sender, &QUdpSocket::readyRead, this, [&](){
+        QByteArray datagram;
+        datagram.resize(sender->pendingDatagramSize());
+        sender->readDatagram(datagram.data(), datagram.size());
+        ui->textEdit->append("对方：" + datagram);
+    });
 
 }
 
