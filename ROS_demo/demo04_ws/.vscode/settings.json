@@ -1,12 +1,8 @@
 {
     "python.autoComplete.extraPaths": [
-        "/home/yin-roc/catkin_ws/devel/lib/python3/dist-packages",
-        "/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo03_ws/devel/lib/python3/dist-packages",
         "/opt/ros/noetic/lib/python3/dist-packages"
     ],
     "python.analysis.extraPaths": [
-        "/home/yin-roc/catkin_ws/devel/lib/python3/dist-packages",
-        "/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo03_ws/devel/lib/python3/dist-packages",
         "/opt/ros/noetic/lib/python3/dist-packages"
     ]
 }

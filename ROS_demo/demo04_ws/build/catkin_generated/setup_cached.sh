@@ -8,7 +8,8 @@
 
 # modified environment variables
 export CMAKE_PREFIX_PATH="/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo04_ws/devel:$CMAKE_PREFIX_PATH"
-export LD_LIBRARY_PATH="/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo04_ws/devel/lib:$LD_LIBRARY_PATH"
+export LD_LIBRARY_PATH='/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo04_ws/devel/lib:/home/yin-roc/1_Code/Ubuntu20.04/Qt_Project_Code/Qt_Project/catkin_ws/devel/lib:/opt/ros/noetic/lib:/home/yin-roc/Qt/Qt_installposition/lib'
+export PATH='/opt/ros/noetic/bin:/home/yin-roc/Qt/Qt_installposition/5.14.0/gcc_64/bin:/home/yin-roc/.local/bin:/home/yin-roc/Qt/Qt_installposition/Tools/QtCreator/bin:/home/yin-roc/Qt/Qt_installposition/5.14.0/gcc_64/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/yin-roc/Qt/Qt5.15/6.6.0/gcc_64/bin/:/home/yin-roc/Qt/Qt5.15/Tools/QtCreator/bin/'
 export PKG_CONFIG_PATH="/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo04_ws/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PWD='/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo04_ws/build'
 export PYTHONPATH="/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo04_ws/devel/lib/python3/dist-packages:$PYTHONPATH"

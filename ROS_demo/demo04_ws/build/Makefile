@@ -285,6 +285,32 @@ gtest/fast:
 .PHONY : gtest/fast
 
 #=============================================================================
+# Target rules for targets named demo02_action02_client
+
+# Build rule for target.
+demo02_action02_client: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 demo02_action02_client
+.PHONY : demo02_action02_client
+
+# fast build rule for target.
+demo02_action02_client/fast:
+	$(MAKE) -f demo01_action/CMakeFiles/demo02_action02_client.dir/build.make demo01_action/CMakeFiles/demo02_action02_client.dir/build
+.PHONY : demo02_action02_client/fast
+
+#=============================================================================
+# Target rules for targets named demo01_action01_server
+
+# Build rule for target.
+demo01_action01_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 demo01_action01_server
+.PHONY : demo01_action01_server
+
+# fast build rule for target.
+demo01_action01_server/fast:
+	$(MAKE) -f demo01_action/CMakeFiles/demo01_action01_server.dir/build.make demo01_action/CMakeFiles/demo01_action01_server.dir/build
+.PHONY : demo01_action01_server/fast
+
+#=============================================================================
 # Target rules for targets named demo01_action_genpy
 
 # Build rule for target.
@@ -517,19 +543,6 @@ rosgraph_msgs_generate_messages_py: cmake_check_build_system
 rosgraph_msgs_generate_messages_py/fast:
 	$(MAKE) -f demo01_action/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make demo01_action/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
 .PHONY : rosgraph_msgs_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named demo01_action_server
-
-# Build rule for target.
-demo01_action_server: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 demo01_action_server
-.PHONY : demo01_action_server
-
-# fast build rule for target.
-demo01_action_server/fast:
-	$(MAKE) -f demo01_action/CMakeFiles/demo01_action_server.dir/build.make demo01_action/CMakeFiles/demo01_action_server.dir/build
-.PHONY : demo01_action_server/fast
 
 #=============================================================================
 # Target rules for targets named rosgraph_msgs_generate_messages_eus
@@ -891,6 +904,8 @@ help:
 	@echo "... gmock"
 	@echo "... gtest_main"
 	@echo "... gtest"
+	@echo "... demo02_action02_client"
+	@echo "... demo01_action01_server"
 	@echo "... demo01_action_genpy"
 	@echo "... demo01_action_generate_messages_py"
 	@echo "... demo01_action_generate_messages_lisp"
@@ -909,7 +924,6 @@ help:
 	@echo "... rosgraph_msgs_generate_messages_cpp"
 	@echo "... actionlib_msgs_generate_messages_lisp"
 	@echo "... rosgraph_msgs_generate_messages_py"
-	@echo "... demo01_action_server"
 	@echo "... rosgraph_msgs_generate_messages_eus"
 	@echo "... actionlib_generate_messages_nodejs"
 	@echo "... actionlib_generate_messages_py"

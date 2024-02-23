@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo04_ws/devel/lib;/home/yin-roc/catkin_ws/devel/lib;/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo03_ws/devel/lib;/home/yin-roc/demo_ws/demo01_ws/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo04_ws/devel/lib;/home/yin-roc/1_Code/Ubuntu20.04/Qt_Project_Code/Qt_Project/catkin_ws/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

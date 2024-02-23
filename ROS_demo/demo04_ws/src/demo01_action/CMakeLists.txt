@@ -107,7 +107,7 @@ generate_messages(
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES demo01_action
- CATKIN_DEPENDS actionlib actionlib_msgs roscpp rospy std_msgs
+CATKIN_DEPENDS actionlib actionlib_msgs roscpp rospy std_msgs
 #  DEPENDS system_lib
 )
 
@@ -135,7 +135,8 @@ include_directories(
 ## Declare a C++ executable
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
-add_executable(demo01_action_server src/demo01_action_server.cpp)
+add_executable(demo01_action01_server src/demo01_action01_server.cpp)
+add_executable(demo02_action02_client src/demo02_action02_client.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -145,10 +146,14 @@ add_executable(demo01_action_server src/demo01_action_server.cpp)
 
 ## Add cmake target dependencies of the executable
 ## same as for the library above
-add_dependencies(demo01_action_server ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(demo01_action01_server ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(demo02_action02_client ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 ## Specify libraries to link a library or executable target against
-target_link_libraries(demo01_action_server
+target_link_libraries(demo01_action01_server
+  ${catkin_LIBRARIES}
+)
+target_link_libraries(demo02_action02_client
   ${catkin_LIBRARIES}
 )
 
