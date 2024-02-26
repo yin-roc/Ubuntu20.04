@@ -9,7 +9,8 @@
         "/opt/ros/noetic/include/**",
         "/home/yin-roc/1_Code/Ubuntu20.04/Qt_Project_Code/Qt_Project/catkin_ws/src/ros_qt_demo/include/**",
         "/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo04_ws/devel/include/**",
-        "/usr/include/**"
+        "/usr/include/**",
+        "/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo04_ws/src/demo03_plugin/include/**"
       ],
       "name": "ROS",
       "intelliSenseMode": "gcc-x64",

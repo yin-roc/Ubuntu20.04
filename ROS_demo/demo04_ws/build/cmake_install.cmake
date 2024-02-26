@@ -131,6 +131,7 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo04_ws/build/gtest/cmake_install.cmake")
+  include("/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo04_ws/build/demo03_plugin/cmake_install.cmake")
   include("/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo04_ws/build/demo01_action/cmake_install.cmake")
   include("/home/yin-roc/1_Code/Ubuntu20.04/ROS_demo/demo04_ws/build/demo02_dr/cmake_install.cmake")
 
