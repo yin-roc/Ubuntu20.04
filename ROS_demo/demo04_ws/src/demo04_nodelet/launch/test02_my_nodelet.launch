@@ -13,4 +13,4 @@
         <remap from="/ergou/in" to="/xiaowang/out"/>   
     </node>
     
-</launch>
+</launch> 
