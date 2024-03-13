@@ -210,3 +210,9 @@ add_executable(chao_node src/chao_node.cpp)
 target_link_libraries(chao_node
   ${catkin_LIBRARIES}
 )
+
+add_executable(yao_node src/yao_node.cpp)
+
+target_link_libraries(yao_node
+  ${catkin_LIBRARIES}
+)

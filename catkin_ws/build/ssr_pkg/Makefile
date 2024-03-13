@@ -168,6 +168,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+ssr_pkg/CMakeFiles/yao_node.dir/rule:
+	cd /home/yin-roc/1_Code/Ubuntu20.04/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ssr_pkg/CMakeFiles/yao_node.dir/rule
+.PHONY : ssr_pkg/CMakeFiles/yao_node.dir/rule
+
+# Convenience name for target.
+yao_node: ssr_pkg/CMakeFiles/yao_node.dir/rule
+
+.PHONY : yao_node
+
+# fast build rule for target.
+yao_node/fast:
+	cd /home/yin-roc/1_Code/Ubuntu20.04/catkin_ws/build && $(MAKE) -f ssr_pkg/CMakeFiles/yao_node.dir/build.make ssr_pkg/CMakeFiles/yao_node.dir/build
+.PHONY : yao_node/fast
+
+# Convenience name for target.
 ssr_pkg/CMakeFiles/chao_node.dir/rule:
 	cd /home/yin-roc/1_Code/Ubuntu20.04/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ssr_pkg/CMakeFiles/chao_node.dir/rule
 .PHONY : ssr_pkg/CMakeFiles/chao_node.dir/rule
@@ -209,6 +224,33 @@ src/chao_node.cpp.s:
 	cd /home/yin-roc/1_Code/Ubuntu20.04/catkin_ws/build && $(MAKE) -f ssr_pkg/CMakeFiles/chao_node.dir/build.make ssr_pkg/CMakeFiles/chao_node.dir/src/chao_node.cpp.s
 .PHONY : src/chao_node.cpp.s
 
+src/yao_node.o: src/yao_node.cpp.o
+
+.PHONY : src/yao_node.o
+
+# target to build an object file
+src/yao_node.cpp.o:
+	cd /home/yin-roc/1_Code/Ubuntu20.04/catkin_ws/build && $(MAKE) -f ssr_pkg/CMakeFiles/yao_node.dir/build.make ssr_pkg/CMakeFiles/yao_node.dir/src/yao_node.cpp.o
+.PHONY : src/yao_node.cpp.o
+
+src/yao_node.i: src/yao_node.cpp.i
+
+.PHONY : src/yao_node.i
+
+# target to preprocess a source file
+src/yao_node.cpp.i:
+	cd /home/yin-roc/1_Code/Ubuntu20.04/catkin_ws/build && $(MAKE) -f ssr_pkg/CMakeFiles/yao_node.dir/build.make ssr_pkg/CMakeFiles/yao_node.dir/src/yao_node.cpp.i
+.PHONY : src/yao_node.cpp.i
+
+src/yao_node.s: src/yao_node.cpp.s
+
+.PHONY : src/yao_node.s
+
+# target to generate assembly for a file
+src/yao_node.cpp.s:
+	cd /home/yin-roc/1_Code/Ubuntu20.04/catkin_ws/build && $(MAKE) -f ssr_pkg/CMakeFiles/yao_node.dir/build.make ssr_pkg/CMakeFiles/yao_node.dir/src/yao_node.cpp.s
+.PHONY : src/yao_node.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -221,11 +263,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test"
+	@echo "... yao_node"
 	@echo "... install/strip"
 	@echo "... chao_node"
 	@echo "... src/chao_node.o"
 	@echo "... src/chao_node.i"
 	@echo "... src/chao_node.s"
+	@echo "... src/yao_node.o"
+	@echo "... src/yao_node.i"
+	@echo "... src/yao_node.s"
 .PHONY : help
 
 

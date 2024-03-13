@@ -20,6 +20,7 @@ ssr_pkg/CMakeFiles/chao_node.dir/src/chao_node.cpp.o: /opt/ros/noetic/include/ro
 ssr_pkg/CMakeFiles/chao_node.dir/src/chao_node.cpp.o: /opt/ros/noetic/include/ros/message.h
 ssr_pkg/CMakeFiles/chao_node.dir/src/chao_node.cpp.o: /opt/ros/noetic/include/ros/message_event.h
 ssr_pkg/CMakeFiles/chao_node.dir/src/chao_node.cpp.o: /opt/ros/noetic/include/ros/message_forward.h
+ssr_pkg/CMakeFiles/chao_node.dir/src/chao_node.cpp.o: /opt/ros/noetic/include/ros/message_operations.h
 ssr_pkg/CMakeFiles/chao_node.dir/src/chao_node.cpp.o: /opt/ros/noetic/include/ros/message_traits.h
 ssr_pkg/CMakeFiles/chao_node.dir/src/chao_node.cpp.o: /opt/ros/noetic/include/ros/names.h
 ssr_pkg/CMakeFiles/chao_node.dir/src/chao_node.cpp.o: /opt/ros/noetic/include/ros/node_handle.h
@@ -57,6 +58,7 @@ ssr_pkg/CMakeFiles/chao_node.dir/src/chao_node.cpp.o: /opt/ros/noetic/include/ro
 ssr_pkg/CMakeFiles/chao_node.dir/src/chao_node.cpp.o: /opt/ros/noetic/include/ros/wall_timer.h
 ssr_pkg/CMakeFiles/chao_node.dir/src/chao_node.cpp.o: /opt/ros/noetic/include/ros/wall_timer_options.h
 ssr_pkg/CMakeFiles/chao_node.dir/src/chao_node.cpp.o: /opt/ros/noetic/include/rosconsole/macros_generated.h
+ssr_pkg/CMakeFiles/chao_node.dir/src/chao_node.cpp.o: /opt/ros/noetic/include/std_msgs/String.h
 ssr_pkg/CMakeFiles/chao_node.dir/src/chao_node.cpp.o: /opt/ros/noetic/include/xmlrpcpp/XmlRpcDecl.h
 ssr_pkg/CMakeFiles/chao_node.dir/src/chao_node.cpp.o: /opt/ros/noetic/include/xmlrpcpp/XmlRpcValue.h
 
