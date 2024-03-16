@@ -519,56 +519,30 @@ chao_node/fast:
 .PHONY : chao_node/fast
 
 #=============================================================================
-# Target rules for targets named vel_node
+# Target rules for targets named sensor_msgs_generate_messages_cpp
 
 # Build rule for target.
-vel_node: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 vel_node
-.PHONY : vel_node
+sensor_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_cpp
+.PHONY : sensor_msgs_generate_messages_cpp
 
 # fast build rule for target.
-vel_node/fast:
-	$(MAKE) -f vel_pkg/CMakeFiles/vel_node.dir/build.make vel_pkg/CMakeFiles/vel_node.dir/build
-.PHONY : vel_node/fast
+sensor_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f lidar_pkg/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make lidar_pkg/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
+.PHONY : sensor_msgs_generate_messages_cpp/fast
 
 #=============================================================================
-# Target rules for targets named geometry_msgs_generate_messages_nodejs
+# Target rules for targets named sensor_msgs_generate_messages_eus
 
 # Build rule for target.
-geometry_msgs_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 geometry_msgs_generate_messages_nodejs
-.PHONY : geometry_msgs_generate_messages_nodejs
+sensor_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_eus
+.PHONY : sensor_msgs_generate_messages_eus
 
 # fast build rule for target.
-geometry_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f vel_pkg/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make vel_pkg/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
-.PHONY : geometry_msgs_generate_messages_nodejs/fast
-
-#=============================================================================
-# Target rules for targets named geometry_msgs_generate_messages_py
-
-# Build rule for target.
-geometry_msgs_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 geometry_msgs_generate_messages_py
-.PHONY : geometry_msgs_generate_messages_py
-
-# fast build rule for target.
-geometry_msgs_generate_messages_py/fast:
-	$(MAKE) -f vel_pkg/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make vel_pkg/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
-.PHONY : geometry_msgs_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named geometry_msgs_generate_messages_lisp
-
-# Build rule for target.
-geometry_msgs_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 geometry_msgs_generate_messages_lisp
-.PHONY : geometry_msgs_generate_messages_lisp
-
-# fast build rule for target.
-geometry_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f vel_pkg/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make vel_pkg/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
-.PHONY : geometry_msgs_generate_messages_lisp/fast
+sensor_msgs_generate_messages_eus/fast:
+	$(MAKE) -f lidar_pkg/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make lidar_pkg/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build
+.PHONY : sensor_msgs_generate_messages_eus/fast
 
 #=============================================================================
 # Target rules for targets named geometry_msgs_generate_messages_eus
@@ -580,8 +554,73 @@ geometry_msgs_generate_messages_eus: cmake_check_build_system
 
 # fast build rule for target.
 geometry_msgs_generate_messages_eus/fast:
-	$(MAKE) -f vel_pkg/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make vel_pkg/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build
+	$(MAKE) -f lidar_pkg/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make lidar_pkg/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build
 .PHONY : geometry_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named geometry_msgs_generate_messages_lisp
+
+# Build rule for target.
+geometry_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 geometry_msgs_generate_messages_lisp
+.PHONY : geometry_msgs_generate_messages_lisp
+
+# fast build rule for target.
+geometry_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f lidar_pkg/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make lidar_pkg/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
+.PHONY : geometry_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named sensor_msgs_generate_messages_lisp
+
+# Build rule for target.
+sensor_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_lisp
+.PHONY : sensor_msgs_generate_messages_lisp
+
+# fast build rule for target.
+sensor_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f lidar_pkg/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make lidar_pkg/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
+.PHONY : sensor_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named sensor_msgs_generate_messages_nodejs
+
+# Build rule for target.
+sensor_msgs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_nodejs
+.PHONY : sensor_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+sensor_msgs_generate_messages_nodejs/fast:
+	$(MAKE) -f lidar_pkg/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make lidar_pkg/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build
+.PHONY : sensor_msgs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named geometry_msgs_generate_messages_py
+
+# Build rule for target.
+geometry_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 geometry_msgs_generate_messages_py
+.PHONY : geometry_msgs_generate_messages_py
+
+# fast build rule for target.
+geometry_msgs_generate_messages_py/fast:
+	$(MAKE) -f lidar_pkg/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make lidar_pkg/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
+.PHONY : geometry_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named sensor_msgs_generate_messages_py
+
+# Build rule for target.
+sensor_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_py
+.PHONY : sensor_msgs_generate_messages_py
+
+# fast build rule for target.
+sensor_msgs_generate_messages_py/fast:
+	$(MAKE) -f lidar_pkg/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make lidar_pkg/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
+.PHONY : sensor_msgs_generate_messages_py/fast
 
 #=============================================================================
 # Target rules for targets named geometry_msgs_generate_messages_cpp
@@ -593,8 +632,47 @@ geometry_msgs_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 geometry_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f vel_pkg/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make vel_pkg/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
+	$(MAKE) -f lidar_pkg/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make lidar_pkg/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
 .PHONY : geometry_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named geometry_msgs_generate_messages_nodejs
+
+# Build rule for target.
+geometry_msgs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 geometry_msgs_generate_messages_nodejs
+.PHONY : geometry_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+geometry_msgs_generate_messages_nodejs/fast:
+	$(MAKE) -f lidar_pkg/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make lidar_pkg/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
+.PHONY : geometry_msgs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named lidar_node
+
+# Build rule for target.
+lidar_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 lidar_node
+.PHONY : lidar_node
+
+# fast build rule for target.
+lidar_node/fast:
+	$(MAKE) -f lidar_pkg/CMakeFiles/lidar_node.dir/build.make lidar_pkg/CMakeFiles/lidar_node.dir/build
+.PHONY : lidar_node/fast
+
+#=============================================================================
+# Target rules for targets named vel_node
+
+# Build rule for target.
+vel_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 vel_node
+.PHONY : vel_node
+
+# fast build rule for target.
+vel_node/fast:
+	$(MAKE) -f vel_pkg/CMakeFiles/vel_node.dir/build.make vel_pkg/CMakeFiles/vel_node.dir/build
+.PHONY : vel_node/fast
 
 # Help Target
 help:
@@ -636,12 +714,18 @@ help:
 	@echo "... rosgraph_msgs_generate_messages_py"
 	@echo "... yao_node"
 	@echo "... chao_node"
-	@echo "... vel_node"
-	@echo "... geometry_msgs_generate_messages_nodejs"
-	@echo "... geometry_msgs_generate_messages_py"
-	@echo "... geometry_msgs_generate_messages_lisp"
+	@echo "... sensor_msgs_generate_messages_cpp"
+	@echo "... sensor_msgs_generate_messages_eus"
 	@echo "... geometry_msgs_generate_messages_eus"
+	@echo "... geometry_msgs_generate_messages_lisp"
+	@echo "... sensor_msgs_generate_messages_lisp"
+	@echo "... sensor_msgs_generate_messages_nodejs"
+	@echo "... geometry_msgs_generate_messages_py"
+	@echo "... sensor_msgs_generate_messages_py"
 	@echo "... geometry_msgs_generate_messages_cpp"
+	@echo "... geometry_msgs_generate_messages_nodejs"
+	@echo "... lidar_node"
+	@echo "... vel_node"
 .PHONY : help
 
 
