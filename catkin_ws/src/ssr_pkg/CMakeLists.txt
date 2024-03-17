@@ -11,6 +11,7 @@ find_package(catkin REQUIRED COMPONENTS
   roscpp
   rospy
   std_msgs
+  qq_msgs
 )
 
 ## System dependencies are found with CMake's conventions
@@ -206,6 +207,8 @@ include_directories(
 # catkin_add_nosetests(test)
 
 add_executable(chao_node src/chao_node.cpp)
+
+add_dependencies(chao_node qq_msgs_generate_messages_cpp)
 
 target_link_libraries(chao_node
   ${catkin_LIBRARIES}
