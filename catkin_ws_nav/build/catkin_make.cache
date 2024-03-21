@@ -1,2 +1,2 @@
 mbot_navigation/mbot_description:mbot_navigation/mbot_gazebo:mbot_navigation/mbot_navigation:mbot_navigation/mbot_teleop
--DCATKIN_DEVEL_PREFIX=/home/yin-roc/1_Code/Ubuntu20.04/catkin_ws_nav/devel -DCMAKE_INSTALL_PREFIX=/home/yin-roc/1_Code/Ubuntu20.04/catkin_ws_nav/install -G Unix Makefiles
+-DCATKIN_DEVEL_PREFIX=/home/yin-roc/1-Github/Ubuntu20.04/catkin_ws_nav/devel -DCMAKE_INSTALL_PREFIX=/home/yin-roc/1-Github/Ubuntu20.04/catkin_ws_nav/install -G Unix Makefiles
