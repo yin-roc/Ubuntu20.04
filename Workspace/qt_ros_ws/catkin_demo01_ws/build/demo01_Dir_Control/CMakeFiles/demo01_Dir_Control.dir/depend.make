@@ -5,6 +5,8 @@ CMakeFiles/demo01_Dir_Control.dir/demo01_Dir_Control_autogen/mocs_compilation.cp
 CMakeFiles/demo01_Dir_Control.dir/demo01_Dir_Control_autogen/mocs_compilation.cpp.o: demo01_Dir_Control_autogen/mocs_compilation.cpp
 CMakeFiles/demo01_Dir_Control.dir/demo01_Dir_Control_autogen/mocs_compilation.cpp.o: /home/yin-roc/1_Code/Ubuntu20.04/Workspace/qt_ros_ws/catkin_demo01_ws/src/demo01_Dir_Control/src/mainwindow.h
 CMakeFiles/demo01_Dir_Control.dir/demo01_Dir_Control_autogen/mocs_compilation.cpp.o: /home/yin-roc/1_Code/Ubuntu20.04/Workspace/qt_ros_ws/catkin_demo01_ws/src/demo01_Dir_Control/src/ros_node_1.h
+CMakeFiles/demo01_Dir_Control.dir/demo01_Dir_Control_autogen/mocs_compilation.cpp.o: /opt/ros/noetic/include/geometry_msgs/Twist.h
+CMakeFiles/demo01_Dir_Control.dir/demo01_Dir_Control_autogen/mocs_compilation.cpp.o: /opt/ros/noetic/include/geometry_msgs/Vector3.h
 CMakeFiles/demo01_Dir_Control.dir/demo01_Dir_Control_autogen/mocs_compilation.cpp.o: /opt/ros/noetic/include/ros/advertise_options.h
 CMakeFiles/demo01_Dir_Control.dir/demo01_Dir_Control_autogen/mocs_compilation.cpp.o: /opt/ros/noetic/include/ros/advertise_service_options.h
 CMakeFiles/demo01_Dir_Control.dir/demo01_Dir_Control_autogen/mocs_compilation.cpp.o: /opt/ros/noetic/include/ros/assert.h
@@ -23,6 +25,7 @@ CMakeFiles/demo01_Dir_Control.dir/demo01_Dir_Control_autogen/mocs_compilation.cp
 CMakeFiles/demo01_Dir_Control.dir/demo01_Dir_Control_autogen/mocs_compilation.cpp.o: /opt/ros/noetic/include/ros/message.h
 CMakeFiles/demo01_Dir_Control.dir/demo01_Dir_Control_autogen/mocs_compilation.cpp.o: /opt/ros/noetic/include/ros/message_event.h
 CMakeFiles/demo01_Dir_Control.dir/demo01_Dir_Control_autogen/mocs_compilation.cpp.o: /opt/ros/noetic/include/ros/message_forward.h
+CMakeFiles/demo01_Dir_Control.dir/demo01_Dir_Control_autogen/mocs_compilation.cpp.o: /opt/ros/noetic/include/ros/message_operations.h
 CMakeFiles/demo01_Dir_Control.dir/demo01_Dir_Control_autogen/mocs_compilation.cpp.o: /opt/ros/noetic/include/ros/message_traits.h
 CMakeFiles/demo01_Dir_Control.dir/demo01_Dir_Control_autogen/mocs_compilation.cpp.o: /opt/ros/noetic/include/ros/names.h
 CMakeFiles/demo01_Dir_Control.dir/demo01_Dir_Control_autogen/mocs_compilation.cpp.o: /opt/ros/noetic/include/ros/node_handle.h
@@ -172,6 +175,8 @@ CMakeFiles/demo01_Dir_Control.dir/demo01_Dir_Control_autogen/mocs_compilation.cp
 CMakeFiles/demo01_Dir_Control.dir/src/main.cpp.o: /home/yin-roc/1_Code/Ubuntu20.04/Workspace/qt_ros_ws/catkin_demo01_ws/src/demo01_Dir_Control/src/main.cpp
 CMakeFiles/demo01_Dir_Control.dir/src/main.cpp.o: /home/yin-roc/1_Code/Ubuntu20.04/Workspace/qt_ros_ws/catkin_demo01_ws/src/demo01_Dir_Control/src/mainwindow.h
 CMakeFiles/demo01_Dir_Control.dir/src/main.cpp.o: /home/yin-roc/1_Code/Ubuntu20.04/Workspace/qt_ros_ws/catkin_demo01_ws/src/demo01_Dir_Control/src/ros_node_1.h
+CMakeFiles/demo01_Dir_Control.dir/src/main.cpp.o: /opt/ros/noetic/include/geometry_msgs/Twist.h
+CMakeFiles/demo01_Dir_Control.dir/src/main.cpp.o: /opt/ros/noetic/include/geometry_msgs/Vector3.h
 CMakeFiles/demo01_Dir_Control.dir/src/main.cpp.o: /opt/ros/noetic/include/ros/advertise_options.h
 CMakeFiles/demo01_Dir_Control.dir/src/main.cpp.o: /opt/ros/noetic/include/ros/advertise_service_options.h
 CMakeFiles/demo01_Dir_Control.dir/src/main.cpp.o: /opt/ros/noetic/include/ros/assert.h
@@ -190,6 +195,7 @@ CMakeFiles/demo01_Dir_Control.dir/src/main.cpp.o: /opt/ros/noetic/include/ros/ma
 CMakeFiles/demo01_Dir_Control.dir/src/main.cpp.o: /opt/ros/noetic/include/ros/message.h
 CMakeFiles/demo01_Dir_Control.dir/src/main.cpp.o: /opt/ros/noetic/include/ros/message_event.h
 CMakeFiles/demo01_Dir_Control.dir/src/main.cpp.o: /opt/ros/noetic/include/ros/message_forward.h
+CMakeFiles/demo01_Dir_Control.dir/src/main.cpp.o: /opt/ros/noetic/include/ros/message_operations.h
 CMakeFiles/demo01_Dir_Control.dir/src/main.cpp.o: /opt/ros/noetic/include/ros/message_traits.h
 CMakeFiles/demo01_Dir_Control.dir/src/main.cpp.o: /opt/ros/noetic/include/ros/names.h
 CMakeFiles/demo01_Dir_Control.dir/src/main.cpp.o: /opt/ros/noetic/include/ros/node_handle.h
@@ -346,6 +352,8 @@ CMakeFiles/demo01_Dir_Control.dir/src/main.cpp.o: /usr/include/x86_64-linux-gnu/
 CMakeFiles/demo01_Dir_Control.dir/src/mainwindow.cpp.o: /home/yin-roc/1_Code/Ubuntu20.04/Workspace/qt_ros_ws/catkin_demo01_ws/src/demo01_Dir_Control/src/mainwindow.cpp
 CMakeFiles/demo01_Dir_Control.dir/src/mainwindow.cpp.o: /home/yin-roc/1_Code/Ubuntu20.04/Workspace/qt_ros_ws/catkin_demo01_ws/src/demo01_Dir_Control/src/mainwindow.h
 CMakeFiles/demo01_Dir_Control.dir/src/mainwindow.cpp.o: /home/yin-roc/1_Code/Ubuntu20.04/Workspace/qt_ros_ws/catkin_demo01_ws/src/demo01_Dir_Control/src/ros_node_1.h
+CMakeFiles/demo01_Dir_Control.dir/src/mainwindow.cpp.o: /opt/ros/noetic/include/geometry_msgs/Twist.h
+CMakeFiles/demo01_Dir_Control.dir/src/mainwindow.cpp.o: /opt/ros/noetic/include/geometry_msgs/Vector3.h
 CMakeFiles/demo01_Dir_Control.dir/src/mainwindow.cpp.o: /opt/ros/noetic/include/ros/advertise_options.h
 CMakeFiles/demo01_Dir_Control.dir/src/mainwindow.cpp.o: /opt/ros/noetic/include/ros/advertise_service_options.h
 CMakeFiles/demo01_Dir_Control.dir/src/mainwindow.cpp.o: /opt/ros/noetic/include/ros/assert.h
@@ -364,6 +372,7 @@ CMakeFiles/demo01_Dir_Control.dir/src/mainwindow.cpp.o: /opt/ros/noetic/include/
 CMakeFiles/demo01_Dir_Control.dir/src/mainwindow.cpp.o: /opt/ros/noetic/include/ros/message.h
 CMakeFiles/demo01_Dir_Control.dir/src/mainwindow.cpp.o: /opt/ros/noetic/include/ros/message_event.h
 CMakeFiles/demo01_Dir_Control.dir/src/mainwindow.cpp.o: /opt/ros/noetic/include/ros/message_forward.h
+CMakeFiles/demo01_Dir_Control.dir/src/mainwindow.cpp.o: /opt/ros/noetic/include/ros/message_operations.h
 CMakeFiles/demo01_Dir_Control.dir/src/mainwindow.cpp.o: /opt/ros/noetic/include/ros/message_traits.h
 CMakeFiles/demo01_Dir_Control.dir/src/mainwindow.cpp.o: /opt/ros/noetic/include/ros/names.h
 CMakeFiles/demo01_Dir_Control.dir/src/mainwindow.cpp.o: /opt/ros/noetic/include/ros/node_handle.h
@@ -532,6 +541,8 @@ CMakeFiles/demo01_Dir_Control.dir/src/mainwindow.cpp.o: demo01_Dir_Control_autog
 
 CMakeFiles/demo01_Dir_Control.dir/src/ros_node_1.cpp.o: /home/yin-roc/1_Code/Ubuntu20.04/Workspace/qt_ros_ws/catkin_demo01_ws/src/demo01_Dir_Control/src/ros_node_1.cpp
 CMakeFiles/demo01_Dir_Control.dir/src/ros_node_1.cpp.o: /home/yin-roc/1_Code/Ubuntu20.04/Workspace/qt_ros_ws/catkin_demo01_ws/src/demo01_Dir_Control/src/ros_node_1.h
+CMakeFiles/demo01_Dir_Control.dir/src/ros_node_1.cpp.o: /opt/ros/noetic/include/geometry_msgs/Twist.h
+CMakeFiles/demo01_Dir_Control.dir/src/ros_node_1.cpp.o: /opt/ros/noetic/include/geometry_msgs/Vector3.h
 CMakeFiles/demo01_Dir_Control.dir/src/ros_node_1.cpp.o: /opt/ros/noetic/include/ros/advertise_options.h
 CMakeFiles/demo01_Dir_Control.dir/src/ros_node_1.cpp.o: /opt/ros/noetic/include/ros/advertise_service_options.h
 CMakeFiles/demo01_Dir_Control.dir/src/ros_node_1.cpp.o: /opt/ros/noetic/include/ros/assert.h
@@ -588,7 +599,6 @@ CMakeFiles/demo01_Dir_Control.dir/src/ros_node_1.cpp.o: /opt/ros/noetic/include/
 CMakeFiles/demo01_Dir_Control.dir/src/ros_node_1.cpp.o: /opt/ros/noetic/include/ros/wall_timer.h
 CMakeFiles/demo01_Dir_Control.dir/src/ros_node_1.cpp.o: /opt/ros/noetic/include/ros/wall_timer_options.h
 CMakeFiles/demo01_Dir_Control.dir/src/ros_node_1.cpp.o: /opt/ros/noetic/include/rosconsole/macros_generated.h
-CMakeFiles/demo01_Dir_Control.dir/src/ros_node_1.cpp.o: /opt/ros/noetic/include/std_msgs/String.h
 CMakeFiles/demo01_Dir_Control.dir/src/ros_node_1.cpp.o: /opt/ros/noetic/include/xmlrpcpp/XmlRpcDecl.h
 CMakeFiles/demo01_Dir_Control.dir/src/ros_node_1.cpp.o: /opt/ros/noetic/include/xmlrpcpp/XmlRpcValue.h
 

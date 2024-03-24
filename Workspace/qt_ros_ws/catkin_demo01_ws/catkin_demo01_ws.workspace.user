@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 12.0.2, 2024-03-24T17:53:48. -->
+<!-- Written by QtCreator 12.0.2, 2024-03-24T21:36:46. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -142,7 +142,7 @@
      <value type="QString">PYTHONPATH=/opt/ros/noetic/lib/python3/dist-packages</value>
      <value type="QString">ROSLISP_PACKAGE_DIRECTORIES=/home/yin-roc/1_Code/Ubuntu20.04/Workspace/qt_ros_ws/catkin_demo01_ws/devel/share/common-lisp</value>
      <value type="QString">ROS_PACKAGE_PATH=/home/yin-roc/1_Code/Ubuntu20.04/Workspace/qt_ros_ws/catkin_demo01_ws/src/demo01_Dir_Control:/opt/ros/noetic/share</value>
-     <value type="QString">SHLVL=84</value>
+     <value type="QString">SHLVL=218</value>
      <value type="QString">TERM=xterm</value>
      <value type="QString">_=/usr/bin/env</value>
     </valuelist>
