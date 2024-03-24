@@ -1,0 +1,8 @@
+prefix=/home/yin-roc/1_Code/Ubuntu20.04/Workspace/catkin_ros_ws/demo01_ws/install
+
+Name: test_listener
+Description: Description of test_listener
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

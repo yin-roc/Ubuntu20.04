@@ -1,0 +1,8 @@
+prefix=/home/yin-roc/1_Code/Ubuntu20.04/Workspace/qt_ros_ws/catkin_demo01_ws/install
+
+Name: demo01_Dir_Control
+Description: Description of demo01_Dir_Control
+Version: 0.1.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
