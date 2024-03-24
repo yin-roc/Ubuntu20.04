@@ -1,21 +1,24 @@
 #include <ros/ros.h>
 #include <std_msgs/String.h>
 #include <iostream>
+#include <qq_msgs/Carry.h>
 
-void chao_callback(std_msgs::String msg)
+void chao_callback(qq_msgs::Carry msg)
 {
-    ROS_INFO("%s",msg.data.c_str());
+    ROS_WARN(msg.grade.c_str());
+    ROS_WARN("%d 星", msg.star);
+    ROS_INFO(msg.data.c_str());
 }
 
-void yao_callback(std_msgs::String msg)
+void yao_callback(std_msgs::String msg_1)
 {
-    ROS_WARN("%s",msg.data.c_str());
+    ROS_WARN("%s",msg_1.data.c_str());
 }
 
 int main(int argc, char  *argv[])
 {
     setlocale(LC_ALL, "");
-        setlocale(LC_ALL, "zh_CN.UTF-8");
+    // setlocale(LC_ALL, "zh_CN.UTF-8");
 
     ros::init(argc, argv, "ma_node");
 
