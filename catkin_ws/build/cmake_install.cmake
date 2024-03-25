@@ -131,8 +131,11 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/yin-roc/1_Code/Ubuntu20.04/catkin_ws/build/gtest/cmake_install.cmake")
+  include("/home/yin-roc/1_Code/Ubuntu20.04/catkin_ws/build/qq_msgs/cmake_install.cmake")
   include("/home/yin-roc/1_Code/Ubuntu20.04/catkin_ws/build/atr_pkg/cmake_install.cmake")
+  include("/home/yin-roc/1_Code/Ubuntu20.04/catkin_ws/build/slam_pkg/cmake_install.cmake")
   include("/home/yin-roc/1_Code/Ubuntu20.04/catkin_ws/build/ssr_pkg/cmake_install.cmake")
+  include("/home/yin-roc/1_Code/Ubuntu20.04/catkin_ws/build/imu_pkg/cmake_install.cmake")
   include("/home/yin-roc/1_Code/Ubuntu20.04/catkin_ws/build/lidar_pkg/cmake_install.cmake")
   include("/home/yin-roc/1_Code/Ubuntu20.04/catkin_ws/build/vel_pkg/cmake_install.cmake")
 

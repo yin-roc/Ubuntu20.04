@@ -936,6 +936,12 @@ ignition-transport8_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/ignition-transport8
 //The directory containing a CMake configuration file for image_transport.
 image_transport_DIR:PATH=/opt/ros/noetic/share/image_transport/cmake
 
+//Value Computed by CMake
+imu_pkg_BINARY_DIR:STATIC=/home/yin-roc/1_Code/Ubuntu20.04/catkin_ws/build/imu_pkg
+
+//Value Computed by CMake
+imu_pkg_SOURCE_DIR:STATIC=/home/yin-roc/1_Code/Ubuntu20.04/catkin_ws/src/imu_pkg
+
 //The directory containing a CMake configuration file for joint_state_controller.
 joint_state_controller_DIR:PATH=/opt/ros/noetic/share/joint_state_controller/cmake
 
@@ -1029,6 +1035,15 @@ pkgcfg_lib_ZeroMQ_zmq:FILEPATH=/usr/lib/x86_64-linux-gnu/libzmq.so
 //The directory containing a CMake configuration file for pluginlib.
 pluginlib_DIR:PATH=/opt/ros/noetic/share/pluginlib/cmake
 
+//Value Computed by CMake
+qq_msgs_BINARY_DIR:STATIC=/home/yin-roc/1_Code/Ubuntu20.04/catkin_ws/build/qq_msgs
+
+//The directory containing a CMake configuration file for qq_msgs.
+qq_msgs_DIR:PATH=/home/yin-roc/1_Code/Ubuntu20.04/catkin_ws/devel/share/qq_msgs/cmake
+
+//Value Computed by CMake
+qq_msgs_SOURCE_DIR:STATIC=/home/yin-roc/1_Code/Ubuntu20.04/catkin_ws/src/qq_msgs
+
 //The directory containing a CMake configuration file for realtime_tools.
 realtime_tools_DIR:PATH=/opt/ros/noetic/share/realtime_tools/cmake
 
@@ -1094,6 +1109,12 @@ sdformat9_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/sdformat9
 
 //The directory containing a CMake configuration file for sensor_msgs.
 sensor_msgs_DIR:PATH=/opt/ros/noetic/share/sensor_msgs/cmake
+
+//Value Computed by CMake
+slam_pkg_BINARY_DIR:STATIC=/home/yin-roc/1_Code/Ubuntu20.04/catkin_ws/build/slam_pkg
+
+//Value Computed by CMake
+slam_pkg_SOURCE_DIR:STATIC=/home/yin-roc/1_Code/Ubuntu20.04/catkin_ws/src/slam_pkg
 
 //Value Computed by CMake
 ssr_pkg_BINARY_DIR:STATIC=/home/yin-roc/1_Code/Ubuntu20.04/catkin_ws/build/ssr_pkg
@@ -1340,7 +1361,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=8
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=11
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
