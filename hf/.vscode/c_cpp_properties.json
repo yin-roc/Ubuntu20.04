@@ -15,7 +15,8 @@
         "/home/yin-roc/1_Code/Ubuntu20.04/catkin_ws/src/ssr_pkg/include/**",
         "/home/yin-roc/1_Code/Ubuntu20.04/catkin_ws/src/vel_pkg/include/**",
         "/home/yin-roc/catkin_ws/src/wpr_simulation/include/**",
-        "/usr/include/**"
+        "/usr/include/**",
+        "/home/yin-roc/1_Code/Ubuntu20.04/hf/src/mower_ctrl/include/**"
       ],
       "name": "ROS",
       "intelliSenseMode": "gcc-x64",

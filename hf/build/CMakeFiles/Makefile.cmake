@@ -97,6 +97,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/opt/ros/noetic/share/rospy/cmake/rospyConfig.cmake"
   "/opt/ros/noetic/share/rostime/cmake/rostimeConfig-version.cmake"
   "/opt/ros/noetic/share/rostime/cmake/rostimeConfig.cmake"
+  "/opt/ros/noetic/share/serial/cmake/serialConfig-version.cmake"
+  "/opt/ros/noetic/share/serial/cmake/serialConfig.cmake"
   "/opt/ros/noetic/share/std_msgs/cmake/std_msgs-msg-extras.cmake"
   "/opt/ros/noetic/share/std_msgs/cmake/std_msgsConfig-version.cmake"
   "/opt/ros/noetic/share/std_msgs/cmake/std_msgsConfig.cmake"
