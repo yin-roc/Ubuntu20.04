@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 12.0.2, 2024-03-24T21:36:46. -->
+<!-- Written by QtCreator 12.0.2, 2024-03-26T22:04:55. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -139,10 +139,11 @@
      <value type="QString">LD_LIBRARY_PATH=/home/yin-roc/1_Code/Ubuntu20.04/Workspace/qt_ros_ws/catkin_demo01_ws/devel/lib:/opt/ros/noetic/lib:/home/yin-roc/Qt/Qt_installposition/lib</value>
      <value type="QString">PATH=/opt/ros/noetic/bin:/home/yin-roc/Qt/Qt_installposition/5.14.0/gcc_64/bin:/home/yin-roc/.local/bin:/home/yin-roc/Qt/Qt_installposition/Tools/QtCreator/bin:/home/yin-roc/Qt/Qt_installposition/5.14.0/gcc_64/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/yin-roc/Qt/Qt5.15/6.6.0/gcc_64/bin/:/home/yin-roc/Qt/Qt5.15/Tools/QtCreator/bin/</value>
      <value type="QString">PKG_CONFIG_PATH=/home/yin-roc/1_Code/Ubuntu20.04/Workspace/qt_ros_ws/catkin_demo01_ws/devel/lib/pkgconfig:/opt/ros/noetic/lib/pkgconfig</value>
+     <value type="QString">PWD=/home/yin-roc/1_Code/Ubuntu20.04/Workspace/qt_ros_ws/catkin_demo01_ws</value>
      <value type="QString">PYTHONPATH=/opt/ros/noetic/lib/python3/dist-packages</value>
      <value type="QString">ROSLISP_PACKAGE_DIRECTORIES=/home/yin-roc/1_Code/Ubuntu20.04/Workspace/qt_ros_ws/catkin_demo01_ws/devel/share/common-lisp</value>
      <value type="QString">ROS_PACKAGE_PATH=/home/yin-roc/1_Code/Ubuntu20.04/Workspace/qt_ros_ws/catkin_demo01_ws/src/demo01_Dir_Control:/opt/ros/noetic/share</value>
-     <value type="QString">SHLVL=218</value>
+     <value type="QString">SHLVL=220</value>
      <value type="QString">TERM=xterm</value>
      <value type="QString">_=/usr/bin/env</value>
     </valuelist>
