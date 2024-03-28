@@ -1,8 +1,0 @@
-[ 16%] [34m[1mAutomatic MOC and UIC for target test_node[0m
-[ 16%] Built target test_node_autogen
-[35m[1mScanning dependencies of target test_node[0m
-[ 66%] [32mBuilding CXX object CMakeFiles/test_node.dir/main.cpp.o[0m
-[ 66%] [32mBuilding CXX object CMakeFiles/test_node.dir/test_node_autogen/mocs_compilation.cpp.o[0m
-[ 66%] [32mBuilding CXX object CMakeFiles/test_node.dir/mainwindow.cpp.o[0m
-[ 83%] [32m[1mLinking CXX executable /home/yin-roc/1_Code/Ubuntu20.04/Workspace/qt_ros_ws/catkin_demo02_ws/devel/lib/test_node/test_node[0m
-[100%] Built target test_node

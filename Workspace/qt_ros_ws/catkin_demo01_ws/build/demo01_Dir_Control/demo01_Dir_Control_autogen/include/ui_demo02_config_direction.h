@@ -11,7 +11,10 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QPushButton>
+#include <QtWidgets/QSpacerItem>
+#include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -19,42 +22,92 @@ QT_BEGIN_NAMESPACE
 class Ui_demo02_config_direction
 {
 public:
-    QPushButton *pushButton_3;
-    QPushButton *pushButton_4;
-    QPushButton *pushButton;
+    QVBoxLayout *verticalLayout_2;
+    QHBoxLayout *horizontalLayout;
     QPushButton *pushButton_2;
+    QSpacerItem *horizontalSpacer;
+    QVBoxLayout *verticalLayout;
+    QSpacerItem *verticalSpacer_2;
+    QPushButton *pushButton;
+    QSpacerItem *verticalSpacer;
+    QPushButton *pushButton_4;
+    QSpacerItem *verticalSpacer_3;
+    QSpacerItem *horizontalSpacer_2;
+    QPushButton *pushButton_3;
     QPushButton *pushButton_5;
 
     void setupUi(QWidget *demo02_config_direction)
     {
         if (demo02_config_direction->objectName().isEmpty())
             demo02_config_direction->setObjectName("demo02_config_direction");
-        demo02_config_direction->resize(352, 180);
-        pushButton_3 = new QPushButton(demo02_config_direction);
-        pushButton_3->setObjectName("pushButton_3");
-        pushButton_3->setGeometry(QRect(220, 70, 91, 41));
-        QFont font;
-        font.setPointSize(18);
-        pushButton_3->setFont(font);
-        pushButton_3->setIconSize(QSize(25, 25));
-        pushButton_4 = new QPushButton(demo02_config_direction);
-        pushButton_4->setObjectName("pushButton_4");
-        pushButton_4->setGeometry(QRect(130, 110, 91, 41));
-        pushButton_4->setFont(font);
-        pushButton_4->setIconSize(QSize(25, 25));
-        pushButton = new QPushButton(demo02_config_direction);
-        pushButton->setObjectName("pushButton");
-        pushButton->setGeometry(QRect(130, 30, 91, 41));
-        pushButton->setFont(font);
-        pushButton->setIconSize(QSize(25, 25));
+        demo02_config_direction->resize(300, 300);
+        verticalLayout_2 = new QVBoxLayout(demo02_config_direction);
+        verticalLayout_2->setObjectName("verticalLayout_2");
+        horizontalLayout = new QHBoxLayout();
+        horizontalLayout->setObjectName("horizontalLayout");
         pushButton_2 = new QPushButton(demo02_config_direction);
         pushButton_2->setObjectName("pushButton_2");
-        pushButton_2->setGeometry(QRect(40, 70, 91, 41));
+        QFont font;
+        font.setPointSize(18);
         pushButton_2->setFont(font);
         pushButton_2->setIconSize(QSize(25, 25));
+
+        horizontalLayout->addWidget(pushButton_2);
+
+        horizontalSpacer = new QSpacerItem(40, 20, QSizePolicy::Policy::Expanding, QSizePolicy::Policy::Minimum);
+
+        horizontalLayout->addItem(horizontalSpacer);
+
+        verticalLayout = new QVBoxLayout();
+        verticalLayout->setObjectName("verticalLayout");
+        verticalSpacer_2 = new QSpacerItem(20, 40, QSizePolicy::Policy::Minimum, QSizePolicy::Policy::Expanding);
+
+        verticalLayout->addItem(verticalSpacer_2);
+
+        pushButton = new QPushButton(demo02_config_direction);
+        pushButton->setObjectName("pushButton");
+        pushButton->setFont(font);
+        pushButton->setIconSize(QSize(25, 25));
+
+        verticalLayout->addWidget(pushButton);
+
+        verticalSpacer = new QSpacerItem(20, 40, QSizePolicy::Policy::Minimum, QSizePolicy::Policy::Expanding);
+
+        verticalLayout->addItem(verticalSpacer);
+
+        pushButton_4 = new QPushButton(demo02_config_direction);
+        pushButton_4->setObjectName("pushButton_4");
+        pushButton_4->setFont(font);
+        pushButton_4->setIconSize(QSize(25, 25));
+
+        verticalLayout->addWidget(pushButton_4);
+
+        verticalSpacer_3 = new QSpacerItem(20, 40, QSizePolicy::Policy::Minimum, QSizePolicy::Policy::Expanding);
+
+        verticalLayout->addItem(verticalSpacer_3);
+
+
+        horizontalLayout->addLayout(verticalLayout);
+
+        horizontalSpacer_2 = new QSpacerItem(40, 20, QSizePolicy::Policy::Expanding, QSizePolicy::Policy::Minimum);
+
+        horizontalLayout->addItem(horizontalSpacer_2);
+
+        pushButton_3 = new QPushButton(demo02_config_direction);
+        pushButton_3->setObjectName("pushButton_3");
+        pushButton_3->setFont(font);
+        pushButton_3->setIconSize(QSize(25, 25));
+
+        horizontalLayout->addWidget(pushButton_3);
+
+
+        verticalLayout_2->addLayout(horizontalLayout);
+
         pushButton_5 = new QPushButton(demo02_config_direction);
         pushButton_5->setObjectName("pushButton_5");
-        pushButton_5->setGeometry(QRect(250, 140, 89, 25));
+
+        verticalLayout_2->addWidget(pushButton_5);
+
 
         retranslateUi(demo02_config_direction);
 
@@ -64,10 +117,10 @@ public:
     void retranslateUi(QWidget *demo02_config_direction)
     {
         demo02_config_direction->setWindowTitle(QCoreApplication::translate("demo02_config_direction", "Form", nullptr));
-        pushButton_3->setText(QCoreApplication::translate("demo02_config_direction", "\345\217\263\350\275\254", nullptr));
-        pushButton_4->setText(QCoreApplication::translate("demo02_config_direction", "\345\220\216\351\200\200", nullptr));
-        pushButton->setText(QCoreApplication::translate("demo02_config_direction", "\345\211\215\350\277\233", nullptr));
         pushButton_2->setText(QCoreApplication::translate("demo02_config_direction", "\345\267\246\344\274\240", nullptr));
+        pushButton->setText(QCoreApplication::translate("demo02_config_direction", "\345\211\215\350\277\233", nullptr));
+        pushButton_4->setText(QCoreApplication::translate("demo02_config_direction", "\345\220\216\351\200\200", nullptr));
+        pushButton_3->setText(QCoreApplication::translate("demo02_config_direction", "\345\217\263\350\275\254", nullptr));
         pushButton_5->setText(QCoreApplication::translate("demo02_config_direction", "back", nullptr));
     } // retranslateUi
 

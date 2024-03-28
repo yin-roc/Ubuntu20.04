@@ -1,0 +1,14 @@
+In file included from [01m[K/home/yin-roc/Qt6.6/6.6.2/gcc_64/include/QtCore/qglobal.h:49[m[K,
+                 from [01m[K/home/yin-roc/Qt6.6/6.6.2/gcc_64/include/QtGui/qtguiglobal.h:7[m[K,
+                 from [01m[K/home/yin-roc/Qt6.6/6.6.2/gcc_64/include/QtWidgets/qtwidgetsglobal.h:7[m[K,
+                 from [01m[K/home/yin-roc/Qt6.6/6.6.2/gcc_64/include/QtWidgets/qwidget.h:7[m[K,
+                 from [01m[K/home/yin-roc/Qt6.6/6.6.2/gcc_64/include/QtWidgets/QWidget:1[m[K,
+                 from [01m[K/home/yin-roc/1_Code/Ubuntu20.04/Workspace/qt_ros_ws/catkin_demo02_ws/src/demo/src/mainwin.h:4[m[K,
+                 from [01m[K/home/yin-roc/1_Code/Ubuntu20.04/Workspace/qt_ros_ws/catkin_demo02_ws/src/demo/src/mainwin.cpp:1[m[K:
+[01m[K/home/yin-roc/1_Code/Ubuntu20.04/Workspace/qt_ros_ws/catkin_demo02_ws/src/demo/src/mainwin.cpp:[m[K In constructor ‘[01m[KMainWin::MainWin(QWidget*)[m[K’:
+[01m[K/home/yin-roc/1_Code/Ubuntu20.04/Workspace/qt_ros_ws/catkin_demo02_ws/src/demo/src/mainwin.cpp:14:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass Ui::MainWin[m[K’ has no member named ‘[01m[KQMessageLogger[m[K’
+   14 |     [01;31m[KqDebug[m[K() << "Signal and slot connected!";
+      |     [01;31m[K^~~~~~[m[K
+make[2]: *** [CMakeFiles/demo.dir/build.make:89：CMakeFiles/demo.dir/src/mainwin.cpp.o] 错误 1
+make[1]: *** [CMakeFiles/Makefile2:295：CMakeFiles/demo.dir/all] 错误 2
+make: *** [Makefile:141：all] 错误 2

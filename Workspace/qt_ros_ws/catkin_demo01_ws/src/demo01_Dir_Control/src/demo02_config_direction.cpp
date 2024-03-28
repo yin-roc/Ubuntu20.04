@@ -8,6 +8,8 @@ demo02_config_direction::demo02_config_direction(QWidget *parent)
     ui->setupUi(this);
 
     this->setWindowTitle("方向控制");
+    this->resize(300, 300);
+    this->move(800, 400);
 
     connect(ui->pushButton_5, &QPushButton::clicked, this, &demo02_config_direction::Send_back_to_main_slots);
 

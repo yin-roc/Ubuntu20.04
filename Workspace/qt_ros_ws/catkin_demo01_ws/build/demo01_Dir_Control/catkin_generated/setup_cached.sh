@@ -7,6 +7,4 @@
 # new environment variables
 
 # modified environment variables
-export LD_LIBRARY_PATH='/opt/ros/noetic/lib:/home/yin-roc/Qt6.6/6.6.2/gcc_64/lib:/home/yin-roc/Qt/Qt_installposition/lib'
-export PKG_CONFIG_PATH='/opt/ros/noetic/lib/pkgconfig:/home/yin-roc/Qt6.6/6.6.2/gcc_64/lib/pkgconfig'
 export PWD='/home/yin-roc/1_Code/Ubuntu20.04/Workspace/qt_ros_ws/catkin_demo01_ws/build/demo01_Dir_Control'

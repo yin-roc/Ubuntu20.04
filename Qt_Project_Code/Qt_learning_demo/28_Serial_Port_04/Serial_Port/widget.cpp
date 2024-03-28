@@ -79,7 +79,7 @@ void Widget::on_pushButton_clicked()
             case 6:serial->setDataBits(QSerialPort::Data6); break;
             case 7:serial->setDataBits(QSerialPort::Data7); break;
             case 8:serial->setDataBits(QSerialPort::Data8); break;
-            default:serial->setDataBits(QSerialPort::UnknownDataBits); break;
+            // default:serial->setDataBits(QSerialPort::UnknownDataBits); break;
         }
 
         // 校验位
@@ -88,7 +88,7 @@ void Widget::on_pushButton_clicked()
             case 0: serial->setParity(QSerialPort::EvenParity);break;
             case 1: serial->setParity(QSerialPort::OddParity);break;
             case 2: serial->setParity(QSerialPort::NoParity);break;
-            default: serial->setParity(QSerialPort::UnknownParity);break;
+            // default: serial->setParity(QSerialPort::UnknownParity);break;
         }
 
         // 停止位
@@ -97,7 +97,7 @@ void Widget::on_pushButton_clicked()
             case 0: serial->setStopBits(QSerialPort::OneStop);break;
             case 1: serial->setStopBits(QSerialPort::OneAndHalfStop);break;
             case 2: serial->setStopBits(QSerialPort::TwoStop);break;
-            default: serial->setStopBits(QSerialPort::UnknownStopBits);break;
+            // default: serial->setStopBits(QSerialPort::UnknownStopBits);break;
         }
 
         // 流控
