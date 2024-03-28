@@ -10,8 +10,7 @@ int main(int argc, char *argv[])
     // Qt
     QApplication a(argc, argv);
     MainWindow w;
-    w.setWindowTitle("小车控制界面");
-    w.resize(272, 164);
+    w.setWindowTitle("主选择界面");
     w.show();
     return a.exec();
 }

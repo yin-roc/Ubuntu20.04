@@ -10,15 +10,26 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
+find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS SerialPort)
+
+# find_package(Qt6 COMPONENTS SerialPort REQUIRED)
 
 set(PROJECT_SOURCES
-    src/main.cpp
-    src/ros_node_1.cpp
+    src/mainwindow.h
     src/ros_node_1.h
+    src/demo01_config_serial.h
+    src/demo02_config_direction.h
+
     src/main.cpp
     src/mainwindow.cpp
-    src/mainwindow.h
+    src/ros_node_1.cpp
+    src/demo01_config_serial.cpp
+    src/demo02_config_direction.cpp
+
     src/mainwindow.ui
+    src/demo01_config_serial.ui
+    src/demo02_config_direction.ui
+
 )
 
 ## Compile as C++11, supported in ROS Kinetic and newer
@@ -189,7 +200,7 @@ endif()
 # target_link_libraries(${PROJECT_NAME}_node
 #   ${catkin_LIBRARIES}
 # )
-target_link_libraries(demo01_Dir_Control PRIVATE Qt${QT_VERSION_MAJOR}::Widgets ${catkin_LIBRARIES})
+target_link_libraries(demo01_Dir_Control PRIVATE Qt${QT_VERSION_MAJOR}::Widgets ${catkin_LIBRARIES} Qt6::SerialPort)
 
 #############
 ## Install ##

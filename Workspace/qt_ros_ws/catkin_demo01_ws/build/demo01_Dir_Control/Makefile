@@ -584,6 +584,60 @@ demo01_Dir_Control_autogen/mocs_compilation.cpp.s:
 	$(MAKE) -f CMakeFiles/demo01_Dir_Control.dir/build.make CMakeFiles/demo01_Dir_Control.dir/demo01_Dir_Control_autogen/mocs_compilation.cpp.s
 .PHONY : demo01_Dir_Control_autogen/mocs_compilation.cpp.s
 
+src/demo01_config_serial.o: src/demo01_config_serial.cpp.o
+
+.PHONY : src/demo01_config_serial.o
+
+# target to build an object file
+src/demo01_config_serial.cpp.o:
+	$(MAKE) -f CMakeFiles/demo01_Dir_Control.dir/build.make CMakeFiles/demo01_Dir_Control.dir/src/demo01_config_serial.cpp.o
+.PHONY : src/demo01_config_serial.cpp.o
+
+src/demo01_config_serial.i: src/demo01_config_serial.cpp.i
+
+.PHONY : src/demo01_config_serial.i
+
+# target to preprocess a source file
+src/demo01_config_serial.cpp.i:
+	$(MAKE) -f CMakeFiles/demo01_Dir_Control.dir/build.make CMakeFiles/demo01_Dir_Control.dir/src/demo01_config_serial.cpp.i
+.PHONY : src/demo01_config_serial.cpp.i
+
+src/demo01_config_serial.s: src/demo01_config_serial.cpp.s
+
+.PHONY : src/demo01_config_serial.s
+
+# target to generate assembly for a file
+src/demo01_config_serial.cpp.s:
+	$(MAKE) -f CMakeFiles/demo01_Dir_Control.dir/build.make CMakeFiles/demo01_Dir_Control.dir/src/demo01_config_serial.cpp.s
+.PHONY : src/demo01_config_serial.cpp.s
+
+src/demo02_config_direction.o: src/demo02_config_direction.cpp.o
+
+.PHONY : src/demo02_config_direction.o
+
+# target to build an object file
+src/demo02_config_direction.cpp.o:
+	$(MAKE) -f CMakeFiles/demo01_Dir_Control.dir/build.make CMakeFiles/demo01_Dir_Control.dir/src/demo02_config_direction.cpp.o
+.PHONY : src/demo02_config_direction.cpp.o
+
+src/demo02_config_direction.i: src/demo02_config_direction.cpp.i
+
+.PHONY : src/demo02_config_direction.i
+
+# target to preprocess a source file
+src/demo02_config_direction.cpp.i:
+	$(MAKE) -f CMakeFiles/demo01_Dir_Control.dir/build.make CMakeFiles/demo01_Dir_Control.dir/src/demo02_config_direction.cpp.i
+.PHONY : src/demo02_config_direction.cpp.i
+
+src/demo02_config_direction.s: src/demo02_config_direction.cpp.s
+
+.PHONY : src/demo02_config_direction.s
+
+# target to generate assembly for a file
+src/demo02_config_direction.cpp.s:
+	$(MAKE) -f CMakeFiles/demo01_Dir_Control.dir/build.make CMakeFiles/demo01_Dir_Control.dir/src/demo02_config_direction.cpp.s
+.PHONY : src/demo02_config_direction.cpp.s
+
 src/main.o: src/main.cpp.o
 
 .PHONY : src/main.o
@@ -711,6 +765,12 @@ help:
 	@echo "... demo01_Dir_Control_autogen/mocs_compilation.o"
 	@echo "... demo01_Dir_Control_autogen/mocs_compilation.i"
 	@echo "... demo01_Dir_Control_autogen/mocs_compilation.s"
+	@echo "... src/demo01_config_serial.o"
+	@echo "... src/demo01_config_serial.i"
+	@echo "... src/demo01_config_serial.s"
+	@echo "... src/demo02_config_direction.o"
+	@echo "... src/demo02_config_direction.i"
+	@echo "... src/demo02_config_direction.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

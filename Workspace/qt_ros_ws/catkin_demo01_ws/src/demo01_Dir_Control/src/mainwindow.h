@@ -2,9 +2,10 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include "ros/ros.h"
-#include "geometry_msgs/Twist.h"
-#include "ros_node_1.h"
+#include <QtSerialPort/QSerialPortInfo>
+#include <QtSerialPort/QSerialPort>
+#include "demo02_config_direction.h"
+#include "demo01_config_serial.h"
 
 namespace Ui {
 class MainWindow;
@@ -14,23 +15,22 @@ class MainWindow : public QMainWindow
 {
     Q_OBJECT
 
-private:
-    // 创建一个全局的ROSController对象
-    ROSController rosController;
-
 public:
     explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+    void deal_demo01();
+    void deal_demo02();
+
 
 private slots:
-    void on_pushButton_3_clicked();
-    void on_pushButton_2_clicked();
-    void on_pushButton_4_clicked();
     void on_pushButton_clicked();
+    void on_pushButton_2_clicked();
 
 
 private:
     Ui::MainWindow *ui;
+    demo02_config_direction dir_screen;
+    demo01_Config_Serial ser_screen;
 
 };
 

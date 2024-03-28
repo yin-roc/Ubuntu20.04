@@ -7,6 +7,25 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+
+
+    // 接收 demo02_config_direction 申请返回信号
+    connect(&dir_screen, &demo02_config_direction::back_to_main_Signal, this, &MainWindow::deal_demo02);
+
+    // 接收 demo01_Config_Serial 申请返回信号
+    connect(&ser_screen, &demo01_Config_Serial::back_to_main_Signal, this, &MainWindow::deal_demo01);
+}
+
+// demo01_Config_Serial 返回主界面
+void MainWindow::deal_demo01(){
+    ser_screen.hide();
+    this->show();
+}
+
+// demo02_config_direction 返回主界面
+void MainWindow::deal_demo02(){
+    dir_screen.hide();
+    this->show();
 }
 
 MainWindow::~MainWindow()
@@ -14,29 +33,15 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-// Qt界面中的按钮点击事件函数
-// 前进
 void MainWindow::on_pushButton_clicked()
 {
-    rosController.publishCommand(0.5, 0.0); // 假设向前移动速度为0.5，角速度为0.0
-
+    ser_screen.show();
+    this->hide();
 }
 
-// 后退
-void MainWindow::on_pushButton_4_clicked()
-{
-    rosController.publishCommand(-0.5, 0.0); // 假设向后移动速度为-0.5，角速度为0.0
-}
-
-// 左转
 void MainWindow::on_pushButton_2_clicked()
 {
-    rosController.publishCommand(0.0, 0.5); // 假设向左移动速度为0.0，角速度为0.5
-}
-
-// 右转
-void MainWindow::on_pushButton_3_clicked()
-{
-    rosController.publishCommand(0.0, -0.5); // 假设向右移动速度为0.0，角速度为-0.5
+    dir_screen.show();
+    this->hide();
 }
 

@@ -1,0 +1,11 @@
+[ 12%] [34m[1mAutomatic MOC and UIC for target demo01_Dir_Control[0m
+[ 12%] Built target demo01_Dir_Control_autogen
+[35m[1mScanning dependencies of target demo01_Dir_Control[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/demo01_Dir_Control.dir/src/demo01_config_serial.cpp.o[0m
+[ 37%] [32m[1mLinking CXX executable /home/yin-roc/1_Code/Ubuntu20.04/Workspace/qt_ros_ws/catkin_demo01_ws/devel/lib/demo01_Dir_Control/demo01_Dir_Control[0m
+/usr/bin/ld: CMakeFiles/demo01_Dir_Control.dir/demo01_Dir_Control_autogen/mocs_compilation.cpp.o: in function `demo01_Config_Serial::qt_static_metacall(QObject*, QMetaObject::Call, int, void**)':
+/home/yin-roc/1_Code/Ubuntu20.04/Workspace/qt_ros_ws/catkin_demo01_ws/build/demo01_Dir_Control/demo01_Dir_Control_autogen/UVLADIE3JM/moc_demo01_config_serial.cpp:124: undefined reference to `demo01_Config_Serial::Send_back_to_main_slots()'
+collect2: error: ld returned 1 exit status
+make[2]: *** [CMakeFiles/demo01_Dir_Control.dir/build.make:182：/home/yin-roc/1_Code/Ubuntu20.04/Workspace/qt_ros_ws/catkin_demo01_ws/devel/lib/demo01_Dir_Control/demo01_Dir_Control] 错误 1
+make[1]: *** [CMakeFiles/Makefile2:268：CMakeFiles/demo01_Dir_Control.dir/all] 错误 2
+make: *** [Makefile:141：all] 错误 2

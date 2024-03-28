@@ -29,7 +29,14 @@
 		"/usr/include/x86_64-linux-gnu",
 		"/usr/include"
 	],
-	"MOC_MACRO_NAMES" : [ "Q_OBJECT", "Q_GADGET", "Q_NAMESPACE" ],
+	"MOC_MACRO_NAMES" : 
+	[
+		"Q_OBJECT",
+		"Q_GADGET",
+		"Q_NAMESPACE",
+		"Q_GADGET_EXPORT",
+		"Q_NAMESPACE_EXPORT"
+	],
 	"MOC_OPTIONS" : [],
 	"MOC_PATH_PREFIX" : true,
 	"MOC_PREDEFS_CMD" : 
@@ -46,9 +53,9 @@
 	"MULTI_CONFIG" : false,
 	"PARALLEL" : 6,
 	"PARSE_CACHE_FILE" : "/home/yin-roc/1_Code/Ubuntu20.04/Workspace/qt_ros_ws/catkin_demo01_ws/build/demo01_Dir_Control/gtest/googletest/CMakeFiles/gtest_main_autogen.dir/ParseCache.txt",
-	"QT_MOC_EXECUTABLE" : "/usr/lib/qt5/bin/moc",
-	"QT_UIC_EXECUTABLE" : "/usr/lib/qt5/bin/uic",
-	"QT_VERSION_MAJOR" : 5,
+	"QT_MOC_EXECUTABLE" : "/home/yin-roc/Qt6.6/6.6.2/gcc_64/./libexec/moc",
+	"QT_UIC_EXECUTABLE" : "/home/yin-roc/Qt6.6/6.6.2/gcc_64/./libexec/uic",
+	"QT_VERSION_MAJOR" : 6,
 	"SETTINGS_FILE" : "/home/yin-roc/1_Code/Ubuntu20.04/Workspace/qt_ros_ws/catkin_demo01_ws/build/demo01_Dir_Control/gtest/googletest/CMakeFiles/gtest_main_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[

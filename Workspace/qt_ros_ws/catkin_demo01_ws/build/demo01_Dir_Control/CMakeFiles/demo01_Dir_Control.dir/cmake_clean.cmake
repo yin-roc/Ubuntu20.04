@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "/home/yin-roc/1_Code/Ubuntu20.04/Workspace/qt_ros_ws/catkin_demo01_ws/devel/lib/demo01_Dir_Control/demo01_Dir_Control"
   "/home/yin-roc/1_Code/Ubuntu20.04/Workspace/qt_ros_ws/catkin_demo01_ws/devel/lib/demo01_Dir_Control/demo01_Dir_Control.pdb"
   "CMakeFiles/demo01_Dir_Control.dir/demo01_Dir_Control_autogen/mocs_compilation.cpp.o"
+  "CMakeFiles/demo01_Dir_Control.dir/src/demo01_config_serial.cpp.o"
+  "CMakeFiles/demo01_Dir_Control.dir/src/demo02_config_direction.cpp.o"
   "CMakeFiles/demo01_Dir_Control.dir/src/main.cpp.o"
   "CMakeFiles/demo01_Dir_Control.dir/src/mainwindow.cpp.o"
   "CMakeFiles/demo01_Dir_Control.dir/src/ros_node_1.cpp.o"

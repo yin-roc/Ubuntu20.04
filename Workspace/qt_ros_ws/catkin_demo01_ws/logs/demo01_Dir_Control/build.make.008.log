@@ -1,0 +1,17 @@
+[ 12%] [34m[1mAutomatic MOC and UIC for target demo01_Dir_Control[0m
+[ 12%] Built target demo01_Dir_Control_autogen
+[35m[1mScanning dependencies of target demo01_Dir_Control[0m
+[ 37%] [32mBuilding CXX object CMakeFiles/demo01_Dir_Control.dir/src/mainwindow.cpp.o[0m
+[ 37%] [32mBuilding CXX object CMakeFiles/demo01_Dir_Control.dir/src/demo01_config_serial.cpp.o[0m
+[01m[K/home/yin-roc/1_Code/Ubuntu20.04/Workspace/qt_ros_ws/catkin_demo01_ws/src/demo01_Dir_Control/src/demo01_config_serial.cpp:[m[K In constructor ‘[01m[Kdemo01_Config_Serial::demo01_Config_Serial(QWidget*)[m[K’:
+[01m[K/home/yin-roc/1_Code/Ubuntu20.04/Workspace/qt_ros_ws/catkin_demo01_ws/src/demo01_Dir_Control/src/demo01_config_serial.cpp:10:105:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K}[m[K’ token
+   10 |     connect(ui->pushButton, &QPushButton::clicked, this, &demo01_Config_Serial::Send_back_to_main_slots)
+      |                                                                                                         [01;31m[K^[m[K
+      |                                                                                                         [32m[K;[m[K
+   11 | 
+   12 | [32m[K}[m[K
+      | [32m[K~[m[K                                                                                                        
+make[2]: *** [CMakeFiles/demo01_Dir_Control.dir/build.make:115：CMakeFiles/demo01_Dir_Control.dir/src/demo01_config_serial.cpp.o] 错误 1
+make[2]: *** 正在等待未完成的任务....
+make[1]: *** [CMakeFiles/Makefile2:268：CMakeFiles/demo01_Dir_Control.dir/all] 错误 2
+make: *** [Makefile:141：all] 错误 2

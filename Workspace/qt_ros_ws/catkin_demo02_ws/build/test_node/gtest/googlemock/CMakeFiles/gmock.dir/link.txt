@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -g  -shared -Wl,-soname,libgmockd.so -o ../lib/libgmockd.so CMakeFiles/gmock.dir/gmock_autogen/mocs_compilation.cpp.o CMakeFiles/gmock.dir/src/gmock-all.cc.o  -Wl,-rpath,/home/yin-roc/1_Code/Ubuntu20.04/Workspace/qt_ros_ws/catkin_demo02_ws/build/test_node/gtest/lib ../lib/libgtestd.so -pthread 
