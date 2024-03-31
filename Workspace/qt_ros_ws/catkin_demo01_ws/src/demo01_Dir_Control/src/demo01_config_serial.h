@@ -27,12 +27,27 @@ signals:
 private slots:
     void Send_back_to_main_slots();
     void TimerEvent_1();
-
+    void on_pushButton_open_serial_clicked();
+    void handleSerialError(QSerialPort::SerialPortError error);
+    void on_checkBox_clicked();
+    void on_checkBox_2_clicked();
+    void on_checkBox_3_clicked();
+    void on_pushButton_send_clicked();
+    void on_pushButton_clear_send_clicked();
+    void on_pushButton_clear_receive_clicked();
+    void serialPort_readyRead();
+    void on_pushButton_reset_send_num_clicked();
+    void on_pushButton_reset_receive_num_clicked();
 
 private:
     Ui::demo01_Config_Serial *ui;
     QTimer* timer;
     QStringList portStringList;
+    QSerialPort * serial;
+    QString Sendtext;
+    long Send_Byte;
+    QString Receivetext;
+    long Receive_Byte;
 };
 
 #endif // DEMO01_CONFIG_SERIAL_H

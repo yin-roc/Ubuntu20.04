@@ -1,0 +1,8 @@
+[01m[K/home/yin-roc/1_Code/Ubuntu20.04/Workspace/qt_ros_ws/catkin_demo01_ws/src/demo01_Dir_Control/src/demo01_config_serial.cpp:[m[K In constructor ‘[01m[Kdemo01_Config_Serial::demo01_Config_Serial(QWidget*)[m[K’:
+[01m[K/home/yin-roc/1_Code/Ubuntu20.04/Workspace/qt_ros_ws/catkin_demo01_ws/src/demo01_Dir_Control/src/demo01_config_serial.cpp:19:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass Ui::demo01_Config_Serial[m[K’ has no member named ‘[01m[KpushButton[m[K’; did you mean ‘[01m[KpushButton_back[m[K’?
+   19 |     connect(ui->[01;31m[KpushButton[m[K, &QPushButton::clicked, this, &demo01_Config_Serial::Send_back_to_main_slots);
+      |                 [01;31m[K^~~~~~~~~~[m[K
+      |                 [32m[KpushButton_back[m[K
+make[2]: *** [CMakeFiles/demo01_Dir_Control.dir/build.make:115：CMakeFiles/demo01_Dir_Control.dir/src/demo01_config_serial.cpp.o] 错误 1
+make[1]: *** [CMakeFiles/Makefile2:268：CMakeFiles/demo01_Dir_Control.dir/all] 错误 2
+make: *** [Makefile:141：all] 错误 2

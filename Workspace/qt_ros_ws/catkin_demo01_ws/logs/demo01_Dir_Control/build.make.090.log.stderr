@@ -1,0 +1,11 @@
+[01m[K/home/yin-roc/1_Code/Ubuntu20.04/Workspace/qt_ros_ws/catkin_demo01_ws/src/demo01_Dir_Control/src/demo01_config_serial.cpp:[m[K In constructor ‘[01m[Kdemo01_Config_Serial::demo01_Config_Serial(QWidget*)[m[K’:
+[01m[K/home/yin-roc/1_Code/Ubuntu20.04/Workspace/qt_ros_ws/catkin_demo01_ws/src/demo01_Dir_Control/src/demo01_config_serial.cpp:37:74:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[Kvoid demo01_Config_Serial::serialPort_readyRead()[m[K’
+   37 |     connect(serial, &QSerialPort::readyRead, this, [01;31m[Kdemo01_Config_Serial::serialPort_readyRead[m[K);
+      |                                                    [01;31m[K~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/yin-roc/1_Code/Ubuntu20.04/Workspace/qt_ros_ws/catkin_demo01_ws/src/demo01_Dir_Control/src/demo01_config_serial.cpp:1[m[K:
+[01m[K/home/yin-roc/1_Code/Ubuntu20.04/Workspace/qt_ros_ws/catkin_demo01_ws/src/demo01_Dir_Control/src/demo01_config_serial.h:38:10:[m[K [01;36m[Knote: [m[Kdeclared here
+   38 |     void [01;36m[KserialPort_readyRead[m[K();
+      |          [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/demo01_Dir_Control.dir/build.make:115：CMakeFiles/demo01_Dir_Control.dir/src/demo01_config_serial.cpp.o] 错误 1
+make[1]: *** [CMakeFiles/Makefile2:268：CMakeFiles/demo01_Dir_Control.dir/all] 错误 2
+make: *** [Makefile:141：all] 错误 2

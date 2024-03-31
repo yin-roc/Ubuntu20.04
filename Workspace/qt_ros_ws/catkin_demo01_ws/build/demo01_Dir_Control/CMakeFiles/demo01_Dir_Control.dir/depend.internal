@@ -418,6 +418,7 @@ CMakeFiles/demo01_Dir_Control.dir/src/demo01_config_serial.cpp.o
  /home/yin-roc/Qt6.6/6.6.2/gcc_64/include/QtGui/qkeysequence.h
  /home/yin-roc/Qt6.6/6.6.2/gcc_64/include/QtGui/qpaintdevice.h
  /home/yin-roc/Qt6.6/6.6.2/gcc_64/include/QtGui/qpalette.h
+ /home/yin-roc/Qt6.6/6.6.2/gcc_64/include/QtGui/qpen.h
  /home/yin-roc/Qt6.6/6.6.2/gcc_64/include/QtGui/qpicture.h
  /home/yin-roc/Qt6.6/6.6.2/gcc_64/include/QtGui/qpixelformat.h
  /home/yin-roc/Qt6.6/6.6.2/gcc_64/include/QtGui/qpixmap.h
@@ -427,7 +428,10 @@ CMakeFiles/demo01_Dir_Control.dir/src/demo01_config_serial.cpp.o
  /home/yin-roc/Qt6.6/6.6.2/gcc_64/include/QtGui/qrgb.h
  /home/yin-roc/Qt6.6/6.6.2/gcc_64/include/QtGui/qrgba64.h
  /home/yin-roc/Qt6.6/6.6.2/gcc_64/include/QtGui/qscreen.h
+ /home/yin-roc/Qt6.6/6.6.2/gcc_64/include/QtGui/qtextcursor.h
  /home/yin-roc/Qt6.6/6.6.2/gcc_64/include/QtGui/qtextdocument.h
+ /home/yin-roc/Qt6.6/6.6.2/gcc_64/include/QtGui/qtextformat.h
+ /home/yin-roc/Qt6.6/6.6.2/gcc_64/include/QtGui/qtextoption.h
  /home/yin-roc/Qt6.6/6.6.2/gcc_64/include/QtGui/qtgui-config.h
  /home/yin-roc/Qt6.6/6.6.2/gcc_64/include/QtGui/qtguiexports.h
  /home/yin-roc/Qt6.6/6.6.2/gcc_64/include/QtGui/qtguiglobal.h
@@ -443,23 +447,33 @@ CMakeFiles/demo01_Dir_Control.dir/src/demo01_config_serial.cpp.o
  /home/yin-roc/Qt6.6/6.6.2/gcc_64/include/QtSerialPort/qserialportinfo.h
  /home/yin-roc/Qt6.6/6.6.2/gcc_64/include/QtSerialPort/qtserialportexports.h
  /home/yin-roc/Qt6.6/6.6.2/gcc_64/include/QtWidgets/QApplication
+ /home/yin-roc/Qt6.6/6.6.2/gcc_64/include/QtWidgets/QCheckBox
  /home/yin-roc/Qt6.6/6.6.2/gcc_64/include/QtWidgets/QComboBox
  /home/yin-roc/Qt6.6/6.6.2/gcc_64/include/QtWidgets/QHBoxLayout
  /home/yin-roc/Qt6.6/6.6.2/gcc_64/include/QtWidgets/QLabel
+ /home/yin-roc/Qt6.6/6.6.2/gcc_64/include/QtWidgets/QMessageBox
  /home/yin-roc/Qt6.6/6.6.2/gcc_64/include/QtWidgets/QPushButton
+ /home/yin-roc/Qt6.6/6.6.2/gcc_64/include/QtWidgets/QSpacerItem
+ /home/yin-roc/Qt6.6/6.6.2/gcc_64/include/QtWidgets/QTextEdit
+ /home/yin-roc/Qt6.6/6.6.2/gcc_64/include/QtWidgets/QVBoxLayout
  /home/yin-roc/Qt6.6/6.6.2/gcc_64/include/QtWidgets/QWidget
  /home/yin-roc/Qt6.6/6.6.2/gcc_64/include/QtWidgets/qabstractbutton.h
  /home/yin-roc/Qt6.6/6.6.2/gcc_64/include/QtWidgets/qabstractitemdelegate.h
+ /home/yin-roc/Qt6.6/6.6.2/gcc_64/include/QtWidgets/qabstractscrollarea.h
  /home/yin-roc/Qt6.6/6.6.2/gcc_64/include/QtWidgets/qabstractslider.h
  /home/yin-roc/Qt6.6/6.6.2/gcc_64/include/QtWidgets/qabstractspinbox.h
  /home/yin-roc/Qt6.6/6.6.2/gcc_64/include/QtWidgets/qapplication.h
  /home/yin-roc/Qt6.6/6.6.2/gcc_64/include/QtWidgets/qboxlayout.h
+ /home/yin-roc/Qt6.6/6.6.2/gcc_64/include/QtWidgets/qcheckbox.h
  /home/yin-roc/Qt6.6/6.6.2/gcc_64/include/QtWidgets/qcombobox.h
+ /home/yin-roc/Qt6.6/6.6.2/gcc_64/include/QtWidgets/qdialog.h
+ /home/yin-roc/Qt6.6/6.6.2/gcc_64/include/QtWidgets/qdialogbuttonbox.h
  /home/yin-roc/Qt6.6/6.6.2/gcc_64/include/QtWidgets/qframe.h
  /home/yin-roc/Qt6.6/6.6.2/gcc_64/include/QtWidgets/qgridlayout.h
  /home/yin-roc/Qt6.6/6.6.2/gcc_64/include/QtWidgets/qlabel.h
  /home/yin-roc/Qt6.6/6.6.2/gcc_64/include/QtWidgets/qlayout.h
  /home/yin-roc/Qt6.6/6.6.2/gcc_64/include/QtWidgets/qlayoutitem.h
+ /home/yin-roc/Qt6.6/6.6.2/gcc_64/include/QtWidgets/qmessagebox.h
  /home/yin-roc/Qt6.6/6.6.2/gcc_64/include/QtWidgets/qpushbutton.h
  /home/yin-roc/Qt6.6/6.6.2/gcc_64/include/QtWidgets/qrubberband.h
  /home/yin-roc/Qt6.6/6.6.2/gcc_64/include/QtWidgets/qsizepolicy.h
@@ -468,6 +482,7 @@ CMakeFiles/demo01_Dir_Control.dir/src/demo01_config_serial.cpp.o
  /home/yin-roc/Qt6.6/6.6.2/gcc_64/include/QtWidgets/qstyleoption.h
  /home/yin-roc/Qt6.6/6.6.2/gcc_64/include/QtWidgets/qtabbar.h
  /home/yin-roc/Qt6.6/6.6.2/gcc_64/include/QtWidgets/qtabwidget.h
+ /home/yin-roc/Qt6.6/6.6.2/gcc_64/include/QtWidgets/qtextedit.h
  /home/yin-roc/Qt6.6/6.6.2/gcc_64/include/QtWidgets/qtwidgets-config.h
  /home/yin-roc/Qt6.6/6.6.2/gcc_64/include/QtWidgets/qtwidgetsexports.h
  /home/yin-roc/Qt6.6/6.6.2/gcc_64/include/QtWidgets/qtwidgetsglobal.h
