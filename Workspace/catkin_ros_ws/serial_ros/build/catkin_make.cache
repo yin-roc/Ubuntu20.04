@@ -1,0 +1,2 @@
+serial_pkg
+-DCMAKE_BUILD_TYPE=RelWithDebInfo -DCATKIN_DEVEL_PREFIX=/home/yin-roc/1_Code/Ubuntu20.04/Workspace/catkin_ros_ws/serial_ros/devel -DCMAKE_INSTALL_PREFIX=/home/yin-roc/1_Code/Ubuntu20.04/Workspace/catkin_ros_ws/serial_ros/install -G Unix Makefiles

@@ -1,15 +1,14 @@
-#include "hfserial.h"
+#include "mower_ctrl/hfserial.h"
 #include "sstream"
+#include "serial/serial.h"
+#include <cmath>
 
-Serialctrl::Serialctrl(){
-    // 初始化节点，加上随机前缀，保证不会与同名节点发生冲突
-    ros::init(argc, argv, "hf_serial", ros::init_options::AnonymousName);
+Serialctrl::Serialctrl(){   
     // 私有空间
     ros::NodeHandle nh("~");
-    serial_port_ = nh.param<std::string>("serial_port", "/dev/ttyTHS1");  
+    serial_port_ = nh.param<std::string>("serial_port", "/dev/ttyUSB0");  
     serial_baudrate_ = nh.param<int>("serial_baudrate", 115200);                                        
     control_rate_ = nh.param<int>("control_rate", 10);                                        
-    ros::Rate rate(control_rate_); 
 
     tx_command = {
         "#camera,ERROR*\n", 
@@ -28,10 +27,14 @@ Serialctrl::Serialctrl(){
 
     state = AUTOState::START;
 
+    ser = new serial::Serial();
     // 初始化串口
     try
     {
-        ser = new serial::Serial(serial_port_, serial_baudrate_, 0.5/control_rate_);
+        // ser = serial::Serial(serial_port_, serial_baudrate_, 0.5 / control_rate_);
+        ser->setPort(serial_port_);
+        ser->setBaudrate(serial_baudrate_);
+        ser->setTimeout(1000 * 0.5 / control_rate_, 0, 0, 0, 0); // 设置读取和写入超时
     }
     catch(const std::exception& e)
     {
@@ -41,52 +44,50 @@ Serialctrl::Serialctrl(){
     
     // 发送话题
     ros::NodeHandle n;
-    ros::Publisher RX_num_publisher = n.advertise<std_msgs::Int8>("RX_num", 1);
-    ros::Publisher RX_info_publisher = n.advertise<mower_ctrl::SensorValue>("RX_info", 1);
-    ros::Publisher carinfo_publisher = n.advertise<std_msgs::String>("car_info", 1);
+    RX_num_publisher = n.advertise<std_msgs::Int8>("RX_num", 10);
+    RX_info_publisher = n.advertise<mower_ctrl::SensorValue>("RX_info", 10);
+    carinfo_publisher = n.advertise<std_msgs::String>("car_info", 10);
 
     // 接收话题
-    ros::Subscriber TX_num_subscriber = n.subscribe("TX_num", 1, &TXHandler);
-    ros::Subscriber ctrl_subscriber = n.subscribe("ctrl_command", 1, &CtrlCommandHandler);
-
-    double last_speed = 0;
-    double last_angle = 0;
-    double last_rspeed = 0;
-    double last_wateren = 0;
-    double driving_speed = 0;
-    double steering_angle = 0;
-    double roll_speed = 0;
-    double water_en = 0;
+    TX_num_subscriber = n.subscribe("TX_num", 10, &Serialctrl::TXHandler, this);
+    ctrl_subscriber = n.subscribe("ctrl_command", 10, &Serialctrl::CtrlCommandHandler, this);
 }
 
-void Serialctrl::del(){
-    try {
-            if (ser->isOpen) {
-                ser->close;
-            }
-        } catch (...) {
-            // 忽略关闭串口时可能出现的异常
+
+Serialctrl::~Serialctrl(){
+    try
+    {
+        if(ser->isOpen()){
+            ser->close();
         }
+    }
+    catch(...)
+    {} 
+    delete ser;   
 }
 
-void Serialctrl::TXHandler(int m_tx_num){
-    if(tx_num != m_tx_num){
-        tx_num = m_tx_num;
+
+void Serialctrl::TXHandler(const std_msgs::Int8::ConstPtr & m_tx_num){
+    if(tx_num != m_tx_num->data){
+        tx_num = m_tx_num->data;
         tx_count = 0;
     }
-    if((m_tx_num > 0) && (tx_count == 0)){
+    if((m_tx_num->data > 0) && (tx_count == 0)){
         ROS_INFO("%s", tx_command[tx_num-1].c_str());
         ser->write(tx_command[tx_num-1]);
         CLTtime = 9;
+        tx_count += 1; //?????
+    if(tx_count == 3)
         tx_count = 0;
     }
 }
 
-void  Serialctrl::CtrlCommandHandler(const mower_ctrl::CtrlCommand::constPtr & ctrl_msg){
+
+void Serialctrl::CtrlCommandHandler(const mower_ctrl::CtrlCommand& ctrl_msg){
     if((ctrl_count_down == 0) && (state == AUTOState::WORK))
     {
-        float32 driving_speed = round(msg->driving_speed, 2);
-        float32 steering_angle = round(msg->steering_angle, 2);
+        float driving_speed = std::round(ctrl_msg.driving_speed * 100) / 100;
+        float steering_angle = std::round(ctrl_msg.steering_angle * 100) / 100;
         std::stringstream ss_ctrl_command_str;
         ss_ctrl_command_str << "move " << std::fixed << std::setprecision(2) << driving_speed << " " << steering_angle << std::endl;
         std::string ctrl_command_str = ss_ctrl_command_str.str();
@@ -96,6 +97,28 @@ void  Serialctrl::CtrlCommandHandler(const mower_ctrl::CtrlCommand::constPtr & c
         ctrl_count_down = 1;
     }
 }
+
+
+void Serialctrl::RxCommand(int num){
+    ROS_INFO("rx command num:%d", num);
+    RX_num.data = num;
+    RX_num_publisher.publish(RX_num);
+}
+
+
+void Serialctrl::FreeCLITxCommand(){
+    if(CLTtime > 0)
+        CLTtime -= 1;
+    else{
+        std::string free_command = "CLI_free\n";
+        ROS_INFO("free_command");
+        ser->write(free_command);
+        CLTtime = 9;
+    }
+}
+
+
+
 
 
 

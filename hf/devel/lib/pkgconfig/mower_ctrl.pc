@@ -3,6 +3,6 @@ prefix=/home/yin-roc/1_Code/Ubuntu20.04/hf/devel
 Name: mower_ctrl
 Description: Description of mower_ctrl
 Version: 0.0.0
-Cflags: 
+Cflags: -I/home/yin-roc/1_Code/Ubuntu20.04/hf/devel/include
 Libs: -L${prefix}/lib 
-Requires: 
+Requires: roscpp rospy std_msgs message_runtime

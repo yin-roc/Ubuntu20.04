@@ -12,6 +12,7 @@ demo01_Config_Serial::demo01_Config_Serial(QWidget *parent)
     this->resize(540, 375);
     this->move(800, 400);
 
+    // 定时器定时刷新设备接口设备
     timer = new QTimer(this);
     timer->start(500);
     connect(timer, &QTimer::timeout, this, &demo01_Config_Serial::TimerEvent_1);
@@ -134,13 +135,14 @@ void demo01_Config_Serial::on_pushButton_open_serial_clicked()
 }
 
 
+// 串口打开失败弹窗内容
 void demo01_Config_Serial::handleSerialError(QSerialPort::SerialPortError error) {
     if (error != QSerialPort::NoError) {
         QMessageBox::information(this, "错误提示", "无法打开串口", QMessageBox::Ok);
     }
 }
 
-
+// 以下三种：设置三个选择框同时只能选择一个
 void demo01_Config_Serial::on_checkBox_clicked()
 {
     ui->checkBox->setCheckState(Qt::Checked);
@@ -165,6 +167,7 @@ void demo01_Config_Serial::on_checkBox_3_clicked()
 }
 
 
+//
 void demo01_Config_Serial::on_pushButton_send_clicked()
 {
     QByteArray bytearray;
@@ -176,18 +179,21 @@ void demo01_Config_Serial::on_pushButton_send_clicked()
 }
 
 
+// 清空接收区内容
 void demo01_Config_Serial::on_pushButton_clear_send_clicked()
 {
     ui->textEdit_Send->clear();
 }
 
 
+// 清空发送区内容
 void demo01_Config_Serial::on_pushButton_clear_receive_clicked()
 {
     ui->textEdit_Receive->clear();
 }
 
 
+// 接收区接收数据显示：hex和ASCII
 void demo01_Config_Serial::serialPort_readyRead(){
     QString last_text;
     int length;
@@ -216,6 +222,7 @@ void demo01_Config_Serial::serialPort_readyRead(){
 }
 
 
+// 重置接收数据计数
 void demo01_Config_Serial::on_pushButton_reset_receive_num_clicked()
 {
     Receive_Byte = 0;
@@ -223,6 +230,7 @@ void demo01_Config_Serial::on_pushButton_reset_receive_num_clicked()
 }
 
 
+// 重置发送数据计数
 void demo01_Config_Serial::on_pushButton_reset_send_num_clicked()
 {
     Send_Byte = 0;

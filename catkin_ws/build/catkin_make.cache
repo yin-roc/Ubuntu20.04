@@ -1,2 +1,2 @@
-atr_pkg:imu_pkg:lidar_pkg:qq_msgs:slam_pkg:ssr_pkg:vel_pkg
+atr_pkg:imu_pkg:lidar_pkg:nav_pkg:qq_msgs:slam_pkg:ssr_pkg:vel_pkg
 -DCATKIN_DEVEL_PREFIX=/home/yin-roc/1_Code/Ubuntu20.04/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/yin-roc/1_Code/Ubuntu20.04/catkin_ws/install -G Unix Makefiles

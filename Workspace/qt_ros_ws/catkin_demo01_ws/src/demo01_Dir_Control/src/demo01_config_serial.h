@@ -42,12 +42,12 @@ private slots:
 private:
     Ui::demo01_Config_Serial *ui;
     QTimer* timer;
-    QStringList portStringList;
+    QStringList portStringList; // 设备已接串口
     QSerialPort * serial;
-    QString Sendtext;
-    long Send_Byte;
-    QString Receivetext;
-    long Receive_Byte;
+    QString Sendtext; // 发送的字符串
+    long Send_Byte; // 发送内容的长度
+    QString Receivetext; // 接收的字符串
+    long Receive_Byte; // 接收内容的长度
 };
 
 #endif // DEMO01_CONFIG_SERIAL_H
