@@ -16,5 +16,6 @@
     <!-- amcl 定位节点 -->
     <node name="amcl" pkg="amcl" type="amcl"/>
     
-
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find nav_pkg)/rviz/nav.rviz"/>
+    
 </launch>
