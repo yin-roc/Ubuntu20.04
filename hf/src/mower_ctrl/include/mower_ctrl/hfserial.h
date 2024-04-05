@@ -21,23 +21,35 @@ enum class AUTOState{
     START = 3
 };
 
-class Serialctrl{
+class Serialctrl{    
 public:
-    
-public:
+    serial::Serial * ser;
     Serialctrl();
     ~Serialctrl();
     void TXHandler(int m_tx_num);
     void TXHandler(const std_msgs::Int8::ConstPtr & tx_num);
     void CtrlCommandHandler(const mower_ctrl::CtrlCommand& ctrl_msg);
-    void RxCommand(int  num);
+    void RxCommand(int num);
     void FreeCLITxCommand();
     int Return_control_rate_(){ return control_rate_;}
-
-public:
+    AUTOState Return_current_state(){ return state;}
+    std::string AUTOState_to_String( AUTOState m_state);
+    void set_CLTime(double t){ CLTtime = t;}
+    void set_state(AUTOState m_state){ state = m_state;}
+    void set_ctrl_count_down( int m_ctrl_count_down){ ctrl_count_down = m_ctrl_count_down;}
+    void set_last_speed(double m_last_speed){ m_last_speed = last_speed;}
+    void set_last_angle(double m_last_angle){ m_last_angle = last_angle;}
+    mower_ctrl::SensorValue RX_info;
+    double Return_last_speed(){ return last_speed;}
+    double Return_driving_speed(){ return driving_speed;}
+    double Return_last_angle(){ return last_angle;}
+    double Return_steering_angle(){ return steering_angle;}
+    void set_carinfo(std::string m_carinfo){ carinfo = m_carinfo;}
+    std::string Return_carinfo(){ return carinfo;}
+    ros::Publisher RX_info_publisher;
+    ros::Publisher carinfo_publisher;
 
 private:
-    serial::Serial * ser;
     std::string serial_port_;
     int serial_baudrate_;
     int control_rate_;
@@ -49,7 +61,6 @@ private:
     AUTOState state;
     std::vector<std::string> tx_command;
     std_msgs::Int8 RX_num;
-    mower_ctrl::SensorValue RX_info;
     std::string carinfo;
 
     double last_speed = 0;
@@ -62,8 +73,6 @@ private:
     double water_en = 0;
 
     ros::Publisher RX_num_publisher;
-    ros::Publisher RX_info_publisher;
-    ros::Publisher carinfo_publisher;
     ros::Subscriber TX_num_subscriber;
     ros::Subscriber ctrl_subscriber;
 

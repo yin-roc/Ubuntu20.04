@@ -67,6 +67,7 @@ Serialctrl::~Serialctrl(){
 }
 
 
+//
 void Serialctrl::TXHandler(const std_msgs::Int8::ConstPtr & m_tx_num){
     if(tx_num != m_tx_num->data){
         tx_num = m_tx_num->data;
@@ -117,6 +118,24 @@ void Serialctrl::FreeCLITxCommand(){
     }
 }
 
+
+std::string Serialctrl::AUTOState_to_String(AUTOState m_state)
+{
+    std::string state_str;
+    switch(m_state){
+        case AUTOState::WAITING:
+            state_str = "WAITING";break;
+        case AUTOState::ALIGNMENT:
+            state_str = "ALIGNMENT";break;
+        case AUTOState::WORK:
+            state_str = "WORK";break;
+        case AUTOState::START:
+            state_str = "START";break;
+        default:
+            state_str = "Unknown";break;
+    }
+    return state_str;
+}
 
 
 

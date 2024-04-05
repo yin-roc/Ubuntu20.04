@@ -80,21 +80,19 @@ iostream
 string
 /home/yin-roc/1_Code/Ubuntu20.04/hf/src/mower_ctrl/include/mower_ctrl/string
 
-/home/yin-roc/1_Code/Ubuntu20.04/hf/src/mower_ctrl/src/hfserial.cpp
-mower_ctrl/hfserial.h
-/home/yin-roc/1_Code/Ubuntu20.04/hf/src/mower_ctrl/src/mower_ctrl/hfserial.h
-sstream
-/home/yin-roc/1_Code/Ubuntu20.04/hf/src/mower_ctrl/src/sstream
-serial/serial.h
-/home/yin-roc/1_Code/Ubuntu20.04/hf/src/mower_ctrl/src/serial/serial.h
-cmath
--
-
 /home/yin-roc/1_Code/Ubuntu20.04/hf/src/mower_ctrl/src/main_serial.cpp
 ros/ros.h
 /home/yin-roc/1_Code/Ubuntu20.04/hf/src/mower_ctrl/src/ros/ros.h
 mower_ctrl/hfserial.h
 /home/yin-roc/1_Code/Ubuntu20.04/hf/src/mower_ctrl/src/mower_ctrl/hfserial.h
+iostream
+-
+sstream
+-
+vector
+-
+cmath
+-
 
 /opt/ros/noetic/include/geometry_msgs/Pose2D.h
 string
