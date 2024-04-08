@@ -1,0 +1,5 @@
+CMake Error at /home/yin-roc/1_Code/Ubuntu20.04/Workspace/baidu_map_ws/src/baidu_map/CMakeLists.txt:199:
+  Parse error.  Function missing ending ")".  End of file reached.
+
+
+make: *** [Makefile:778：cmake_check_build_system] 错误 1

@@ -1,0 +1,9 @@
+-rootPath
+/home/yin-roc/1_Code/Ubuntu20.04/Workspace/baidu_map_ws/src/baidu_map
+-cmake-output
+-output-file
+/home/yin-roc/1_Code/Ubuntu20.04/Workspace/baidu_map_ws/build/baidu_map/.qt_plugins/Qt6_QmlPlugins_Imports_baidu_map.cmake
+-importPath
+/home/yin-roc/1_Code/Ubuntu20.04/Workspace/baidu_map_ws/build/baidu_map
+-importPath
+/home/yin-roc/Qt6.6/6.6.2/gcc_64/./qml

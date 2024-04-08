@@ -1,0 +1,2 @@
+map
+-G CodeBlocks - Unix Makefiles -DCMAKE_BUILD_TYPE=Debug -DCATKIN_DEVEL_PREFIX=/home/yin-roc/1_Code/Ubuntu20.04/Workspace/map_test/devel -DCMAKE_INSTALL_PREFIX=/home/yin-roc/1_Code/Ubuntu20.04/Workspace/map_test/install

@@ -1,0 +1,4 @@
+# Hashes of file build rules.
+7ee801c5a6dd82ab1c8ca55564ed98d2 .qt_plugins/Qt6_QmlPlugins_Imports_baidu_map.cmake
+6d46f842c1afea2f9eae3baca3b4d29e CMakeFiles/baidu_map_autogen
+56ced137c7f01c1e8549522ff1527079 CMakeFiles/clean_test_results

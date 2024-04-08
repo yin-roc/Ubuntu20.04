@@ -1,0 +1,15 @@
+[ 12%] Built target baidu_map_qmlimportscan
+[ 25%] [34m[1mAutomatic MOC and UIC for target baidu_map[0m
+[ 25%] Built target baidu_map_autogen
+[35m[1mScanning dependencies of target baidu_map[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/baidu_map.dir/src/view1.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/baidu_map.dir/src/main.cpp.o[0m
+In file included from [01m[K/home/yin-roc/1_Code/Ubuntu20.04/Workspace/baidu_map_ws/src/baidu_map/src/view1.cpp:2[m[K:
+[01m[K/home/yin-roc/1_Code/Ubuntu20.04/Workspace/baidu_map_ws/build/baidu_map/baidu_map_autogen/include/ui_view1.h:16:10:[m[K [01;31m[Kfatal error: [m[Kview2.h: 没有那个文件或目录
+   16 | #include [01;31m[K<view2.h>[m[K
+      |          [01;31m[K^~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/baidu_map.dir/build.make:102：CMakeFiles/baidu_map.dir/src/view1.cpp.o] 错误 1
+make[2]: *** 正在等待未完成的任务....
+make[1]: *** [CMakeFiles/Makefile2:162：CMakeFiles/baidu_map.dir/all] 错误 2
+make: *** [Makefile:141：all] 错误 2

@@ -1,0 +1,8 @@
+prefix=/home/yin-roc/1_Code/Ubuntu20.04/Workspace/map_test/devel
+
+Name: map
+Description: Description of map
+Version: 0.1.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

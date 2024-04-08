@@ -1,0 +1,1 @@
+_qt_internal_generate_deploy_qml_imports_script(baidu_map)

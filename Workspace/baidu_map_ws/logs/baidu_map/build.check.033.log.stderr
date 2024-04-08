@@ -1,0 +1,1 @@
+WARNING: Target "baidu_map" requests linking to directory "/home/yin-roc/1_Code/Ubuntu20.04/Workspace/baidu_map_ws/src/baidu_map".  Targets may link only to libraries.  CMake is dropping the item.

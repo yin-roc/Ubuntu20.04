@@ -1,0 +1,8 @@
+prefix=/home/yin-roc/1_Code/Ubuntu20.04/Workspace/baidu_map_ws/install
+
+Name: baidu_map
+Description: Description of baidu_map
+Version: 0.1.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

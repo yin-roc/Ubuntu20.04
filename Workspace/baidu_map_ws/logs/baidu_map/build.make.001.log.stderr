@@ -1,0 +1,9 @@
+In file included from [01m[K/home/yin-roc/1_Code/Ubuntu20.04/Workspace/baidu_map_ws/src/baidu_map/src/view1.cpp:2[m[K:
+[01m[K/home/yin-roc/1_Code/Ubuntu20.04/Workspace/baidu_map_ws/build/baidu_map/baidu_map_autogen/include/ui_view1.h:15:10:[m[K [01;31m[Kfatal error: [m[Ktest.h: 没有那个文件或目录
+   15 | #include [01;31m[K<test.h>[m[K
+      |          [01;31m[K^~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/baidu_map.dir/build.make:115：CMakeFiles/baidu_map.dir/src/view1.cpp.o] 错误 1
+make[2]: *** 正在等待未完成的任务....
+make[1]: *** [CMakeFiles/Makefile2:162：CMakeFiles/baidu_map.dir/all] 错误 2
+make: *** [Makefile:141：all] 错误 2

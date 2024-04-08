@@ -1,0 +1,69 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "qt_test_ros_qmake",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "qt_test_ros_qmake::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-qt_test_ros_qmake-Debug-d54375b53645f526df5f.json",
+					"name" : "qt_test_ros_qmake",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "qt_test_ros_qmake_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-qt_test_ros_qmake_autogen-Debug-62b5ce7cb381dee035c6.json",
+					"name" : "qt_test_ros_qmake_autogen",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/yin-roc/1_Code/Ubuntu20.04/Workspace/qt_ws/build-qt_test_ros_qmake-Desktop_Qt_6_6_2_GCC_64bit-Debug",
+		"source" : "/home/yin-roc/1_Code/Ubuntu20.04/Workspace/qt_ws/qt_test_ros_qmake"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 0
+	}
+}

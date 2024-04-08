@@ -1,0 +1,6 @@
+devel_space: /home/yin-roc/1_Code/Ubuntu20.04/Workspace/baidu_map_ws/devel
+install: false
+install_space: /home/yin-roc/1_Code/Ubuntu20.04/Workspace/baidu_map_ws/install
+profile: default
+source_space: /home/yin-roc/1_Code/Ubuntu20.04/Workspace/baidu_map_ws/src
+workspace: /home/yin-roc/1_Code/Ubuntu20.04/Workspace/baidu_map_ws

@@ -1,0 +1,8 @@
+[ 14%] [34m[1mAutomatic MOC and UIC for target baidu_map[0m
+[ 14%] Built target baidu_map_autogen
+[35m[1mScanning dependencies of target baidu_map[0m
+[ 57%] [32mBuilding CXX object CMakeFiles/baidu_map.dir/src/mainwindow.cpp.o[0m
+[ 57%] [32mBuilding CXX object CMakeFiles/baidu_map.dir/baidu_map_autogen/mocs_compilation.cpp.o[0m
+[ 57%] [32mBuilding CXX object CMakeFiles/baidu_map.dir/src/main.cpp.o[0m
+[ 71%] [32m[1mLinking CXX executable /home/yin-roc/1_Code/Ubuntu20.04/Workspace/baidu_map_ws/devel/lib/baidu_map/baidu_map[0m
+[100%] Built target baidu_map
