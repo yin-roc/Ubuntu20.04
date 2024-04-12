@@ -1,5 +1,0 @@
-/home/yin-roc/1_Code/Ubuntu20.04/Workspace/qt_ws/build-test2-Desktop_Qt_6_6_2_GCC_64bit-Debug/config.tests/static_link_order/CMakeFiles/rebuild_cache.dir
-/home/yin-roc/1_Code/Ubuntu20.04/Workspace/qt_ws/build-test2-Desktop_Qt_6_6_2_GCC_64bit-Debug/config.tests/static_link_order/CMakeFiles/edit_cache.dir
-/home/yin-roc/1_Code/Ubuntu20.04/Workspace/qt_ws/build-test2-Desktop_Qt_6_6_2_GCC_64bit-Debug/config.tests/static_link_order/CMakeFiles/static_link_order_test.dir
-/home/yin-roc/1_Code/Ubuntu20.04/Workspace/qt_ws/build-test2-Desktop_Qt_6_6_2_GCC_64bit-Debug/config.tests/static_link_order/CMakeFiles/staticLib.dir
-/home/yin-roc/1_Code/Ubuntu20.04/Workspace/qt_ws/build-test2-Desktop_Qt_6_6_2_GCC_64bit-Debug/config.tests/static_link_order/CMakeFiles/objLib.dir
